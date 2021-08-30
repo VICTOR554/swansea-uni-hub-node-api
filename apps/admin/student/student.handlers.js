@@ -14,21 +14,21 @@ const getOneStudent = (req, res, next) => {
   };
 
 //@des      Create student
-//@route    GET /students/new
+//@route    GET /students/
 //@access   Student
 const createStudents = (req, res, next) => {
     res.status(200).json({ success: true, msg: `Create new students`});
   };
 
 //@des      Update student
-//@route    GET /students/update/id
+//@route    GET /students
 //@access   Student
 const updateStudent = (req, res, next) => {
     res.status(200).json({ success: true, msg: `Update student ${req.params.id}`});
   };
 
 //@des      Delete student
-//@route    GET /students/delete/id
+//@route    GET /students
 //@access   Student
 const deleteStudent = (req, res, next) => {
     res.status(200).json({ success: true, msg: `Delete student ${req.params.id}`});
