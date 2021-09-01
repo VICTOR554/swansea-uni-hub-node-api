@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const logger = require('./middleware/logger');
+const morgan = require('morgan');
 const admin = require('./apps/admin/admin')
 const connectDB = require('./config/db');
 
@@ -13,7 +13,10 @@ connectDB();
 
 const app = express();
 
-app.use(logger);
+// development logging middleware (morgan)
+if(process.env.NODE_ENV === 'development') {
+    app.use(morgan('dev'));
+}
 
 //Mount routers
 app.use('/admin', admin)
