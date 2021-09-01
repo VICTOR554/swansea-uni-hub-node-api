@@ -20,7 +20,15 @@ app.use('/admin', admin)
 
 const PORT = process.env.PORT || 6000;
 
-app.listen(PORT, 
-    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+const server = app.listen(PORT,
+    console.log(`Server runnin in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
+
+
+//Handle unhandle promise rejections
+process.on('unhandledRejection,', (err, promise) => {
+    console.log(`Error: ${err.message}`);
+    //close server & exit process
+    server.close(() => process.exit(1));
+});
 
