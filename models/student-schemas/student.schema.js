@@ -8,11 +8,11 @@ const studentSchema = new Schema({
     },
     name: {
         type: String,
-        // required: true
+        required: true
     },
     email:{
         type: String,
-        // required: true
+        required: true
     },
     password: {
         type: String,
@@ -20,7 +20,7 @@ const studentSchema = new Schema({
     },
     course: {
         type: Number,
-        //required: true
+        required: true
     },
     specialism: {
         type: String,
