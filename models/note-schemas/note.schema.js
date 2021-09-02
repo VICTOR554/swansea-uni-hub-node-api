@@ -13,7 +13,7 @@ const noteSchema = new Schema({
         type: String,
         required: true
     },
-    dateTime: {
+    initialdate: {
         type: Number,
         required: true
     },
