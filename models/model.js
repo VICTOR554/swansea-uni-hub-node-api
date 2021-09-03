@@ -9,6 +9,7 @@ const Term = require('./term-schemas/term.schema');
 const Session = require('./session-schemas/session.schema');
 const Week = require('./week-schemas/week.schema');
 const Course = require('./course-schemas/course.schema');
+const Location = require('./location-schemas/location.schema');
 
 
 module.exports = {
@@ -22,6 +23,7 @@ module.exports = {
     Term,
     Session,
     Week,
-    Course
+    Course,
+    Location
 
 }

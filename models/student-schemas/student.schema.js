@@ -24,7 +24,6 @@ const studentSchema = new Schema({
     },
     specialism: {
         type: String,
-        // required: true
     },
     modules: [{
         type: String,
