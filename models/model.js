@@ -6,6 +6,7 @@ const Activity = require('./activity-schemas/activity.schema');
 const Report = require('./report-schemas/report.schema');
 const Lecturer = require('./lecturer-schemas/lecturer.scema');
 const Term = require('./term-schemas/term.schema');
+const Session = require('./session-schemas/session.schema');
 
 
 module.exports = {
@@ -16,6 +17,7 @@ module.exports = {
     Activity,
     Report,
     Lecturer,
-    Term
+    Term,
+    Session
 
 }
