@@ -14,7 +14,8 @@ const moduleSchema = new Schema({
     courseId: {
         type: Number,
         required: true
-    }
+    },
+    
 
 })
 

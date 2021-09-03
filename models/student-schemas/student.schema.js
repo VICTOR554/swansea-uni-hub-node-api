@@ -40,6 +40,7 @@ const studentSchema = new Schema({
         accomodation: {
             initial: {
                 type: String,
+                required: true
             },
             payment: [{
                 type: Number,
