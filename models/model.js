@@ -8,6 +8,7 @@ const Lecturer = require('./lecturer-schemas/lecturer.scema');
 const Term = require('./term-schemas/term.schema');
 const Session = require('./session-schemas/session.schema');
 const Week = require('./week-schemas/week.schema');
+const Course = require('./course-schemas/course.schema');
 
 
 module.exports = {
@@ -20,6 +21,7 @@ module.exports = {
     Lecturer,
     Term,
     Session,
-    Week
+    Week,
+    Course
 
 }
