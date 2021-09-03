@@ -12,10 +12,10 @@ const lecturerSchema = new Schema({
         unique: true
     },
     officeHour: {
-        StartTime: {
+        startTime: {
             type: Number,
         },
-        EndTime: {
+        endTime: {
             type: Number,
         }
     }

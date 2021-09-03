@@ -5,6 +5,7 @@ const Task = require('./task-schemas/task.schema');
 const Activity = require('./activity-schemas/activity.schema');
 const Report = require('./report-schemas/report.schema');
 const Lecturer = require('./lecturer-schemas/lecturer.scema');
+const Term = require('./term-schemas/term.schema');
 
 
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
     Task,
     Activity,
     Report,
-    Lecturer
+    Lecturer,
+    Term
 
 }
