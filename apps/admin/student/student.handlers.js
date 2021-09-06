@@ -6,14 +6,14 @@ const getAllStudents = (req, res, next) => {
     res.status(200).json({ success: true, msg: `Show all students`});
   };
 
-//@des      get one students
+//@des      get one student
 //@route    GET /students/:id
 //@access   Admin
 const getOneStudent = (req, res, next) => {
     res.status(200).json({ success: true, msg: `Get student ${req.params.id}`});
   };
 
-//@des      Create student
+//@des      Create students
 //@route    POST /students/new
 //@access   Admin
 const createStudents = (req, res, next) => {
