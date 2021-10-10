@@ -30,4 +30,4 @@ const activitySchema = new Schema({
 })
 
 
-module.exports = activitySchema
+module.exports = activitySchema;
