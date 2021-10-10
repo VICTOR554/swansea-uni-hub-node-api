@@ -3,67 +3,67 @@ const Schema = mongoose.Schema
 
 const studentSchema = new Schema({
     number: {
-        type: String,
-        required: true
+        type: Number,
+        // required: true
     },
     name: {
         type: String,
-        required: true
+        // required: true
     },
     gender: {
         type: String,
         enum: ['male', 'female', 'other'],
-        required: true
+        // required: true
     },
     nationality: {
         type: String,
-        required: true
+        // required: true
     },
     telephone: {
-        type: Number,
-        required: true
+        type: String,
+        // required: true
     },
     email:{
         type: String,
-        required: true
+        // required: true
     },
     password: {
         type: String,
-        required: true
+        // required: true
     },
     homeCampus: {
         type: String,
         enum: ['bay', 'singleton'],
-        required: true,
+        // required: true,
     },
     department: {
         type: String,
-        required: true,
+        // required: true,
     },
     degree: {
         type: String,
         enum: ['bachelor', 'master', 'Phd'],
-        required: true
+        // required: true
     },
     duration: {
         startTime: {
-            type: Number,
-            required: true
+            type: String,
+            // required: true
         },
         endTime:{
-            type: Number,
-            required: true
+            type: String,
+            // required: true
         },
     },
     course: {
-        type: Number,
-        required: true
+        type: String,
+        // required: true
     },
     finance: {
         tuition: {
             initial: {
                 type: Number,
-                required: true
+                // required: true
             },
             payment: [{
                 type: Number,
@@ -72,7 +72,7 @@ const studentSchema = new Schema({
         accomodation: {
             initial: {
                 type: Number,
-                required: true
+                // required: true
             },
             payment: [{
                 type: Number,
@@ -88,11 +88,11 @@ const studentSchema = new Schema({
     },
     modules: [{
         type: String,
-        required: true
+        // required: true
     }]
 
 })
 
 
 
-module.exports = studentSchema
+module.exports = mongoose.model('Student', studentSchema);

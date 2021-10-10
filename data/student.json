@@ -1,32 +1,32 @@
 [
-    {
-        "number": "1234567",
-        "name": "victor",
-        "gender": "male",
-        "nationality": "Nigeria",
-        "telephone": "07831854487",
-        "email": "2039887@swansea.ac.uk",
-        "password": "123",
-        "homeCampus": "bay",
-        "department": "science",
-        "degree": "bachelor",
-        "duration": {
-            "startTime": "12/11/2019",
-            "endTime": "12/11/2024"
-        },
-        "course": "computer science",
-        "finance": {
-            "tuition": {
-                "initial": "2000",
-                "payment": ["1000"]
-            },
-            "accomodation": {
-                "initial": "3000",
-                "payment": ["2000"]
-            }
-        },
-        "address": "bay room 2",
-        "specialism": "software engineering",
-        "modules": ["data visualisation"]
-    }
+  {
+    "number": "1234567",
+    "name": "victor",
+    "gender": "male",
+    "nationality": "Nigeria",
+    "telephone": "07831854487",
+    "email": "2039887@swansea.ac.uk",
+    "password": "123",
+    "homeCampus": "bay",
+    "department": "science",
+    "degree": "bachelor",
+    "duration": {
+      "startTime": "12/11/2019",
+      "endTime": "12/11/2024"
+    },
+    "course": "computer science",
+    "finance": {
+      "tuition": {
+        "initial": 2000,
+        "payment": [1000,500]
+      },
+      "accomodation": {
+        "initial": 3000,
+        "payment": [2000,100]
+      }
+    },
+    "address": "bay room 2",
+    "specialism": "software engineering",
+    "modules": ["data visualisation"]
+  }
 ]
