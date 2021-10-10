@@ -12,7 +12,7 @@ const studentSchema = new Schema({
     },
     gender: {
         type: String,
-        enum: ['Male', 'Female', 'other'],
+        enum: ['male', 'female', 'other'],
         required: true
     },
     nationality: {
@@ -33,7 +33,7 @@ const studentSchema = new Schema({
     },
     homeCampus: {
         type: String,
-        enum: ['Bay', 'Singleton'],
+        enum: ['bay', 'singleton'],
         required: true,
     },
     department: {
@@ -42,7 +42,7 @@ const studentSchema = new Schema({
     },
     degree: {
         type: String,
-        enum: ['Foundation', 'A-level', 'First year', 'Second year', 'Third year', 'Master', 'Phd'],
+        enum: ['bachelor', 'master', 'Phd'],
         required: true
     },
     duration: {
@@ -62,7 +62,7 @@ const studentSchema = new Schema({
     finance: {
         tuition: {
             initial: {
-                type: String,
+                type: Number,
                 required: true
             },
             payment: [{
@@ -71,7 +71,8 @@ const studentSchema = new Schema({
         },
         accomodation: {
             initial: {
-                type: String,
+                type: Number,
+                required: true
             },
             payment: [{
                 type: Number,
@@ -80,7 +81,7 @@ const studentSchema = new Schema({
     },
     address: {
         type: String,
-        required: true
+        // required: true
     },
     specialism: {
         type: String,

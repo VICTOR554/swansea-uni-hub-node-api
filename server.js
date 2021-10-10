@@ -14,6 +14,9 @@ connectDB();
 
 const app = express();
 
+//Body parser
+app.use(express.json());
+
 // development logging middleware (morgan)
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
@@ -32,7 +35,7 @@ const server = app.listen(PORT,
 //Handle unhandle promise rejections
 process.on('unhandledRejection,', (err, promise) => {
     console.log(`Error: ${err.message}`.red);
-    //close server & exit process
+    //close server and exit process
     server.close(() => process.exit(1));
 });
 
