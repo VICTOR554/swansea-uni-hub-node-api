@@ -81,7 +81,7 @@ const updateCourse = async (req, res, next) => {
 //@access   Admin
 const deleteCourse = async (req, res, next) => {
   try {
-    const course = await model.Activity.findByIdAndDelete(req.params.id);
+    const course = await model.Course.findByIdAndDelete(req.params.id);
 
     if (!course) {
       return res.status(400).json({ success: false });
