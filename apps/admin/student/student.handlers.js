@@ -1,39 +1,100 @@
+const model = require('../../../models/model');
 
 //@des      get all students
 //@route    GET /students
 //@access   Admin
-const getAllStudents = (req, res, next) => { 
-    res.status(200).json({ success: true, msg: `Show all students`});
-  };
+const getAllStudents = async (req, res, next) => {
+  try {
+    const student = await model.Student.find();
+
+    res.status(200).json({
+      success: true,
+      count: student.length,
+      data: student
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
+};
 
 //@des      get one student
 //@route    GET /students/:id
 //@access   Admin
-const getOneStudent = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Get student ${req.params.id}`});
-  };
+const getOneStudent = async (req, res, next) => {
+  try {
+    const student = await model.Student.findById(req.params.id);
+
+    if (!student) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: student
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
+};
 
 //@des      Create students
 //@route    POST /students/new
 //@access   Admin
-const createStudents = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Create new students`});
-  };
+const createStudents = async (req, res, next) => {
+  try {
+    const student = await model.Student.create(req.body);
+
+    res.status(201).json({
+      success: true,
+      data: student
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
+};
 
 //@des      Update student
 //@route    PUT /students/update/id
 //@access   Admin
-const updateStudent = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Update student ${req.params.id}`});
-  };
+const updateStudent = async (req, res, next) => {
+  try {
+    const student = await model.Student.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true
+    });
+
+    if (!student) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: student
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
+};
 
 //@des      Delete student
 //@route    DELETE /students/delete/id
 //@access   Admin
-const deleteStudent = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Delete student ${req.params.id}`});
-};
+const deleteStudent = async (req, res, next) => {
+  try {
+    const student = await model.Student.findByIdAndDelete(req.params.id);
 
+    if (!student) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: {}
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }
+};
 
 module.exports = {
   getAllStudents,
@@ -41,5 +102,4 @@ module.exports = {
   createStudents,
   updateStudent,
   deleteStudent
- 
-}
+};

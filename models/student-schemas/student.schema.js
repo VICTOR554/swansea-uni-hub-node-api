@@ -4,16 +4,17 @@ const Schema = mongoose.Schema
 const studentSchema = new Schema({
     number: {
         type: Number,
-        // required: true
+        unique: true,
+        required: true
     },
     name: {
         type: String,
-        // required: true
+        required: true
     },
     gender: {
         type: String,
         enum: ['male', 'female', 'other'],
-        // required: true
+        required: true
     },
     nationality: {
         type: String,
