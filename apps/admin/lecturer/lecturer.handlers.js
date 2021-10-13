@@ -1,38 +1,95 @@
+const model = require('../../../models/model');
 
 //@des      get all lecturer
 //@route    GET /lecturers
 //@access   Admin
-const getAllLecturers = (req, res, next) => { 
-    res.status(200).json({ success: true, msg: `Show all lecturers`});
-  };
+const getAllLecturers = async (req, res, next) => { 
+  try {
+    const lecturer = await model.Lecturer.find();
+
+    res.status(200).json({
+      success: true,
+      count: lecturer.length,
+      data: lecturer
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      get one lecturer
 //@route    GET /lecturers/:id
 //@access   Admin
-const getOneLecturer = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Get lecturer ${req.params.id}`});
-  };
+const getOneLecturer = async (req, res, next) => {
+  try {
+    const lecturer = await model.Lecturer.findById(req.params.id);
+
+    if (!lecturer) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: lecturer
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Create lecturers
 //@route    POST /lecturers/new
 //@access   Admin
-const createLecturers = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Create new lecturers`});
-  };
+const createLecturers = async (req, res, next) => {
+  try {
+    const lecturer = await model.Lecturer.create(req.body);
+
+    res.status(201).json({
+      success: true,
+      data: lecturer
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Update lecturer
 //@route    PUT /lecturers/update/id
 //@access   Admin
-const updateLecturer = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Update lecturer ${req.params.id}`});
-  };
+const updateLecturer = async (req, res, next) => {
+  try {
+    const lecturer = await model.Lecturer.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true
+    });
+
+    if (!lecturer) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: lecturer
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Delete lecturer
 //@route    DELETE /lecturers/delete/id
 //@access   Admin
-const deleteLecturer = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Delete lecturer ${req.params.id}`});
-};
+const deleteLecturer = async (req, res, next) => {
+  try {
+    const lecturer = await model.Lecturer.findByIdAndDelete(req.params.id);
+
+    if (!lecturer) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: {}
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }};
 
 
 module.exports = {
