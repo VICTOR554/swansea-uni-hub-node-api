@@ -1,38 +1,95 @@
+const model = require('../../../models/model');
 
 //@des      get all tasks
 //@route    GET /tasks
 //@access   Task
-const getAllTasks = (req, res, next) => { 
-    res.status(200).json({ success: true, msg: `Show all tasks`});
-  };
+const getAllTasks = async (req, res, next) => { 
+  try {
+    const task = await model.Task.find();
+
+    res.status(200).json({
+      success: true,
+      count: task.length,
+      data: task
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      get one task
 //@route    GET /tasks/:id
 //@access   Task
-const getOneTask = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Get task ${req.params.id}`});
-  };
+const getOneTask = async (req, res, next) => {
+  try {
+    const task = await model.Task.findById(req.params.id);
+
+    if (!task) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: task
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Create tasks
 //@route    POST /tasks/new
 //@access   Task
-const createTasks = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Create new tasks`});
-  };
+const createTasks = async (req, res, next) => {
+  try {
+    const task = await model.Task.create(req.body);
+
+    res.status(201).json({
+      success: true,
+      data: task
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Update task
 //@route    PUT /tasks/update/id
 //@access   Task
-const updateTask = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Update task ${req.params.id}`});
-  };
+const updateTask = async (req, res, next) => {
+  try {
+    const task = await model.Task.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true
+    });
+
+    if (!task) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: task
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Delete task
 //@route    DELETE /tasks/delete/id
 //@access   Task
-const deleteTask = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Delete task ${req.params.id}`});
-};
+const deleteTask = async (req, res, next) => {
+  try {
+    const task = await model.Task.findByIdAndDelete(req.params.id);
+
+    if (!task) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: {}
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }};
 
 
 module.exports = {
