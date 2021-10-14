@@ -1,38 +1,95 @@
+const model = require('../../../models/model');
 
 //@des      get all sessions
 //@route    GET /sessions
 //@access   Admin
-const getAllSessions = (req, res, next) => { 
-    res.status(200).json({ success: true, msg: `Show all sessions`});
-  };
+const getAllSessions = async (req, res, next) => { 
+  try {
+    const session = await model.Session.find();
+
+    res.status(200).json({
+      success: true,
+      count: session.length,
+      data: session
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      get one session
 //@route    GET /sessions/:id
 //@access   Admin
-const getOneSession = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Get session ${req.params.id}`});
-  };
+const getOneSession = async (req, res, next) => {
+  try {
+    const session = await model.Session.findById(req.params.id);
+
+    if (!session) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: session
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Create sessions
 //@route    POST /sessions/new
 //@access   Admin
-const createSessions = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Create new sessions`});
-  };
+const createSessions = async (req, res, next) => {
+  try {
+    const session = await model.Session.create(req.body);
+
+    res.status(201).json({
+      success: true,
+      data: session
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Update session
 //@route    PUT /sessions/update/id
 //@access   Admin
-const updateSession = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Update session ${req.params.id}`});
-  };
+const updateSession = async (req, res, next) => {
+  try {
+    const session = await model.Session.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true
+    });
+
+    if (!session) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: session
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }  };
 
 //@des      Delete session
 //@route    DELETE /sessions/delete/id
 //@access   Admin
-const deleteSession = (req, res, next) => {
-    res.status(200).json({ success: true, msg: `Delete session ${req.params.id}`});
-};
+const deleteSession = async (req, res, next) => {
+  try {
+    const session = await model.Session.findByIdAndDelete(req.params.id);
+
+    if (!session) {
+      return res.status(400).json({ success: false });
+    }
+
+    res.status(200).json({
+      success: true,
+      data: {}
+    });
+  } catch (err) {
+    res.status(400).json({ success: false });
+  }};
 
 
 module.exports = {
