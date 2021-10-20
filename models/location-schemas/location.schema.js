@@ -19,6 +19,11 @@ const locationSchema = new Schema({
   longitude: {
     type: Number,
     required: true
+  },
+  key: {
+    type: String,
+    required: true,
+    unique: true
   }
   
 });

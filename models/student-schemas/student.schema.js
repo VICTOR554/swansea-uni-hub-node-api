@@ -56,29 +56,13 @@ const studentSchema = new Schema({
             // required: true
         },
     },
-    course: {
-        type: String,
+    courseId: {
+        type: Number,
         // required: true
     },
     finance: {
-        tuition: {
-            initial: {
-                type: Number,
-                // required: true
-            },
-            payment: [{
-                type: Number,
-            }],
-        },
-        accomodation: {
-            initial: {
-                type: Number,
-                // required: true
-            },
-            payment: [{
-                type: Number,
-            }],
-        },
+        type: Number,
+        // required: true
     },
     address: {
         type: String,

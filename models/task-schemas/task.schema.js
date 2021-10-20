@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const taskSchema = new Schema({
+    studentNumber:{
+        type: Number,
+        required: true
+    },
     moduleCode: {
         type: String,
     },
@@ -17,7 +21,7 @@ const taskSchema = new Schema({
         type: Number,
         required: true
     },
-    body: {
+    description: {
         type: String,
         //required: true
     },
@@ -31,10 +35,6 @@ const taskSchema = new Schema({
         required: true,
         default: false
     },
-    studentNumber:{
-        type: Number,
-        required: true
-    }
 })
 
 module.exports = taskSchema
