@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router()
-const handlers = require('./courseWork.handlers');
+const handlers = require('./coursework.handlers');
 
 
-router.get('/', handlers.getAllCourseWorks)
-router.get('/:id', handlers.getOneCourseWork)
-router.post('/new', handlers.createCourseWorkWorks)
-router.put('/update/:id', handlers.updateCourseWork)
-router.delete('/delete/:id', handlers.deleteCourseWork)
+router.get('/', handlers.getAllCourseworks)
+router.get('/:id', handlers.getOneCoursework)
+router.post('/new', handlers.createCourseworks)
+router.put('/update/:id', handlers.updateCoursework)
+router.delete('/delete/:id', handlers.deleteCoursework)
 
 
 module.exports = router;

@@ -1,89 +1,89 @@
 const model = require('../../../models/model');
 
-//@des      get all courseWorks
-//@route    GET /courseWorks
+//@des      get all courseworks
+//@route    GET /courseworks
 //@access   Admin
-const getAllCourseWorks= async (req, res, next) => {
+const getAllCourseworks= async (req, res, next) => {
   try {
-    const course = await model.Course.find();
+    const coursework = await model.Coursework.find();
 
     res.status(200).json({
       success: true,
-      count: course.length,
-      data: course
+      count: coursework.length,
+      data: coursework
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      get one courseWork
-//@route    GET /courseWorks/:id
+//@des      get one coursework
+//@route    GET /courseworks/:id
 //@access   Admin
-const getOneCourseWork = async (req, res, next) => {
+const getOneCoursework = async (req, res, next) => {
   try {
-    const course = await model.Course.findById(req.params.id);
+    const coursework = await model.Coursework.findById(req.params.id);
 
-    if (!course) {
+    if (!coursework) {
       return res.status(400).json({ success: false });
     }
 
     res.status(200).json({
       success: true,
-      data: course
+      data: coursework
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      Create courseWorks
-//@route    POST /courseWorks/new
+//@des      Create courseworks
+//@route    POST /courseworks/new
 //@access   Admin
-const createCourseWorks = async (req, res, next) => {
+const createCourseworks = async (req, res, next) => {
   try {
-    const course = await model.Course.create(req.body);
+    const coursework = await model.Coursework.create(req.body);
 
     res.status(201).json({
       success: true,
-      data: course
+      data: coursework
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      Update courseWork
-//@route    PUT /courseWorks/update/id
+//@des      Update coursework
+//@route    PUT /courseworks/update/id
 //@access   Admin
-const updateCourseWork = async (req, res, next) => {
+const updateCoursework = async (req, res, next) => {
   try {
-    const course = await model.Course.findByIdAndUpdate(req.params.id, req.body, {
+    const coursework = await model.Coursework.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
       runValidators: true
     });
 
-    if (!course) {
+    if (!coursework) {
       return res.status(400).json({ success: false });
     }
 
     res.status(200).json({
       success: true,
-      data: course
+      data: coursework
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      Delete courseWork
-//@route    DELETE /courseWorks/delete/id
+//@des      Delete coursework
+//@route    DELETE /courseworks/delete/id
 //@access   Admin
-const deleteCourseWork = async (req, res, next) => {
+const deleteCoursework = async (req, res, next) => {
   try {
-    const course = await model.Course.findByIdAndDelete(req.params.id);
+    const coursework = await model.Coursework.findByIdAndDelete(req.params.id);
 
-    if (!course) {
+    if (!coursework) {
       return res.status(400).json({ success: false });
     }
 
@@ -97,9 +97,9 @@ const deleteCourseWork = async (req, res, next) => {
 };
 
 module.exports = {
-  getAllCourseWorks,
-  getOneCourseWork,
-  createCourseWorks,
-  updateCourseWork,
-  deleteCourseWork
+  getAllCourseworks,
+  getOneCoursework,
+  createCourseworks,
+  updateCoursework,
+  deleteCoursework
 };
