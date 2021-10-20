@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get all weeks
 //@route    GET /weeks
-//@access   Admin
+//@access   Student
 const getAllWeeks = async (req, res, next) => { 
   try {
     const week = await model.Week.find();
@@ -18,7 +18,7 @@ const getAllWeeks = async (req, res, next) => {
 
 //@des      get one week
 //@route    GET /weeks/:id
-//@access   Admin
+//@access   Student
 const getOneWeek = async (req, res, next) => {
   try {
     const week = await model.Week.findById(req.params.id);

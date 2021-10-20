@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get all locations
 //@route    GET /locations
-//@access   Admin
+//@access   Student
 const getAllLocations = async (req, res, next) => {
   try {
     const location = await model.Location.find();
@@ -19,7 +19,7 @@ const getAllLocations = async (req, res, next) => {
 
 //@des      get one location
 //@route    GET /locations/:id
-//@access   Admin
+//@access   Student
 const getOneLocation = async (req, res, next) => {
   try {
     const location = await model.Location.findById(req.params.id);

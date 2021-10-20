@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get all courseworks
 //@route    GET /courseworks
-//@access   Admin
+//@access   Student
 const getAllCourseworks= async (req, res, next) => {
   try {
     const coursework = await model.Coursework.find();
@@ -19,7 +19,7 @@ const getAllCourseworks= async (req, res, next) => {
 
 //@des      get one coursework
 //@route    GET /courseworks/:id
-//@access   Admin
+//@access   Student
 const getOneCoursework = async (req, res, next) => {
   try {
     const coursework = await model.Coursework.findById(req.params.id);

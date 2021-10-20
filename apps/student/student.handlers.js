@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get one student
 //@route    GET /students/:id
-//@access   Admin
+//@access   Student
 const getOneStudent = async (req, res, next) => {
   try {
     const student = await model.Student.findById(req.params.id);
@@ -22,7 +22,7 @@ const getOneStudent = async (req, res, next) => {
 
 //@des      Update student
 //@route    PUT /students/update/id
-//@access   Admin
+//@access   Student
 const updateStudent = async (req, res, next) => {
   try {
     const student = await model.Student.findByIdAndUpdate(req.params.id, req.body, {

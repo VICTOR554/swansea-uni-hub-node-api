@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get all activities
 //@route    GET /activities
-//@access   Admin
+//@access   Student
 const getAllActivities = async (req, res, next) => {
   try {
     const activity = await model.Activity.find();
@@ -19,7 +19,7 @@ const getAllActivities = async (req, res, next) => {
 
 //@des      get one activities
 //@route    GET /activities/:id
-//@access   Admin
+//@access   Student
 const getOneActivity = async (req, res, next) => {
   try {
     const activity = await model.Activity.findById(req.params.id);

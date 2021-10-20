@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get all modules
 //@route    GET /modules
-//@access   Admin
+//@access   Student
 const getAllModules = async (req, res, next) => {
   try {
     const module = await model.Module.find();
@@ -19,7 +19,7 @@ const getAllModules = async (req, res, next) => {
 
 //@des      get one module
 //@route    GET /modules/:id
-//@access   Admin
+//@access   Student
 const getOneModule = async (req, res, next) => {
   try {
     const module = await model.Module.findById(req.params.id);

@@ -2,7 +2,7 @@ const model = require('../../../models/model');
 
 //@des      get all tasks
 //@route    GET /tasks
-//@access   Task
+//@access   Student
 const getAllTasks = async (req, res, next) => { 
   try {
     const task = await model.Task.find();
@@ -18,7 +18,7 @@ const getAllTasks = async (req, res, next) => {
 
 //@des      get one task
 //@route    GET /tasks/:id
-//@access   Task
+//@access   Student
 const getOneTask = async (req, res, next) => {
   try {
     const task = await model.Task.findById(req.params.id);
@@ -37,7 +37,7 @@ const getOneTask = async (req, res, next) => {
 
 //@des      Create tasks
 //@route    POST /tasks/new
-//@access   Task
+//@access   Student
 const createTasks = async (req, res, next) => {
   try {
     const task = await model.Task.create(req.body);
@@ -52,7 +52,7 @@ const createTasks = async (req, res, next) => {
 
 //@des      Update task
 //@route    PUT /tasks/update/id
-//@access   Task
+//@access   Student
 const updateTask = async (req, res, next) => {
   try {
     const task = await model.Task.findByIdAndUpdate(req.params.id, req.body, {
@@ -74,7 +74,7 @@ const updateTask = async (req, res, next) => {
 
 //@des      Delete task
 //@route    DELETE /tasks/delete/id
-//@access   Task
+//@access   Student
 const deleteTask = async (req, res, next) => {
   try {
     const task = await model.Task.findByIdAndDelete(req.params.id);
