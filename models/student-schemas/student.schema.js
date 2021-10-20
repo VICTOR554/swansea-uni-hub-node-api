@@ -28,6 +28,10 @@ const studentSchema = new Schema({
         type: String,
         // required: true
     },
+    address: {
+        type: String,
+        // required: true
+    },
     password: {
         type: String,
         // required: true
@@ -58,14 +62,6 @@ const studentSchema = new Schema({
     },
     courseId: {
         type: Number,
-        // required: true
-    },
-    finance: {
-        type: Number,
-        // required: true
-    },
-    address: {
-        type: String,
         // required: true
     },
     specialism: {

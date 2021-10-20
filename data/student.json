@@ -6,6 +6,7 @@
     "nationality": "Nigeria",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
+    "address": "bay room 2",
     "password": "123",
     "homeCampus": "bay",
     "department": "science",
@@ -14,18 +15,7 @@
       "startTime": "12/11/2019",
       "endTime": "12/11/2024"
     },
-    "course": "computer science",
-    "finance": {
-      "tuition": {
-        "initial": 2000,
-        "payment": [1000,500]
-      },
-      "accomodation": {
-        "initial": 3000,
-        "payment": [2000,100]
-      }
-    },
-    "address": "bay room 2",
+    "courseId": "201010",
     "specialism": "software engineering",
     "modules": ["data visualisation"]
   }
