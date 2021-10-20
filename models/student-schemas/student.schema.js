@@ -16,6 +16,10 @@ const studentSchema = new Schema({
         enum: ['male', 'female', 'other'],
         required: true
     },
+    dateOfBirth: {
+        type: Number,
+        required: true
+    },
     nationality: {
         type: String,
         // required: true
@@ -45,12 +49,26 @@ const studentSchema = new Schema({
         type: String,
         // required: true,
     },
+    courseId: {
+        type: Number,
+        // required: true
+    },
     degree: {
         type: String,
         enum: ['bachelor', 'master', 'Phd'],
         // required: true
     },
-    duration: {
+    status: {
+        type: String,
+        enum: ['current', 'past'],
+        // required: true
+    },
+    Enrollment: {
+        type: String,
+        enum: ['Enrolled', 'Not enrolled'],
+        // required: true
+    },
+    courseDuration: {
         startTime: {
             type: String,
             // required: true
@@ -59,10 +77,6 @@ const studentSchema = new Schema({
             type: String,
             // required: true
         },
-    },
-    courseId: {
-        type: Number,
-        // required: true
     },
     specialism: {
         type: String,

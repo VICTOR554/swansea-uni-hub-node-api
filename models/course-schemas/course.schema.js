@@ -12,6 +12,10 @@ const courseSchema = new Schema({
         required: true,
         unique: true
     },
+    code: {
+        type: Number,
+        unique: true
+    },
 })
 
 module.exports = courseSchema
