@@ -13,6 +13,9 @@ const modules = require('./module/module');
 const week = require('./week/week');
 const coursework = require('./coursework/coursework');
 const finance = require('./finance/finance');
+const lecturer = require('./lecturer/lecturer');
+const report = require('./report/report');
+
 
 
 // Mounting the Routes and how it is displayed in the url
@@ -22,6 +25,8 @@ router.use('/modules', modules);
 router.use('/weeks', week);
 router.use('/courseworks', coursework);
 router.use('/finances', finance);
+router.use('/lecturers', lecturer);
+router.use('/reports', report);
 
 
 
