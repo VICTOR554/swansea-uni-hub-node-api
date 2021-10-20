@@ -12,6 +12,8 @@ const report = require('./report/report');
 const session = require('./session/session');
 const term = require('./term/term');
 const week = require('./week/week');
+const coursework = require('./coursework/coursework');
+const finance = require('./finance/finance');
 
 
 // Mounting the Routes and how it is displayed in the url
@@ -25,6 +27,8 @@ router.use('/reports', report);
 router.use('/sessions', session);
 router.use('/terms', term);
 router.use('/weeks', week);
+router.use('/courseworks', coursework);
+router.use('/finances', finance);
 
 
 
