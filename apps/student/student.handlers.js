@@ -1,4 +1,4 @@
-const model = require('../../../models/model');
+const model = require('../../models/model');
 
 //@des      get one student
 //@route    GET /students/:id
