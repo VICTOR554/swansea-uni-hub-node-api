@@ -11,6 +11,8 @@ const Term = mongoose.model('Term',require('./term-schemas/term.schema'));
 const Session = mongoose.model('Session',require('./session-schemas/session.schema'));
 const Week = mongoose.model('Week',require('./week-schemas/week.schema'));
 const Course = mongoose.model('Course',require('./course-schemas/course.schema'));
+const Coursework = mongoose.model('Coursework',require('./coursework-schemas/coursework.schema'));
+const Finance = mongoose.model('Finance',require('./finance-schemas/finance.schema'));
 const Location = mongoose.model('Location',require('./location-schemas/location.schema'));
 
 
@@ -26,5 +28,7 @@ module.exports = {
     Session,
     Week,
     Course,
-    Location
+    Location,
+    Coursework,
+    Finance
 }
