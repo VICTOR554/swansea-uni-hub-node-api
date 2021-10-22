@@ -3,6 +3,7 @@
     "number": "1234567",
     "name": "victor",
     "gender": "male",
+    "dateOfBirth": "12/15/1999",
     "nationality": "Nigeria",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
@@ -10,12 +11,14 @@
     "password": "123",
     "homeCampus": "bay",
     "department": "science",
+    "courseId": "201010",
     "degree": "bachelor",
+    "status": "current",
+    "enrollment": "enrolled",
     "duration": {
       "startTime": "12/11/2019",
       "endTime": "12/11/2024"
     },
-    "courseId": "201010",
     "specialism": "software engineering",
     "modules": ["data visualisation"]
   }

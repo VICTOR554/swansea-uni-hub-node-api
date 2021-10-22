@@ -6,6 +6,10 @@ const courseWorkSchema = new Schema({
         type: String,
         required: true
     },
+    title: {
+        type: String,
+        required: true
+    },
     lecturerName: {
         type: String,
         required: true
@@ -13,6 +17,11 @@ const courseWorkSchema = new Schema({
     dueDate: {
         type: Number,
         required: true
+    },
+    status: {
+        type: string,
+        required: true,
+        enum: ['Current', 'Past'],
     },
     percentage: {
         type: Number,
