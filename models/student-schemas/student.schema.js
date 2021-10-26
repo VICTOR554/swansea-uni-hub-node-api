@@ -69,11 +69,11 @@ const studentSchema = new Schema({
         // required: true
     },
     courseDuration: {
-        startTime: {
+        startDate: {
             type: String,
             // required: true
         },
-        endTime:{
+        endDate:{
             type: String,
             // required: true
         },
