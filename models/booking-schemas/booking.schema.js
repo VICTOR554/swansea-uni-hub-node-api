@@ -20,7 +20,7 @@ const bookingSchema = new Schema({
   status: {
     type: string,
     required: true,
-    enum: ['Booked', 'Not Booked'],
+    enum: ['Booked', 'Unbooked'],
 },
   date: {
     day: {
