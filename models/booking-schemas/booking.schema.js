@@ -20,20 +20,19 @@ const bookingSchema = new Schema({
     type: String,
     required: true
   },
-  status: {
-    type: string,
-    required: true,
-    enum: ['Booked', 'Unbooked'],
-},
   date: {
-    startTime: {
+    start_date_time: {
       type: Number,
       required: true
     },
-    endTime: {
+    end_date_time: {
       type: Number,
       required: true
     }
+  },
+  created_date_time: {
+    type: Number,
+    required: true
   }
 });
 
