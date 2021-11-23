@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const bookingSchema = new Schema({
-  title: {
+  name: {
     type: String,
     required: true
   },
@@ -10,10 +10,13 @@ const bookingSchema = new Schema({
     type: String,
     required: true
   },
-  lecturerId: {
+  lecturer_name: {
     type: String
   },
-  studentId: {
+  room_name: {
+    type: String
+  },
+  student_number: {
     type: String,
     required: true
   },
@@ -27,12 +30,12 @@ const bookingSchema = new Schema({
       type: String
     },
     startTime: {
-      type: String
-      // required: true
+      type: Number,
+      required: true
     },
     endTime: {
-      type: String
-      // required: true
+      type: Number,
+      required: true
     }
   }
 });

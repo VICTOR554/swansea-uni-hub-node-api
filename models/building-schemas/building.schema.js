@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const bookingSchema = new Schema({
-  name: {
+const buildingSchema = new Schema({
+  campus_name: {
     type: String,
-    required: true
   },
   location: {
     type: String,
@@ -12,4 +11,4 @@ const bookingSchema = new Schema({
   },
 });
 
-module.exports = bookingSchema;
+module.exports = buildingSchema;
