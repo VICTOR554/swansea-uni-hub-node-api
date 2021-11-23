@@ -9,7 +9,6 @@ const bookSchema = new Schema({
   author: {
     type: String,
     required: true,
-    unique: true
   },
   subject: {
     type: String,

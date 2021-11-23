@@ -26,9 +26,6 @@ const bookingSchema = new Schema({
     enum: ['Booked', 'Unbooked'],
 },
   date: {
-    day: {
-      type: String
-    },
     startTime: {
       type: Number,
       required: true
