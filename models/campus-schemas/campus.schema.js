@@ -9,7 +9,7 @@ const campusSchema = new Schema({
   location: {
     type: String,
     required: true
-  },
+  }
 });
 
 module.exports = campusSchema;
