@@ -1,27 +1,26 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const noteSchema = new Schema({
-    studentNumber: {
-        type: Number,
-        required: true
-    },
-    moduleCode: {
-        type: String,
-    },
-    title: {
-        type: String,
-        required: true
-    },
-    initialdate: {
-        type: Number,
-        required: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
+  student_number: {
+    type: Number,
+    required: true
+  },
+  module_code: {
+    type: String
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  created_date_time: {
+    type: Number,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  }
+});
 
-})
-
-module.exports = noteSchema
+module.exports = noteSchema;
