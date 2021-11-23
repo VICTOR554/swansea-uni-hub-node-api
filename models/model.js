@@ -15,6 +15,8 @@ const Coursework = mongoose.model('Coursework',require('./coursework-schemas/cou
 const Finance = mongoose.model('Finance',require('./finance-schemas/finance.schema'));
 const Location = mongoose.model('Location',require('./location-schemas/location.schema'));
 const Library = mongoose.model('Library',require('./library-schemas/library.schema'));
+const Campus = mongoose.model('Campus',require('./campus-schemas/campus.schema'));
+
 
 
 
@@ -32,6 +34,7 @@ module.exports = {
     Course,
     Location,
     Coursework,
-    Finance,
-    Library
+    Finance, 
+    Library,
+    Campus
 }
