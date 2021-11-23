@@ -2,13 +2,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
-  title: {
+  name: {
     type: String,
     required: true
   },
   author: {
     type: String,
-    required: true,
+    required: true
   },
   subject: {
     type: String,
@@ -27,7 +27,7 @@ const bookSchema = new Schema({
     enum: ['Bay', 'Singleton', 'Bay and Singleton', 'Not available'],
     required: true
   },
-  bookmarked: {
+  bookmark: {
     type: Boolean,
     required: true
   }
