@@ -8,8 +8,8 @@ const financeSchema = new Schema({
   },
   tuition: {
     initial: {
-      type: Number
-      // required: true
+      type: Number,
+      required: true
     },
     payment: [
       {
@@ -20,7 +20,6 @@ const financeSchema = new Schema({
   accomodation: {
     initial: {
       type: Number
-      // required: true
     },
     payment: [
       {
