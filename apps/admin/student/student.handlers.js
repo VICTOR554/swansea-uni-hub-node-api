@@ -14,7 +14,7 @@ const getAllStudents = async (req, res, next) => {
       data: student
     });
   } catch (err) {
-    res.status(400).json({ success: false });
+    next(err);
   }
 };
 
@@ -52,8 +52,7 @@ const createStudents = async (req, res, next) => {
       data: student
     });
   } catch (err) {
-    res.status(400).json({ success: false });
-  }
+    next(err);  }
 };
 
 //@des      Update student
@@ -67,7 +66,7 @@ const updateStudent = async (req, res, next) => {
     });
 
     if (!student) {
-      return res.status(400).json({ success: false });
+      return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
     }
 
     res.status(200).json({
@@ -75,8 +74,8 @@ const updateStudent = async (req, res, next) => {
       data: student
     });
   } catch (err) {
-    res.status(400).json({ success: false });
-  }
+    next(err);
+    }
 };
 
 //@des      Delete student
@@ -87,7 +86,7 @@ const deleteStudent = async (req, res, next) => {
     const student = await model.Student.findByIdAndDelete(req.params.id);
 
     if (!student) {
-      return res.status(400).json({ success: false });
+      return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
     }
 
     res.status(200).json({
@@ -95,8 +94,8 @@ const deleteStudent = async (req, res, next) => {
       data: {}
     });
   } catch (err) {
-    res.status(400).json({ success: false });
-  }
+    next(err);
+    }
 };
 
 module.exports = {
