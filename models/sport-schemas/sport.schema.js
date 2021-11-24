@@ -7,7 +7,7 @@ const sportSchema = new Schema({
     required: true
   },
   img: {
-    type: string,
+    type: String,
     required: true
   },
   category: {
