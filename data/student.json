@@ -3,23 +3,23 @@
     "number": "1234567",
     "name": "victor",
     "gender": "male",
-    "dateOfBirth": "12/15/1999",
+    "date_of_birth": "12/15/1999",
     "nationality": "Nigeria",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
     "address": "bay room 2",
     "password": "123",
-    "homeCampus": "bay",
+    "home_campus": "bay",
     "department": "science",
-    "courseId": "201010",
+    "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
     "enrollment": "enrolled",
-    "duration": {
-      "startTime": "12/11/2019",
-      "endTime": "12/11/2024"
+    "course_duration": {
+      "start_date_time": "12/11/2019",
+      "end_date_time": "12/11/2024"
     },
     "specialism": "software engineering",
-    "modules": ["data visualisation"]
+    "modules": ["data visualisation", "Crypotcurrency"]
   }
 ]

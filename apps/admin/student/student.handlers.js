@@ -13,7 +13,8 @@ const getAllStudents = async (req, res, next) => {
       data: student
     });
   } catch (err) {
-    res.status(400).json({ success: false });
+    // res.status(400).json({ success: false });
+    next(err);
   }
 };
 

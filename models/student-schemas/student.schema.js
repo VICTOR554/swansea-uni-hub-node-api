@@ -17,7 +17,7 @@ const studentSchema = new Schema({
     required: true
   },
   date_of_birth: {
-    type: Number,
+    type: String,
     required: true
   },
   nationality: {
@@ -40,7 +40,7 @@ const studentSchema = new Schema({
     type: String
     // required: true
   },
-  homeCampus: {
+  home_campus: {
     type: String,
     enum: ['bay', 'singleton']
     // required: true,
@@ -49,7 +49,7 @@ const studentSchema = new Schema({
     type: String
     // required: true,
   },
-  courseId: {
+  course_id: {
     type: Number
     // required: true
   },
@@ -70,11 +70,11 @@ const studentSchema = new Schema({
   },
   course_duration: {
     start_date_time: {
-      type: Number
+      type: String
       // required: true
     },
     end_date_time: {
-      type: Number
+      type: String
       // required: true
     }
   },
