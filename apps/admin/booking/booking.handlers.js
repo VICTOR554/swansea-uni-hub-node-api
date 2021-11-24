@@ -1,75 +1,75 @@
 const model = require('../../../models/model');
 
-//@des      get all books
-//@route    GET /books
+//@des      get all bookings 
+//@route    GET /bookings
 //@access   Admin 
-const getAllBooks = async (req, res, next) => {
+const getAllBookings = async (req, res, next) => {
   try {
-    const book = await model.Book.find();
+    const booking = await model.Booking.find();
 
     res.status(200).json({
       success: true,
-      count: book.length,
-      data: book
+      count: booking.length,
+      data: booking
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      get one book
-//@route    GET /books/:id
+//@des      get one booking
+//@route    GET /bookings/:id
 //@access   Admin
-const getOneBook= async (req, res, next) => {
+const getOneBooking= async (req, res, next) => {
   try {
-    const book = await model.Book.findById(req.params.id);
+    const booking = await model.Booking.findById(req.params.id);
 
-    if (!book) {
+    if (!booking) {
       return res.status(400).json({ success: false });
     }
 
     res.status(200).json({
       success: true,
-      data: book
+      data: booking
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      Create books
-//@route    POST /books/new
+//@des      Create bookings
+//@route    POST /bookings/new
 //@access   Admin
-const createBooks = async (req, res, next) => {
+const createBookings = async (req, res, next) => {
   try {
-    const book = await model.Book.create(req.body);
+    const booking = await model.Booking.create(req.body);
 
     res.status(201).json({
       success: true,
-      data: book
+      data: booking
     });
   } catch (err) {
     res.status(400).json({ success: false });
   }
 };
 
-//@des      Update book
-//@route    PUT /books/update/id
+//@des      Update booking
+//@route    PUT /bookings/update/id
 //@access   Admin
-const updateBook = async (req, res, next) => {
+const updateBooking = async (req, res, next) => {
   try {
-    const book = await model.Book.findByIdAndUpdate(req.params.id, req.body, {
+    const booking = await model.Booking.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
       runValidators: true
     });
 
-    if (!book) {
+    if (!booking) {
       return res.status(400).json({ success: false });
     }
 
     res.status(200).json({
       success: true,
-      data: book
+      data: booking
     });
   } catch (err) {
     res.status(400).json({ success: false });
@@ -77,13 +77,13 @@ const updateBook = async (req, res, next) => {
 };
 
 //@des      Delete book
-//@route    DELETE /books/delete/id
+//@route    DELETE /Bookings/delete/id
 //@access   Admin
-const deleteBook = async (req, res, next) => {
+const deleteBooking = async (req, res, next) => {
   try {
-    const book = await model.Book.findByIdAndDelete(req.params.id);
+    const booking = await model.Booking.findByIdAndDelete(req.params.id);
 
-    if (!book) {
+    if (!booking) {
       return res.status(400).json({ success: false });
     }
 
@@ -97,9 +97,9 @@ const deleteBook = async (req, res, next) => {
 };
 
 module.exports = {
-  getAllBooks,
-  getOneBook,
-  createBooks,
-  updateBook,
-  deleteBook
+  getAllBookings,
+  getOneBooking,
+  createBookings,
+  updateBooking,
+  deleteBooking
 };
