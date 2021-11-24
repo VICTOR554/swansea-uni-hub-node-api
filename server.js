@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const colors = require('colors');
+const errorHandler = require('./middleware/error');
 const admin = require('./apps/admin/admin')
 const student = require('./apps/student/student')
 const connectDB = require('./config/db');
@@ -24,8 +25,10 @@ if(process.env.NODE_ENV === 'development') {
 }
 
 //Mount routers
-app.use('/admin', admin)
-app.use('/student', student)
+app.use('/admin', admin);
+app.use('/student', student);
+
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 6000;
 
