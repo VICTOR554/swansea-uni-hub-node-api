@@ -35,7 +35,7 @@ const getOneStudent = async (req, res, next) => {
       data: student
     });
   } catch (err) {
-    next(new ErrorResponse(`Student not found with id of ${req.params.id}`, 404));
+    next(err);
 
   }
 };
