@@ -1,3 +1,4 @@
+const ErrorResponse = require('../../../utils/errorResponse');
 const model = require('../../../models/model');
 
 //@des      get all students
@@ -25,7 +26,8 @@ const getOneStudent = async (req, res, next) => {
     const student = await model.Student.findById(req.params.id);
 
     if (!student) {
-      return res.status(400).json({ success: false });
+      return     next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+
     }
 
     res.status(200).json({
@@ -33,8 +35,7 @@ const getOneStudent = async (req, res, next) => {
       data: student
     });
   } catch (err) {
-    // res.status(400).json({ success: false });
-    next(err);
+    next(new ErrorResponse(`Student not found with id of ${req.params.id}`, 404));
 
   }
 };
