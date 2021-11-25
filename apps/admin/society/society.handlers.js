@@ -1,100 +1,82 @@
+const ErrorResponse = require('../../../utils/errorResponse');
+const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
 //@des      get all societies
 //@route    GET /societies
-//@access   Admin 
-const getAllSocieties = async (req, res, next) => {
-  try {
-    const society = await model.Society.find();
+//@access   Admin
+const getAllSocieties = asyncHandler(async (req, res, next) => {
+  const society = await model.Society.find();
 
-    res.status(200).json({
-      success: true,
-      count: society.length,
-      data: society
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(200).json({
+    success: true,
+    count: society.length,
+    data: society
+  });
+});
 
 //@des      get one society
 //@route    GET /societies/:id
 //@access   Admin
-const getOneSociety= async (req, res, next) => {
-  try {
-    const society = await model.Society.findById(req.params.id);
+const getOneSociety = asyncHandler(async (req, res, next) => {
+  const society = await model.Society.findById(req.params.id);
 
-    if (!society) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: society
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!society) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: society
+  });
+});
 
 //@des      Create societies
 //@route    POST /societies/new
 //@access   Admin
-const createSocieties = async (req, res, next) => {
-  try {
-    const society = await model.Society.create(req.body);
+const createSocieties = asyncHandler(async (req, res, next) => {
+  const society = await model.Society.create(req.body);
 
-    res.status(201).json({
-      success: true,
-      data: society
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(201).json({
+    success: true,
+    data: society
+  });
+});
 
 //@des      Update society
 //@route    PUT /societies/update/id
 //@access   Admin
-const updateSociety= async (req, res, next) => {
-  try {
-    const society = await model.Society.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true
-    });
+const updateSociety = asyncHandler(async (req, res, next) => {
+  const society = await model.Society.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
 
-    if (!society) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: society
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!society) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: society
+  });
+});
 
 //@des      Delete society
 //@route    DELETE /societies/delete/id
 //@access   Admin
-const deleteSociety = async (req, res, next) => {
-  try {
-    const society = await model.Society.findByIdAndDelete(req.params.id);
+const deleteSociety = asyncHandler(async (req, res, next) => {
+  const society = await model.Society.findByIdAndDelete(req.params.id);
 
-    if (!society) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: {}
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!society) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: {}
+  });
+});
 
 module.exports = {
   getAllSocieties,
