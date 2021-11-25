@@ -1,100 +1,82 @@
+const ErrorResponse = require('../../../utils/errorResponse');
+const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
 //@des      get all books
 //@route    GET /books
-//@access   Admin 
-const getAllBooks = async (req, res, next) => {
-  try {
-    const book = await model.Book.find();
+//@access   Admin
+const getAllBooks = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.find();
 
-    res.status(200).json({
-      success: true,
-      count: book.length,
-      data: book
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(200).json({
+    success: true,
+    count: book.length,
+    data: book
+  });
+});
 
 //@des      get one book
 //@route    GET /books/:id
 //@access   Admin
-const getOneBook= async (req, res, next) => {
-  try {
-    const book = await model.Book.findById(req.params.id);
+const getOneBook = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.findById(req.params.id);
 
-    if (!book) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: book
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!book) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: book
+  });
+});
 
 //@des      Create books
 //@route    POST /books/new
 //@access   Admin
-const createBooks = async (req, res, next) => {
-  try {
-    const book = await model.Book.create(req.body);
+const createBooks = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.create(req.body);
 
-    res.status(201).json({
-      success: true,
-      data: book
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(201).json({
+    success: true,
+    data: book
+  });
+});
 
 //@des      Update book
 //@route    PUT /books/update/id
 //@access   Admin
-const updateBook = async (req, res, next) => {
-  try {
-    const book = await model.Book.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true
-    });
+const updateBook = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
 
-    if (!book) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: book
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!book) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: book
+  });
+});
 
 //@des      Delete book
 //@route    DELETE /books/delete/id
 //@access   Admin
-const deleteBook = async (req, res, next) => {
-  try {
-    const book = await model.Book.findByIdAndDelete(req.params.id);
+const deleteBook = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.findByIdAndDelete(req.params.id);
 
-    if (!book) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: {}
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!book) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: {}
+  });
+});
 
 module.exports = {
   getAllBooks,

@@ -1,41 +1,35 @@
+const ErrorResponse = require('../../../utils/errorResponse');
+const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
 //@des      get all books
 //@route    GET /books
 //@access   Student 
-const getAllBooks = async (req, res, next) => {
-  try {
-    const book = await model.Book.find();
+const getAllBooks = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.find();
 
-    res.status(200).json({
-      success: true,
-      count: book.length,
-      data: book
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(200).json({
+    success: true,
+    count: book.length,
+    data: book
+  });
+});
 
 //@des      get one book
 //@route    GET /books/:id
 //@access   Student
-const getOneBook= async (req, res, next) => {
-  try {
-    const book = await model.Book.findById(req.params.id);
+const getOneBook = asyncHandler(async (req, res, next) => {
+  const book = await model.Book.findById(req.params.id);
 
-    if (!book) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: book
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!book) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: book
+  });
+});
 
 
 
