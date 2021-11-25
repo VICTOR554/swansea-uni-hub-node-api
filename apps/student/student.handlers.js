@@ -37,9 +37,7 @@ const updateStudent = asyncHandler(async (req, res, next) => {
   });
 });
 
-
-
 module.exports = {
   getOneStudent,
-  updateStudent,
+  updateStudent
 };
