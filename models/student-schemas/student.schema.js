@@ -63,9 +63,8 @@ const studentSchema = new Schema({
     enum: ['current', 'past']
     // required: true
   },
-  Enrollment: {
-    type: String,
-    enum: ['Enrolled', 'Not enrolled']
+  enrollment: {
+    type: Boolean,
     // required: true
   },
   course_duration: {

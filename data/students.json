@@ -1,7 +1,7 @@
 [
   {
-    "number": "1111111",
-    "name": "victor",
+    "number": "1111",
+    "name": "Victor",
     "gender": "male",
     "date_of_birth": "12/15/1999",
     "nationality": "Nigeria",
@@ -14,7 +14,7 @@
     "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
-    "enrollment": "enrolled",
+    "enrollment": "true",
     "course_duration": {
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2024"
@@ -23,8 +23,8 @@
     "modules": ["data visualisation", "Crypotcurrency"]
   },
   {
-    "number": "1111112",
-    "name": "max",
+    "number": "1112",
+    "name": "dave",
     "gender": "male",
     "date_of_birth": "12/15/1999",
     "nationality": "Nigeria",
@@ -37,18 +37,18 @@
     "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
-    "enrollment": "enrolled",
+    "enrollment": "false",
     "course_duration": {
-      "start_date_time": "12/11/2019",
-      "end_date_time": "12/11/2024"
+      "start_date_time": "12/11/2009",
+      "end_date_time": "12/11/2010"
     },
     "specialism": "software engineering",
     "modules": ["data visualisation", "Crypotcurrency"]
   },
   {
-    "number": "1111113",
-    "name": "david",
-    "gender": "male",
+    "number": "1113",
+    "name": "amy",
+    "gender": "female",
     "date_of_birth": "12/15/1999",
     "nationality": "Nigeria",
     "telephone": "07831854487",
@@ -60,16 +60,16 @@
     "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
-    "enrollment": "enrolled",
+    "enrollment": "false",
     "course_duration": {
-      "start_date_time": "12/11/2019",
-      "end_date_time": "12/11/2024"
+      "start_date_time": "12/11/2000",
+      "end_date_time": "12/11/2008"
     },
     "specialism": "software engineering",
     "modules": ["data visualisation", "Crypotcurrency"]
   },
   {
-    "number": "1111114",
+    "number": "1114",
     "name": "kola",
     "gender": "male",
     "date_of_birth": "12/15/1999",
@@ -83,33 +83,10 @@
     "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
-    "enrollment": "enrolled",
+    "enrollment": "true",
     "course_duration": {
       "start_date_time": "12/11/2019",
-      "end_date_time": "12/11/2024"
-    },
-    "specialism": "software engineering",
-    "modules": ["data visualisation", "Crypotcurrency"]
-  },
-  {
-    "number": "1111115",
-    "name": "adele",
-    "gender": "female",
-    "date_of_birth": "12/15/1999",
-    "nationality": "Nigeria",
-    "telephone": "07831854487",
-    "email": "2039887@swansea.ac.uk",
-    "address": "bay room 2",
-    "password": "123",
-    "home_campus": "bay",
-    "department": "science",
-    "course_id": "201010",
-    "degree": "bachelor",
-    "status": "current",
-    "enrollment": "enrolled",
-    "course_duration": {
-      "start_date_time": "12/11/2019",
-      "end_date_time": "12/11/2024"
+      "end_date_time": "12/11/2022"
     },
     "specialism": "software engineering",
     "modules": ["data visualisation", "Crypotcurrency"]
