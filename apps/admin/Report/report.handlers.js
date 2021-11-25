@@ -22,7 +22,7 @@ const getOneReport = asyncHandler(async (req, res, next) => {
   const report = await model.Report.findById(req.params.id);
 
   if (!report) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Report is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateReport = asyncHandler(async (req, res, next) => {
   });
 
   if (!report) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Report is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteReport = asyncHandler(async (req, res, next) => {
   const report = await model.Report.findByIdAndDelete(req.params.id);
 
   if (!report) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Report is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

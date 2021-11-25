@@ -22,7 +22,7 @@ const getOneSession = asyncHandler(async (req, res, next) => {
   const session = await model.Session.findById(req.params.id);
 
   if (!session) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Session is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateSession = asyncHandler(async (req, res, next) => {
   });
 
   if (!session) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Session is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteSession = asyncHandler(async (req, res, next) => {
   const session = await model.Session.findByIdAndDelete(req.params.id);
 
   if (!session) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Session is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

@@ -22,7 +22,7 @@ const getOneCoursework = asyncHandler(async (req, res, next) => {
   const coursework = await model.Coursework.findById(req.params.id);
 
   if (!coursework) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Coursework is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

@@ -22,7 +22,7 @@ const getOneBook = asyncHandler(async (req, res, next) => {
   const book = await model.Book.findById(req.params.id);
 
   if (!book) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Book is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateBook = asyncHandler(async (req, res, next) => {
   });
 
   if (!book) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Book is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteBook = asyncHandler(async (req, res, next) => {
   const book = await model.Book.findByIdAndDelete(req.params.id);
 
   if (!book) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Book is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

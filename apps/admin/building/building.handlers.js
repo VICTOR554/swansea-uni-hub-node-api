@@ -22,7 +22,7 @@ const getOneBuilding = asyncHandler(async (req, res, next) => {
   const building = await model.Building.findById(req.params.id);
 
   if (!building) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Building is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateBuilding = asyncHandler(async (req, res, next) => {
   });
 
   if (!building) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Building is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteBuilding = asyncHandler(async (req, res, next) => {
   const building = await model.Building.findByIdAndDelete(req.params.id);
 
   if (!building) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Building is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

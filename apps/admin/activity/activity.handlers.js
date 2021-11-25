@@ -22,7 +22,7 @@ const getOneActivity = asyncHandler(async (req, res, next) => {
   const activity = await model.Activity.findById(req.params.id);
 
   if (!activity) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Activity is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateActivity = asyncHandler(async (req, res, next) => {
   });
 
   if (!activity) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Activity is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteActivity = asyncHandler(async (req, res, next) => {
   const activity = await model.Activity.findByIdAndDelete(req.params.id);
 
   if (!activity) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Activity is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

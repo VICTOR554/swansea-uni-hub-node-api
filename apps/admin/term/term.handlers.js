@@ -22,7 +22,7 @@ const getOneTerm = asyncHandler(async (req, res, next) => {
   const term = await model.Term.findById(req.params.id);
 
   if (!term) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Term is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateTerm = asyncHandler(async (req, res, next) => {
   });
 
   if (!term) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Term is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteTerm = asyncHandler(async (req, res, next) => {
   const term = await model.Term.findByIdAndDelete(req.params.id);
 
   if (!term) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Term is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

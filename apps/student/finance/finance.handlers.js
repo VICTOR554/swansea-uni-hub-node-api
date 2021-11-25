@@ -22,7 +22,7 @@ const getOneFinance = asyncHandler(async (req, res, next) => {
   const finance = await model.Finance.findById(req.params.id);
 
   if (!finance) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Finance is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

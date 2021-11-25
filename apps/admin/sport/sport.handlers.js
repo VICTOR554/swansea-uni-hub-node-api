@@ -22,7 +22,7 @@ const getOneSport = asyncHandler(async (req, res, next) => {
   const sport = await model.Sport.findById(req.params.id);
 
   if (!sport) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Sport is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateSport = asyncHandler(async (req, res, next) => {
   });
 
   if (!sport) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Sport is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteSport = asyncHandler(async (req, res, next) => {
   const sport = await model.Sport.findByIdAndDelete(req.params.id);
 
   if (!sport) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Sport is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

@@ -22,7 +22,7 @@ const getOneRoom = asyncHandler(async (req, res, next) => {
   const room = await model.Room.findById(req.params.id);
 
   if (!room) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Room is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateRoom = asyncHandler(async (req, res, next) => {
   });
 
   if (!room) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Room is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteRoom = asyncHandler(async (req, res, next) => {
   const room = await model.Room.findByIdAndDelete(req.params.id);
 
   if (!room) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Room is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

@@ -14,7 +14,7 @@ const getAllCourses = asyncHandler(async (req, res, next) => {
     data: course
   });
 });
-
+ 
 //@des      get one course
 //@route    GET /courses/:id
 //@access   Admin
@@ -22,7 +22,7 @@ const getOneCourse = asyncHandler(async (req, res, next) => {
   const course = await model.Course.findById(req.params.id);
 
   if (!course) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Course is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateCourse = asyncHandler(async (req, res, next) => {
   });
 
   if (!course) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Course is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteCourse = asyncHandler(async (req, res, next) => {
   const course = await model.Course.findByIdAndDelete(req.params.id);
 
   if (!course) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Course is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

@@ -22,7 +22,7 @@ const getOneLocation = asyncHandler(async (req, res, next) => {
   const location = await model.Location.findById(req.params.id);
 
   if (!location) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Location is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

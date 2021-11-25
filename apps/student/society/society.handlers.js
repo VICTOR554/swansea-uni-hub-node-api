@@ -22,7 +22,7 @@ const getOneSociety = asyncHandler(async (req, res, next) => {
   const society = await model.Society.findById(req.params.id);
 
   if (!society) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Society is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

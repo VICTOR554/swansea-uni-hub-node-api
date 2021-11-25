@@ -22,7 +22,7 @@ const getOneEvent = asyncHandler(async (req, res, next) => {
   const event = await model.Event.findById(req.params.id);
 
   if (!event) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Event is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

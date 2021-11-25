@@ -22,7 +22,7 @@ const getOneModule = asyncHandler(async (req, res, next) => {
   const module = await model.Module.findById(req.params.id);
 
   if (!module) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Module is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateModule = asyncHandler(async (req, res, next) => {
   });
 
   if (!module) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Module is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteModule = asyncHandler(async (req, res, next) => {
   const module = await model.Module.findByIdAndDelete(req.params.id);
 
   if (!module) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Module is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({

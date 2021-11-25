@@ -22,7 +22,7 @@ const getOneNote = asyncHandler(async (req, res, next) => {
   const note = await model.Note.findById(req.params.id);
 
   if (!note) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Note is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -53,7 +53,7 @@ const updateNote = asyncHandler(async (req, res, next) => {
   });
 
   if (!note) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Note is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
@@ -69,7 +69,7 @@ const deleteNote = asyncHandler(async (req, res, next) => {
   const note = await model.Note.findByIdAndDelete(req.params.id);
 
   if (!note) {
-    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Note is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
