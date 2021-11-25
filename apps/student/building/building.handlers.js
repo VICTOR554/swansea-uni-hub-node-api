@@ -1,41 +1,35 @@
+const ErrorResponse = require('../../../utils/errorResponse');
+const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
 //@des      get all buildings
 //@route    GET /buildings
 //@access   Student
-const getAllBuildings = async (req, res, next) => {
-  try {
-    const building = await model.Building.find();
+const getAllBuildings = asyncHandler(async (req, res, next) => {
+  const building = await model.Building.find();
 
-    res.status(200).json({
-      success: true,
-      count: building.length,
-      data: building
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(200).json({
+    success: true,
+    count: building.length,
+    data: building
+  });
+});
 
 //@des      get one building
 //@route    GET /buildings/:id
 //@access   Student
-const getOneBuilding = async (req, res, next) => {
-  try {
-    const building = await model.Building.findById(req.params.id);
+const getOneBuilding = asyncHandler(async (req, res, next) => {
+  const building = await model.Building.findById(req.params.id);
 
-    if (!building) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: building
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!building) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: building
+  });
+});
 
 module.exports = {
   getAllBuildings,
