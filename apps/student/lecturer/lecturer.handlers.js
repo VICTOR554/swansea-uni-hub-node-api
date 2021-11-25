@@ -22,7 +22,7 @@ const getOneLecturer = asyncHandler(async (req, res, next) => {
   const lecturer = await model.Lecturer.findById(req.params.id);
 
   if (!lecturer) {
-    return res.status(400).json({ success: false });
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
