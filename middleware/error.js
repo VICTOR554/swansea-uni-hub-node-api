@@ -9,7 +9,7 @@ const errorHandler = (err, req, res, next) => {
 
   // Bad objectId
   if (err.name === 'CastError') {
-    const message = `Student not found with id of ${err.value}`;
+    const message = `Object not found with id of ${err.value}`;
     error = new ErrorResponse(message, 404);
   }
 
