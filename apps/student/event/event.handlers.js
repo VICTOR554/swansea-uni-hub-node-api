@@ -1,42 +1,35 @@
+const ErrorResponse = require('../../../utils/errorResponse');
+const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
 //@des      get all events
 //@route    GET /events
-//@access   Admin 
-const getAllEvents = async (req, res, next) => {
-  try {
-    const event = await model.Event.find();
+//@access   Student
+const getAllEvents = asyncHandler(async (req, res, next) => {
+  const event = await model.Event.find();
 
-    res.status(200).json({
-      success: true,
-      count: event.length,
-      data: event
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(200).json({
+    success: true,
+    count: event.length,
+    data: event
+  });
+});
 
 //@des      get one event
 //@route    GET /events/:id
-//@access   Admin
-const getOneEvent= async (req, res, next) => {
-  try {
-    const event = await model.Event.findById(req.params.id);
+//@access   Student
+const getOneEvent = asyncHandler(async (req, res, next) => {
+  const event = await model.Event.findById(req.params.id);
 
-    if (!event) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: event
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!event) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
 
+  res.status(200).json({
+    success: true,
+    data: event
+  });
+});
 
 module.exports = {
   getAllEvents,
