@@ -1,100 +1,82 @@
+const ErrorResponse = require('../../../utils/errorResponse');
+const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
 //@des      get all finances
 //@route    GET /finances
 //@access   Admin
-const getAllFinances = async (req, res, next) => {
-  try {
-    const finance = await model.Finance.find();
+const getAllFinances = asyncHandler(async (req, res, next) => {
+  const finance = await model.Finance.find();
 
-    res.status(200).json({
-      success: true,
-      count: finance.length,
-      data: finance
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(200).json({
+    success: true,
+    count: finance.length,
+    data: finance
+  });
+});
 
 //@des      get one finance
 //@route    GET /finances/:id
 //@access   Admin
-const getOneFinance = async (req, res, next) => {
-  try {
-    const finance = await model.Finance.findById(req.params.id);
+const getOneFinance = asyncHandler(async (req, res, next) => {
+  const finance = await model.Finance.findById(req.params.id);
 
-    if (!finance) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: finance
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!finance) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: finance
+  });
+});
 
 //@des      Create finances
 //@route    POST /finances/new
 //@access   Admin
-const createFinances = async (req, res, next) => {
-  try {
-    const finance = await model.Finance.create(req.body);
+const createFinances = asyncHandler(async (req, res, next) => {
+  const finance = await model.Finance.create(req.body);
 
-    res.status(201).json({
-      success: true,
-      data: finance
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
-  }
-};
+  res.status(201).json({
+    success: true,
+    data: finance
+  });
+});
 
 //@des      Update finance
 //@route    PUT /finances/update/id
 //@access   Admin
-const updateFinance = async (req, res, next) => {
-  try {
-    const finance = await model.Finance.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true
-    });
+const updateFinance = asyncHandler(async (req, res, next) => {
+  const finance = await model.Finance.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
 
-    if (!finance) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: finance
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!finance) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: finance
+  });
+});
 
 //@des      Delete finance
 //@route    DELETE /finances/delete/id
 //@access   Admin
-const deleteFinance = async (req, res, next) => {
-  try {
-    const finance = await model.Finance.findByIdAndDelete(req.params.id);
+const deleteFinance = asyncHandler(async (req, res, next) => {
+  const finance = await model.Finance.findByIdAndDelete(req.params.id);
 
-    if (!finance) {
-      return res.status(400).json({ success: false });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: {}
-    });
-  } catch (err) {
-    res.status(400).json({ success: false });
+  if (!finance) {
+    return next(new ErrorResponse(`Student is not in the database with the id of ${req.params.id}`, 404));
   }
-};
+
+  res.status(200).json({
+    success: true,
+    data: {}
+  });
+});
 
 module.exports = {
   getAllFinances,
