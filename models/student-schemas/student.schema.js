@@ -21,20 +21,18 @@ const studentSchema = new Schema({
     required: true
   },
   nationality: {
-    type: String
-    // required: true
+    type: String,
+    required: true
   },
   telephone: {
     type: String
-    // required: true
   },
   email: {
-    type: String
-    // required: true
+    type: String,
+    required: true
   },
   address: {
     type: String
-    // required: true
   },
   password: {
     type: String
@@ -42,8 +40,8 @@ const studentSchema = new Schema({
   },
   home_campus: {
     type: String,
-    enum: ['bay', 'singleton']
-    // required: true,
+    enum: ['bay', 'singleton'],
+    required: true
   },
   department: {
     type: String
@@ -51,17 +49,17 @@ const studentSchema = new Schema({
   },
   degree: {
     type: String,
-    enum: ['bachelor', 'master', 'Phd']
-    // required: true
+    enum: ['bachelor', 'master', 'Phd'],
+    required: true
   },
   status: {
     type: String,
-    enum: ['current', 'past']
-    // required: true
+    enum: ['current', 'past'],
+    required: true
   },
   enrollment: {
-    type: Boolean
-    // required: true
+    type: Boolean,
+    required: true
   },
   course_duration: {
     start_date_time: {
@@ -73,17 +71,14 @@ const studentSchema = new Schema({
       // required: true
     }
   },
-  specialism: {
-    type: String
-  },
   course_id: {
-    type: Number
-    // required: true
+    type: String,
+    required: true
   },
-  modules: [
+  modules_code: [
     {
-      type: String
-      // required: true
+      type: String,
+      required: true
     }
   ]
 });

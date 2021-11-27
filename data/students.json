@@ -4,14 +4,13 @@
     "name": "Victor",
     "gender": "male",
     "date_of_birth": "12/15/1999",
-    "nationality": "Nigeria",
+    "nationality": "Nigerian",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
     "address": "bay room 2",
     "password": "123",
     "home_campus": "bay",
     "department": "science",
-    "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
     "enrollment": "true",
@@ -19,22 +18,21 @@
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2024"
     },
-    "specialism": "software engineering",
-    "modules": ["data visualisation", "Crypotcurrency"]
+    "course_id": "MSFS2FX",
+    "module_code": ["CSCM13", "CSCM48", "CSCM08", "CSCM13"]
   },
   {
     "number": "1112",
     "name": "dave",
     "gender": "male",
     "date_of_birth": "12/15/1999",
-    "nationality": "Nigeria",
+    "nationality": "British",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
     "address": "bay room 2",
     "password": "123",
     "home_campus": "bay",
     "department": "science",
-    "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
     "enrollment": "false",
@@ -42,22 +40,21 @@
       "start_date_time": "12/11/2009",
       "end_date_time": "12/11/2010"
     },
-    "specialism": "software engineering",
-    "modules": ["data visualisation", "Crypotcurrency"]
+    "course_id": "MSC0001",
+    "module_code": ["CSCM13", "CSCM48"]
   },
   {
     "number": "1113",
     "name": "amy",
     "gender": "female",
     "date_of_birth": "12/15/1999",
-    "nationality": "Nigeria",
+    "nationality": "American",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
     "address": "bay room 2",
     "password": "123",
     "home_campus": "bay",
     "department": "science",
-    "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
     "enrollment": "false",
@@ -65,22 +62,21 @@
       "start_date_time": "12/11/2000",
       "end_date_time": "12/11/2008"
     },
-    "specialism": "software engineering",
-    "modules": ["data visualisation", "Crypotcurrency"]
+    "course_id": "MSM0002",
+    "module_code": ["CSCM08", "CSCM13"]
   },
   {
     "number": "1114",
     "name": "kola",
     "gender": "male",
     "date_of_birth": "12/15/1999",
-    "nationality": "Nigeria",
+    "nationality": "Nigerian",
     "telephone": "07831854487",
     "email": "2039887@swansea.ac.uk",
     "address": "bay room 2",
     "password": "123",
     "home_campus": "bay",
     "department": "science",
-    "course_id": "201010",
     "degree": "bachelor",
     "status": "current",
     "enrollment": "true",
@@ -88,7 +84,51 @@
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2022"
     },
-    "specialism": "software engineering",
-    "modules": ["data visualisation", "Crypotcurrency"]
+    "course_id": "BSM0001",
+    "module_code": ["CSCM08"]
+  },
+  {
+    "number": "1115",
+    "name": "Cassandra",
+    "gender": "female",
+    "date_of_birth": "12/15/1999",
+    "nationality": "German",
+    "telephone": "07831854487",
+    "email": "2039887@swansea.ac.uk",
+    "address": "bay room 2",
+    "password": "123",
+    "home_campus": "bay",
+    "department": "science",
+    "degree": "bachelor",
+    "status": "current",
+    "enrollment": "true",
+    "course_duration": {
+      "start_date_time": "12/11/2019",
+      "end_date_time": "12/11/2022"
+    },
+    "course_id": "BSM0001",
+    "module_code": ["CSCM08"]
+  },
+  {
+    "number": "1116",
+    "name": "Emma",
+    "gender": "female",
+    "date_of_birth": "12/15/2002",
+    "nationality": "British",
+    "telephone": "07831854487",
+    "email": "2039887@swansea.ac.uk",
+    "address": "bay room 2",
+    "password": "123",
+    "home_campus": "bay",
+    "department": "science",
+    "degree": "bachelor",
+    "status": "current",
+    "enrollment": "true",
+    "course_duration": {
+      "start_date_time": "12/11/2019",
+      "end_date_time": "12/11/2022"
+    },
+    "course_id": "BSM0001",
+    "module_code": ["CSCM08"]
   }
 ]
