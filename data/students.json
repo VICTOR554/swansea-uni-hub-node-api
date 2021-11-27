@@ -18,8 +18,8 @@
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2024"
     },
-    "course_id": "MSFS2FX",
-    "module_code": ["CSCM13", "CSCM48", "CSCM08", "CSCM13"]
+    "course_code": "MSFS2FX",
+    "module_code": ["CSCM13", "CSCM48", "CSCM08", "CSCM30"]
   },
   {
     "number": "1112",
@@ -40,7 +40,7 @@
       "start_date_time": "12/11/2009",
       "end_date_time": "12/11/2010"
     },
-    "course_id": "MSC0001",
+    "course_code": "MSC0001",
     "module_code": ["CSCM13", "CSCM48"]
   },
   {
@@ -62,8 +62,8 @@
       "start_date_time": "12/11/2000",
       "end_date_time": "12/11/2008"
     },
-    "course_id": "MSM0002",
-    "module_code": ["CSCM08", "CSCM13"]
+    "course_code": "MSM0002",
+    "module_code": ["CSCM08", "CSCM"]
   },
   {
     "number": "1114",
@@ -84,7 +84,7 @@
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2022"
     },
-    "course_id": "BSM0001",
+    "course_code": "BSM0001",
     "module_code": ["CSCM08"]
   },
   {
@@ -106,8 +106,8 @@
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2022"
     },
-    "course_id": "BSM0001",
-    "module_code": ["CSCM08"]
+    "course_code": "BSM0001",
+    "module_code": ["CSCM30"]
   },
   {
     "number": "1116",
@@ -128,7 +128,7 @@
       "start_date_time": "12/11/2019",
       "end_date_time": "12/11/2022"
     },
-    "course_id": "BSM0001",
+    "course_code": "BSM0001",
     "module_code": ["CSCM08"]
   }
 ]

@@ -14,10 +14,10 @@ const errorHandler = (err, req, res, next) => {
   }
 
   // Duplicate key
-  if (err.code === 11000) {
-    const message = 'Duplicate field value entered';
-    error = new ErrorResponse(message, 400);
-  }
+  // if (err.code === 11000) {
+  //   const message = 'Duplicate field value entered';
+  //   error = new ErrorResponse(message, 400);
+  // }
  
   // Validation error
   if (err.name === 'ValidationError') {

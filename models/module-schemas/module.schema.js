@@ -5,15 +5,14 @@ const moduleSchema = new Schema({
   code: [
     {
       type: String,
-      required: true,
-      unique: true
+      required: true
     }
   ],
   name: {
     type: String,
     required: true
   },
-  course_id: {
+  course_code: {
     type: String,
     required: true
   }

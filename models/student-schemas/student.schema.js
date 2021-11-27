@@ -71,7 +71,7 @@ const studentSchema = new Schema({
       // required: true
     }
   },
-  course_id: {
+  course_code: {
     type: String,
     required: true
   },
