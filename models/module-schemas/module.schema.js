@@ -2,17 +2,19 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const moduleSchema = new Schema({
-  code: {
-    type: String,
-    required: true,
-    unique: true
-  },
+  code: [
+    {
+      type: String,
+      required: true,
+      unique: true
+    }
+  ],
   name: {
     type: String,
     required: true
   },
   course_id: {
-    type: Number,
+    type: String,
     required: true
   }
 });

@@ -1,0 +1,23 @@
+[
+  {
+    "code": ["CSC313", "CSCM13"],
+    "name": "High Integrity Systems/Critical Systems",
+    "course_id": "MSFS2FX"
+  },
+  {
+    "code": ["CSC348", "CSCM48"],
+    "name": "Web Application Development",
+    "course_id": "MSFS2FX"
+  },
+  {
+    "code": "CSCM08",
+    "name": "High Integrity Systems/Critical Systems",
+    "course_id": "MSFS2FX"
+  },
+  {
+    "code": ["CSC313", "CSCM13"],
+    "name": "Information Security Management",
+    "course_id": "MSFS2FX"
+  }
+
+]
