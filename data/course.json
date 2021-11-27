@@ -1,0 +1,32 @@
+[
+  {
+    "code": "MSFS2FX",
+    "name": "Advanced Computer Science",
+    "type": "masters"
+  },
+  {
+    "code": "MSC0001",
+    "name": "Computer Science",
+    "type": "masters"
+  },
+  {
+    "code": "MSM0002",
+    "name": "Mechanical Engineering",
+    "type": "masters"
+  },
+  {
+    "code": "BSM0001",
+    "name": "Mechanical Engineering",
+    "type": "bachelor"
+  },
+  {
+    "code": "BSC0002",
+    "name": "Computer Science",
+    "type": "bachelor"
+  },
+  {
+    "code": "DRC0001",
+    "name": "Computer Science",
+    "type": "phd"
+  }
+]

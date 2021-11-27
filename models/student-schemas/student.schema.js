@@ -49,10 +49,6 @@ const studentSchema = new Schema({
     type: String
     // required: true,
   },
-  course_id: {
-    type: Number
-    // required: true
-  },
   degree: {
     type: String,
     enum: ['bachelor', 'master', 'Phd']
@@ -64,7 +60,7 @@ const studentSchema = new Schema({
     // required: true
   },
   enrollment: {
-    type: Boolean,
+    type: Boolean
     // required: true
   },
   course_duration: {
@@ -79,6 +75,10 @@ const studentSchema = new Schema({
   },
   specialism: {
     type: String
+  },
+  course_id: {
+    type: Number
+    // required: true
   },
   modules: [
     {

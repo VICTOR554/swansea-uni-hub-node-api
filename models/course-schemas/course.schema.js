@@ -10,7 +10,11 @@ const courseSchema = new Schema({
   name: {
     type: String,
     required: true,
-    unique: true
+  },
+  type: {
+    type: String,
+    enum: ['bachelor', 'masters', 'Phd'],
+    required: true
   }
 });
 
