@@ -19,7 +19,7 @@
       "end_date_time": "12/11/2024"
     },
     "course_code": "MSFS2FX",
-    "module_code": ["CSCM13", "CSCM48", "CSCM08", "CSCM30"]
+    "module_code": ["CSCM13"]
   },
   {
     "number": "1112",
@@ -63,7 +63,7 @@
       "end_date_time": "12/11/2008"
     },
     "course_code": "MSM0002",
-    "module_code": ["CSCM08", "CSCM"]
+    "module_code": ["CSCM08", "CSCM30"]
   },
   {
     "number": "1114",

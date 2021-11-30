@@ -75,7 +75,7 @@ const studentSchema = new Schema({
     type: String,
     required: true
   },
-  modules_code: [
+  module_code: [
     {
       type: String,
       required: true

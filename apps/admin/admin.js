@@ -23,6 +23,7 @@ const student = require('./student/student');
 const term = require('./term/term');
 const week = require('./week/week');
 
+
 // Mounting the Routes and how it is displayed in the url
 router.use('/activities', activity);
 router.use('/books', book);

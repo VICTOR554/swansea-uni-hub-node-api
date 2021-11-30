@@ -6,41 +6,9 @@ const model = require('../../../models/model');
 //@route    GET /students
 //@access   Admin
 const getAllStudents = asyncHandler(async (req, res, next) => {
-  let query;
 
-  // copy req.query
-  const reqQuery = { ...req.query };
 
-  //Field to exclude
-  const removeFields = ['sort'];
-
-  //loop removeFields and exclude them from reqQuery
-  removeFields.forEach(param => delete reqQuery[param]);
-
-  console.log(reqQuery);
-
-  //Create query string
-  let queryStr = JSON.stringify(req.query);
-
-  //Create operators
-  queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
-
-  // finding student
-  query = model.Student.find(JSON.parse(queryStr));
-
-  //Sort Fields
-  if (req.query.sort) {
-    const sortBy = req.query.sort.split(',').join(' ');
-    query = query.sort(sortBy);
-  }
-
-  const student = await query;
-
-  res.status(200).json({
-    success: true,
-    count: student.length,
-    data: student
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one student
