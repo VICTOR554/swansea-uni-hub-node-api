@@ -29,6 +29,7 @@ const getOneStudent = asyncHandler(async (req, res, next) => {
 //@route    POST /students/new
 //@access   Admin
 const createStudents = asyncHandler(async (req, res, next) => {
+
   const student = await model.Student.create(req.body);
 
   res.status(201).json({
