@@ -34,18 +34,15 @@ const studentSchema = new Schema({
   address: {
     type: String
   },
-  password: {
-    type: String
-    // required: true
-  },
   home_campus: {
     type: String,
     enum: ['bay', 'singleton'],
     required: true
   },
   department: {
-    type: String
+    type: String,
     // required: true,
+    minlength: 6,
   },
   degree: {
     type: String,
@@ -80,7 +77,17 @@ const studentSchema = new Schema({
       type: String,
       required: true
     }
-  ]
+  ],
+  password: {
+    type: String
+    // required: true
+  },
+  resetPasswordToken: String,
+  resetPasswordExpire: Date,
+  createdAt:  {
+    type: Date,
+    default: Date.now
+  }
 });
 
 module.exports = studentSchema;

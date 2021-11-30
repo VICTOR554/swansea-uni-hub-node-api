@@ -6,8 +6,6 @@ const model = require('../../../models/model');
 //@route    GET /students
 //@access   Admin
 const getAllStudents = asyncHandler(async (req, res, next) => {
-
-
   res.status(200).json(res.advancedResults);
 });
 
