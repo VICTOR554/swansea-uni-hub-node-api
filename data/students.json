@@ -19,7 +19,7 @@
     },
     "course_code": "MSFS2FX",
     "module_code": ["CSCM13"],
-    "password": "123"
+    "password": "chad123"
   },
   {
     "number": "1112",
@@ -41,7 +41,7 @@
     },
     "course_code": "MSC0001",
     "module_code": ["CSCM13", "CSCM48"],
-    "password": "123"
+    "password": "chad123"
   },
   {
     "number": "1113",
@@ -63,7 +63,7 @@
     },
     "course_code": "MSM0002",
     "module_code": ["CSCM08", "CSCM30"],
-    "password": "123"
+    "password": "chad123"
   },
   {
     "number": "1114",
@@ -85,7 +85,7 @@
     },
     "course_code": "BSM0001",
     "module_code": ["CSCM08"],
-    "password": "123"
+    "password": "chad123"
   },
   {
     "number": "1115",
@@ -107,7 +107,7 @@
     },
     "course_code": "BSM0001",
     "module_code": ["CSCM30"],
-    "password": "123"
+    "password": "chad123"
   },
   {
     "number": "1116",
@@ -129,6 +129,6 @@
     },
     "course_code": "BSM0001",
     "module_code": ["CSCM08"],
-    "password": "123"
+    "password": "chad123"
   }
 ]

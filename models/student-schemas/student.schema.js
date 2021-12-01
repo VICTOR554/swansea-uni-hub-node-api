@@ -44,7 +44,6 @@ const studentSchema = new Schema({
   department: {
     type: String,
     // required: true,
-    minlength: 6
   },
   degree: {
     type: String,
@@ -81,8 +80,10 @@ const studentSchema = new Schema({
     }
   ],
   password: {
-    type: String
-    // required: true
+    type: String,
+    required: true,
+    minlength: 6,
+    select: false
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,
@@ -103,6 +104,11 @@ studentSchema.methods.getSignedJwtToken = function () {
   return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRE
   });
+};
+
+//Match student password with hashed password saved in the database
+studentSchema.methods.matchPassword = async function (enteredPassword) {
+  return await bcrypt.compare(enteredPassword, this.password);
 };
 
 module.exports = studentSchema  ;

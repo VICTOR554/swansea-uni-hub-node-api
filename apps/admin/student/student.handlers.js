@@ -43,7 +43,40 @@ const createStudents = asyncHandler(async (req, res, next) => {
 });
 
 
+//@des      Login student
+//@route    POST /students/login
+//@access   Admin
+const loginStudent = asyncHandler(async (req, res, next) => {
+  const {number, password } = req.body;
 
+  //Validate student number and password
+  if (!number || !password) {
+    return next(new ErrorResponse(`Please Provide a student number and password`, 400));
+  }
+
+  //check for user 
+  const student = await model.Student.findOne({number}).select('+password');
+
+   //Validate student number and password
+   if (!student) {
+    return next(new ErrorResponse(`Invalid Credentials`, 401));
+  }
+
+  // check if password match
+  const match = await student.matchPassword(password);
+
+  if (!match) {
+    return next(new ErrorResponse(`Invalid Credentials`, 401));
+  }
+
+  //Create token
+  const token = student.getSignedJwtToken();
+
+  res.status(200).json({
+    success: true,
+    token 
+  });
+});
 
 //@des      Update student
 //@route    PUT /students/update/id
@@ -82,6 +115,7 @@ const deleteStudent = asyncHandler(async (req, res, next) => {
 
 module.exports = {
   getAllStudents,
+  loginStudent,
   getOneStudent,
   createStudents,
   updateStudent,
