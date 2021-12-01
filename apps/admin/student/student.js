@@ -8,7 +8,6 @@ const advancedResults = require('../../../middleware/advancedresults');
 
 router.get('/', advancedResults(model.Student), handlers.getAllStudents)
 router.get('/:id', handlers.getOneStudent) 
-router.post('/login', handlers.loginStudent)
 router.post('/new', handlers.createStudents)
 router.put('/update/:id', handlers.updateStudent)
 router.delete('/delete/:id', handlers.deleteStudent)

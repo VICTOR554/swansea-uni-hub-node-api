@@ -49,7 +49,8 @@ router.use('/tasks', task);
 router.use('/weeks', week);
 
 
-router.get('/:id', handlers.getOneStudent);
+router.post('/login', handlers.loginStudent)
+router.get('/:id', handlers.getCurrentStudent);
 router.put('/update/:id', handlers.updateStudent);
 
 module.exports = router;
