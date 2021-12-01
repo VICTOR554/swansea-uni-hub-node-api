@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /terms
 //@access   Admin
 const getAllTerms = asyncHandler(async (req, res, next) => {
-  const term = await model.Term.find();
-
-  res.status(200).json({
-    success: true,
-    count: term.length,
-    data: term
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one term

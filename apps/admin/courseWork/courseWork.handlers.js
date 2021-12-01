@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /courseworks
 //@access   Admin
 const getAllCourseworks = asyncHandler(async (req, res, next) => {
-  const coursework = await model.Coursework.find();
-
-  res.status(200).json({
-    success: true,
-    count: coursework.length,
-    data: coursework
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one coursework

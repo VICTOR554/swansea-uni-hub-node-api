@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /sessions
 //@access   Admin
 const getAllSessions = asyncHandler(async (req, res, next) => {
-  const session = await model.Session.find();
-
-  res.status(200).json({
-    success: true,
-    count: session.length,
-    data: session
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one session

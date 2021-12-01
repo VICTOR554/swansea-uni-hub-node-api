@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /societies
 //@access   Admin
 const getAllSocieties = asyncHandler(async (req, res, next) => {
-  const society = await model.Society.find();
-
-  res.status(200).json({
-    success: true,
-    count: society.length,
-    data: society
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one society

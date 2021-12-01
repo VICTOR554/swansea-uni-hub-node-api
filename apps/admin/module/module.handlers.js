@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /modules
 //@access   Admin
 const getAllModules = asyncHandler(async (req, res, next) => {
-  const module = await model.Module.find();
-
-  res.status(200).json({
-    success: true,
-    count: module.length,
-    data: module
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one module

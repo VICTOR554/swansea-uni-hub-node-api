@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /weeks
 //@access   Admin
 const getAllWeeks = asyncHandler(async (req, res, next) => {
-  const week = await model.Week.find();
-
-  res.status(200).json({
-    success: true,
-    count: week.length,
-    data: week
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one week

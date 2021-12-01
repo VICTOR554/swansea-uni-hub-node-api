@@ -19,16 +19,7 @@ const getAllCampuses = asyncHandler(async (req, res, next) => {
 //@route    GET /campuses/:id
 //@access   Admin
 const getOneCampus = asyncHandler(async (req, res, next) => {
-  const campus = await model.Campus.findById(req.params.id);
-
-  if (!campus) {
-    return next(new ErrorResponse(`Campus is not in the database with the id of ${req.params.id}`, 404));
-  }
-
-  res.status(200).json({
-    success: true,
-    data: campus
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      Create campuses
