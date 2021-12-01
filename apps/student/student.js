@@ -3,8 +3,6 @@ const router = express.Router();
 
 const handlers = require('./student.handlers');
 
-
-
 // Routes
 const activity = require('./activity/activity');
 const book = require('./book/book');
@@ -25,7 +23,6 @@ const society = require('./society/society');
 const sport = require('./sport/sport');
 const task = require('./task/task');
 const week = require('./week/week');
-
 
 // Mounting the Routes and how it is displayed in the url
 router.use('/activities', activity);
@@ -48,8 +45,6 @@ router.use('/sports', sport);
 router.use('/tasks', task);
 router.use('/weeks', week);
 
-
-router.post('/login', handlers.loginStudent)
 router.get('/me', handlers.getCurrentStudent);
 router.put('/update/:id', handlers.updateStudent);
 

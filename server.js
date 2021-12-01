@@ -34,7 +34,7 @@ if(process.env.NODE_ENV === 'development') {
 //Mount routers
 app.use('/admin', admin);
 app.use('/auth', auth);
-app.use('/student', student);
+app.use('/student', protect, student);
 
 app.use(errorHandler);
 
