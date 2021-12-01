@@ -32,11 +32,18 @@ const createStudents = asyncHandler(async (req, res, next) => {
 
   const student = await model.Student.create(req.body);
 
+  //Create token
+  const token = student.getSignedJwtToken();
+
   res.status(201).json({
     success: true,
-    data: student
+    data: student,
+    token 
   });
 });
+
+
+
 
 //@des      Update student
 //@route    PUT /students/update/id

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const Schema = mongoose.Schema;
 
 const studentSchema = new Schema({
@@ -43,7 +44,7 @@ const studentSchema = new Schema({
   department: {
     type: String,
     // required: true,
-    minlength: 6,
+    minlength: 6
   },
   degree: {
     type: String,
@@ -85,16 +86,23 @@ const studentSchema = new Schema({
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,
-  createdAt:  {
+  createdAt: {
     type: Date,
     default: Date.now
   }
 });
 
 //encrypt password
-studentSchema.pre('save', async function(next) {
+studentSchema.pre('save', async function (next) {
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-module.exports = studentSchema;
+//sign Json Web Token and return
+studentSchema.methods.getSignedJwtToken = function () {
+  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRE
+  });
+};
+
+module.exports = studentSchema  ;
