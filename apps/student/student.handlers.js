@@ -42,10 +42,12 @@ const loginStudent = asyncHandler(async (req, res, next) => {
 });
 
 //@des      get student
-//@route    GET /students/:id
+//@route    GET /students/me
 //@access   Student
 const getCurrentStudent = asyncHandler(async (req, res, next) => {
   const student = await model.Student.findById(req.student.id);
+
+  console.log(req);
 
 
   res.status(200).json({

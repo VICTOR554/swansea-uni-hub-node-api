@@ -5,6 +5,7 @@ const colors = require('colors');
 const cookieParser = require('cookie-parser');
 const errorHandler = require('./middleware/error');
 const admin = require('./apps/admin/admin')
+const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
 const connectDB = require('./config/db');
@@ -32,7 +33,8 @@ if(process.env.NODE_ENV === 'development') {
 
 //Mount routers
 app.use('/admin', admin);
-app.use('/student', protect, student);
+app.use('/auth', auth);
+app.use('/student', student);
 
 app.use(errorHandler);
 
