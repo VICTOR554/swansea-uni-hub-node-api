@@ -5,7 +5,7 @@ const advancedResults = (model) => async (req, res, next) => {
     const reqQuery = { ...req.query };
   
     //Field to exclude
-    const removeFields = ['sort'];
+    const removeFields = ['select', 'sort'];
   
     //loop removeFields and exclude them from reqQuery
     removeFields.forEach(param => delete reqQuery[param]);
@@ -18,7 +18,14 @@ const advancedResults = (model) => async (req, res, next) => {
   
     // finding model resource
     query = model.find(JSON.parse(queryStr));
-  
+
+
+    //Select Fields
+    if (req.query.select) {
+      const fields = req.query.select.split(',').join(' ');
+      query = query.select(fields);
+    }
+   
     //Sort Fields
     if (req.query.sort) {
       const sortBy = req.query.sort.split(',').join(' ');
