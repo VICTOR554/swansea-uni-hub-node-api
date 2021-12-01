@@ -2,9 +2,11 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const colors = require('colors');
+const cookieParser = require('cookie-parser');
 const errorHandler = require('./middleware/error');
 const admin = require('./apps/admin/admin')
 const student = require('./apps/student/student')
+const {protect} = require('./middleware/auth')
 const connectDB = require('./config/db');
 
 
@@ -19,6 +21,10 @@ const app = express();
 //Body parser
 app.use(express.json());
 
+//cookie parser
+app.use(cookieParser());
+
+
 // development logging middleware (morgan)
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
@@ -26,7 +32,7 @@ if(process.env.NODE_ENV === 'development') {
 
 //Mount routers
 app.use('/admin', admin);
-app.use('/student', student);
+app.use('/student', protect, student);
 
 app.use(errorHandler);
 

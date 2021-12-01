@@ -3,8 +3,7 @@ const router = express.Router();
 
 const handlers = require('./student.handlers');
 
-router.get('/:id', handlers.getOneStudent);
-router.put('/update/:id', handlers.updateStudent);
+
 
 // Routes
 const activity = require('./activity/activity');
@@ -27,6 +26,7 @@ const sport = require('./sport/sport');
 const task = require('./task/task');
 const week = require('./week/week');
 
+
 // Mounting the Routes and how it is displayed in the url
 router.use('/activities', activity);
 router.use('/books', book);
@@ -47,5 +47,9 @@ router.use('/societies', society);
 router.use('/sports', sport);
 router.use('/tasks', task);
 router.use('/weeks', week);
+
+
+router.get('/:id', handlers.getOneStudent);
+router.put('/update/:id', handlers.updateStudent);
 
 module.exports = router;

@@ -33,13 +33,15 @@ const createStudents = asyncHandler(async (req, res, next) => {
   const student = await model.Student.create(req.body);
 
   //Create token
-  const token = student.getSignedJwtToken();
+  // const token = student.getSignedJwtToken();
 
-  res.status(201).json({
-    success: true,
-    data: student,
-    token 
-  });
+  // res.status(201).json({
+  //   success: true,
+  //   data: student,
+  //   token 
+  // });
+
+  sendTokenResponse(student, 200, res);
 });
 
 
@@ -70,12 +72,15 @@ const loginStudent = asyncHandler(async (req, res, next) => {
   }
 
   //Create token
-  const token = student.getSignedJwtToken();
+  // const token = student.getSignedJwtToken();
 
-  res.status(200).json({
-    success: true,
-    token 
-  });
+  // res.status(200).json({
+  //   success: true,
+  //   token 
+  // });
+
+  sendTokenResponse(student, 200, res);
+
 });
 
 //@des      Update student
@@ -112,6 +117,25 @@ const deleteStudent = asyncHandler(async (req, res, next) => {
     data: {}
   });
 });
+
+//Get token from model, create cookie and send response
+const sendTokenResponse = (student, statusCode, res) => {
+   //Create token
+   const token = student.getSignedJwtToken();
+
+   const options = {
+     expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 1000),
+     httpOnly: true
+   };
+
+   res
+   .status(statusCode)
+   .cookie('token', token, options)
+   .json({
+    success: true,
+    token
+   })
+}
 
 module.exports = {
   getAllStudents,
