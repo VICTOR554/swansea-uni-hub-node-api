@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const sessionSchema = new Schema({
-  start_date_time: {
+  start_date: {
     type: Number,
     unique: true
   },

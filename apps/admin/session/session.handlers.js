@@ -1,6 +1,8 @@
 const ErrorResponse = require('../../../utils/errorResponse');
 const asyncHandler = require('../../../middleware/async');
+const moment = require("moment");
 const model = require('../../../models/model');
+
 
 //@des      get all sessions
 //@route    GET /sessions
@@ -30,11 +32,13 @@ const getOneSession = asyncHandler(async (req, res, next) => {
 //@access   Admin
 const createSessions = asyncHandler(async (req, res, next) => {
   const session = await model.Session.create(req.body);
+  getWeeks(req, res);
 
   res.status(201).json({
     success: true,
     data: session
   });
+
 });
 
 //@des      Update session
@@ -71,6 +75,32 @@ const deleteSession = asyncHandler(async (req, res, next) => {
     data: {}
   });
 });
+
+
+const getWeeks =  function(req, res){
+  start_date = moment.unix(req.body.start_date).format('X');
+  console.log(start_date)
+  nweeks = req.body.number_of_weeks;
+
+  for (i = 1; i <= nweeks; i++) {
+    week = {};
+    dates = [];
+    week.number = i;
+
+    for (j = 1; j <= 7; j++) {
+      dates.push(start_date);
+      start_date = moment.unix(start_date).add(1, "days").format('X');
+      console.log(start_date)
+    }
+    week.dates = dates;
+    
+    model.Week.updateOne({number: week.number},week,{upsert: true})
+    .catch(e => {
+      console.log("error with the weeks:", err);
+      res.status(402).send(err)
+    });
+  }
+}
 
 module.exports = {
   getAllSessions,
