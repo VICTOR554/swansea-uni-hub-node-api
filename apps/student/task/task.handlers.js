@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /tasks
 //@access   Student
 const getAllTasks = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.find();
-
-  res.status(200).json({
-    success: true,
-    count: task.length,
-    data: task
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one task

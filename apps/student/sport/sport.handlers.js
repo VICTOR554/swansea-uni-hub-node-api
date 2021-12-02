@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /sports
 //@access   Student
 const getAllSports = asyncHandler(async (req, res, next) => {
-  const sport = await model.Sport.find();
-
-  res.status(200).json({
-    success: true,
-    count: sport.length,
-    data: sport
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one sport

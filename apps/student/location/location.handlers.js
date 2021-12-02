@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /locations
 //@access   Student
 const getAllLocations = asyncHandler(async (req, res, next) => {
-  const location = await model.Location.find();
-
-  res.status(200).json({
-    success: true,
-    count: location.length,
-    data: location
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one location

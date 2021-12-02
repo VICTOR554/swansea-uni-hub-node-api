@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /activities
 //@access   Student
 const getAllActivities = asyncHandler(async (req, res, next) => {
-  const activity = await model.Activity.find();
-
-  res.status(200).json({
-    success: true,
-    count: activity.length,
-    data: activity
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one activities

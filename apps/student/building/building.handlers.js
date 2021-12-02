@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /buildings
 //@access   Student
 const getAllBuildings = asyncHandler(async (req, res, next) => {
-  const building = await model.Building.find();
-
-  res.status(200).json({
-    success: true,
-    count: building.length,
-    data: building
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one building

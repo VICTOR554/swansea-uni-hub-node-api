@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /books
 //@access   Student 
 const getAllBooks = asyncHandler(async (req, res, next) => {
-  const book = await model.Book.find();
-
-  res.status(200).json({
-    success: true,
-    count: book.length,
-    data: book
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one book

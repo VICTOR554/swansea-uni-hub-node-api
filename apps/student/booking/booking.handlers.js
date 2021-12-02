@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /bookings
 //@access   Student
 const getAllBookings = asyncHandler(async (req, res, next) => {
-  const booking = await model.Booking.find();
-
-  res.status(200).json({
-    success: true,
-    count: booking.length,
-    data: booking
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one booking

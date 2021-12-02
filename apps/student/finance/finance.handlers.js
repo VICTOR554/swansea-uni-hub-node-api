@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /finances
 //@access   Student
 const getAllFinances = asyncHandler(async (req, res, next) => {
-  const finance = await model.Finance.find();
-
-  res.status(200).json({
-    success: true,
-    count: finance.length,
-    data: finance
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one finance

@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /events
 //@access   Student
 const getAllEvents = asyncHandler(async (req, res, next) => {
-  const event = await model.Event.find();
-
-  res.status(200).json({
-    success: true,
-    count: event.length,
-    data: event
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one event

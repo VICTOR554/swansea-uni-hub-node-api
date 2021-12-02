@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /reports
 //@access   Student
 const getAllReports = asyncHandler(async (req, res, next) => {
-  const report = await model.Report.find();
-
-  res.status(200).json({
-    success: true,
-    count: report.length,
-    data: report
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one report

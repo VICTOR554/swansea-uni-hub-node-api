@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /notes
 //@access   Student
 const getAllNotes = asyncHandler(async (req, res, next) => {
-  const note = await model.Note.find();
-
-  res.status(200).json({
-    success: true,
-    count: note.length,
-    data: note
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one note

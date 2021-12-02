@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /lecturers
 //@access   Student
 const getAllLecturers = asyncHandler(async (req, res, next) => {
-  const lecturer = await model.Lecturer.find();
-
-  res.status(200).json({
-    success: true,
-    count: lecturer.length,
-    data: lecturer
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one lecturer

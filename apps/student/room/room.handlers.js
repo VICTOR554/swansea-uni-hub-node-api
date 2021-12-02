@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /rooms
 //@access   Admin
 const getAllRooms = asyncHandler(async (req, res, next) => {
-  const room = await model.room.find();
-
-  res.status(200).json({
-    success: true,
-    count: room.length,
-    data: room
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one room

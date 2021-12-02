@@ -6,13 +6,7 @@ const model = require('../../../models/model');
 //@route    GET /campuses
 //@access   Student 
 const getAllCampuses = asyncHandler(async (req, res, next) => {
-  const campus = await model.Campus.find();
-
-  res.status(200).json({
-    success: true,
-    count: campus.length,
-    data: campus
-  });
+  res.status(200).json(res.advancedResults);
 });
 
 //@des      get one campus
