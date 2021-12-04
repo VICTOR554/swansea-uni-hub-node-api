@@ -44,7 +44,5 @@ const deleteWeek = asyncHandler(async (req, res, next) => {
 module.exports = {
   getAllWeeks,
   getOneWeek,
-  createWeeks,
-  updateWeek,
   deleteWeek
 };
