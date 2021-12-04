@@ -9,6 +9,7 @@ const getAllTasks = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);
 });
 
+
 //@des      get one task
 //@route    GET /tasks/:id
 //@access   Student

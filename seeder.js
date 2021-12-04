@@ -19,6 +19,8 @@ mongoose.connect(process.env.MONGO_URI, {
 const students = JSON.parse(fs.readFileSync(`${__dirname}/data/students.json`, 'utf-8'));
 const modules = JSON.parse(fs.readFileSync(`${__dirname}/data/modules.json`, 'utf-8'));
 const courses = JSON.parse(fs.readFileSync(`${__dirname}/data/courses.json`, 'utf-8'));
+const tasks = JSON.parse(fs.readFileSync(`${__dirname}/data/tasks.json`, 'utf-8'));
+
 
 
 //Import into DB
@@ -27,6 +29,7 @@ const importData = async () => {
     await Model.Student.create(students);
     await Model.Module.create(modules);
     await Model.Course.create(courses);
+    await Model.Task.create(tasks);
 
     console.log('Data Imported....'.green.inverse);
     process.exit();
@@ -41,6 +44,8 @@ const deleteData = async () => {
     await Model.Student.deleteMany();
     await Model.Module.deleteMany();
     await Model.Course.deleteMany();
+    await Model.Task.deleteMany();
+
 
     console.log('Data Destroyed....'.red.inverse);
     process.exit();

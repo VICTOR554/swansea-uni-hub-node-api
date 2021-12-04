@@ -31,9 +31,11 @@ const advancedResults = (model) => async (req, res, next) => {
       const sortBy = req.query.sort.split(',').join(' ');
       query = query.sort(sortBy);
     }
-  
+
+
     //Executing query
     const results = await query;
+
 
     res.advancedResults = {
         success: true,
