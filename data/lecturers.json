@@ -1,0 +1,26 @@
+[
+  {
+    "name": "david",
+    "email": "david@awansea.ac.uk",
+    "officeHour": {
+      "start_date_time": 1638345600,
+      "end_date_time": 1638352800
+    }
+  },
+  {
+    "name": "john",
+    "email": "john@awansea.ac.uk",
+    "officeHour": {
+      "start_date_time": 1638345600,
+      "end_date_time": 1638352800
+    }
+  },
+  {
+    "name": "larry",
+    "email": "larry@awansea.ac.uk",
+    "officeHour": {
+      "start_date_time": 1638345600,
+      "end_date_time": 1638352800
+    }
+  }
+]

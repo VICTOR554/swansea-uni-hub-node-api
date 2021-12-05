@@ -1,0 +1,26 @@
+[
+  {
+    "module_code": "CSC348",
+    "lecturer_name": "david",
+    "start_date_time": 1638345600    ,
+    "end_date_time": 1638352800,
+    "location": "Engineering",
+    "type": "Seminar"
+  },
+  {
+    "module_code": "CSC348",
+    "lecturer_name": "john",
+    "start_date_time": 1638360000,
+    "end_date_time": 1638367200,
+    "location": "Library",
+    "type": "Lecture"
+  },
+  {
+    "module_code": "CSC348",
+    "lecturer_name": "larry",
+    "start_date_time": 1638367200,
+    "end_date_time": 1638381600,
+    "location": "Computer foundary",
+    "type": "Lecture/Seminar"
+  }
+]

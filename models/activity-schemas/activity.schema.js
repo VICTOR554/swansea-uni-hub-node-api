@@ -10,11 +10,11 @@ const activitySchema = new Schema({
     type: String,
     required: true
   },
-  start_time: {
+  start_date_time: {
     type: Number,
     required: true
   },
-  end_time: {
+  end_date_time: {
     type: Number,
     required: true
   },
@@ -28,5 +28,6 @@ const activitySchema = new Schema({
     required: true
   }
 });
+
 
 module.exports = activitySchema;

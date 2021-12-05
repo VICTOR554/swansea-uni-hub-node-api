@@ -1,3 +1,5 @@
+const ErrorResponse = require('../utils/errorResponse');
+
 const advancedResults = (model) => async (req, res, next) => {
     let query;
 
@@ -31,12 +33,15 @@ const advancedResults = (model) => async (req, res, next) => {
       const sortBy = req.query.sort.split(',').join(' ');
       query = query.sort(sortBy);
     }
-
+    
+   
 
     //Executing query
     const results = await query;
 
-
+    if (results.length == 0) {
+      return next(new ErrorResponse(`There is no object in the database.`, 404));
+    }
     res.advancedResults = {
         success: true,
         count: results.length,
