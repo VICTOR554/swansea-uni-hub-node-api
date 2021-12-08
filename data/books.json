@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Computer",
+    "author": "Computational Mechanics Institute (Southampton, England) ",
+    "subject": "Environmental monitoring",
+    "created_at": "1986-1996",
+    "availability": "Not Available",
+    "bookmark": true
+  },
+  {
+    "name": "Environmental software",
+    "author": "IEEE Computer Society",
+    "subject": "Computer",
+    "created_at": "CSC313 & CSCM13",
+    "availability": "Bay",
+    "bookmark": false
+  },
+  {
+    "name": "Critical infrastructure system security and resiliency",
+    "author": "Biringer, Betty E., 1952,",
+    "subject": "Fault tolerance (Engineering)",
+    "created_at": "2013",
+    "availability": "Bay and Singleton",
+    "bookmark": false
+  },
+  {
+    "name": "Mind Games",
+    "author": "Max",
+    "subject": "Psychology",
+    "created_at": "2012",
+    "availability": "Singleton",
+    "bookmark": false
+  },
+  {
+    "name": "Engine Overload",
+    "author": "IEEE Computer Society",
+    "subject": "Computer",
+    "created_at": "2010",
+    "availability": "Bay",
+    "bookmark": false
+  },
+  {
+    "name": "Plane Overload",
+    "author": "Jack. H",
+    "subject": "Aerodynamics",
+    "created_at": "2000",
+    "availability": "Singleton",
+    "bookmark": true
+  },
+  {
+    "name": "Traffic Malfunction",
+    "author": "Connor",
+    "subject": "AI",
+    "created_at": "2019",
+    "availability": "Bay and Singleton",
+    "bookmark": true
+  },
+  {
+    "name": "Gangster Management",
+    "author": "Rajat Raina",
+    "subject": "Psychology",
+    "created_at": "2020",
+    "availability": "Bay",
+    "bookmark": true
+  },
+  {
+    "name": "Crowds at Party",
+    "author": "Abi",
+    "subject": "Psychology",
+    "created_at": "2021",
+    "availability": "Not Available",
+    "bookmark": false
+  },
+  {
+    "name": "Poker Prediction",
+    "author": "Alan",
+    "subject": "AI",
+    "created_at": "2021",
+    "availability": "Bay and Singleton",
+    "bookmark": false
+  }
+]

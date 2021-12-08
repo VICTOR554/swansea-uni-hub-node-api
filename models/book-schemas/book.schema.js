@@ -14,17 +14,13 @@ const bookSchema = new Schema({
     type: String,
     required: true
   },
-  publisher: {
-    type: String,
-    required: true
-  },
   created_at: {
     type: String,
     required: true
   },
   availability: {
     type: String,
-    enum: ['Bay', 'Singleton', 'Bay and Singleton', 'Not available'],
+    enum: ['Bay', 'Singleton', 'Bay and Singleton', 'Not Available'],
     required: true
   },
   bookmark: {
