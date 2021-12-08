@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Engineering East",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Engineering Central",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Bay Library",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Great Hall",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "School of Management",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Students’ Union",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Tower Information Centre",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "MyUniHub",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Computational Foundry",
+    "campus_name": "Bay"
+  },
+  {
+    "name": "Faraday Building",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "Faraday Tower",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "Grove Building Extension",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "Grove Building",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "Wallace Building",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "Students’ Union",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "Singleton Park Library",
+    "campus_name": "Singleton"
+  },
+  {
+    "name": "MyUniHub",
+    "campus_name": "Singleton"
+  }
+]
