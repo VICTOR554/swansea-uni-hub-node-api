@@ -11,14 +11,20 @@ const lecturerSchema = new Schema({
     required: true,
     unique: true
   },
-  officeHour: {
-    start_date_time: {
-      type: Number
-    },
-    end_date_time: {
-      type: Number
+  module_code: {
+    type: String,
+    required: true
+  },
+  officeHour: [
+    {
+      start_date_time: {
+        type: Number
+      },
+      end_date_time: {
+        type: Number
+      }
     }
-  }
+  ]
 });
 
 module.exports = lecturerSchema;

@@ -1,26 +1,39 @@
 [
   {
-    "name": "david",
-    "email": "david@awansea.ac.uk",
-    "officeHour": {
+    "name": "Anton Setzer",
+    "email": "Anton@awansea.ac.uk",
+    "module_code": "CSC313 & CSCM13",
+    "officeHour": [{
       "start_date_time": 1638345600,
       "end_date_time": 1638352800
-    }
+    }]
+
   },
   {
-    "name": "john",
-    "email": "john@awansea.ac.uk",
-    "officeHour": {
+    "name": "Sean Walton",
+    "email": "Sean@awansea.ac.uk",
+    "module_code": "CSC348 & CSCM48",
+    "officeHour": [{
       "start_date_time": 1638345600,
       "end_date_time": 1638352800
-    }
+    }]
   },
   {
-    "name": "larry",
-    "email": "larry@awansea.ac.uk",
-    "officeHour": {
+    "name": "Bertie Müller",
+    "email": "Bertie@awansea.ac.uk",
+    "module_code": "CSCM08",
+    "officeHour": [{
       "start_date_time": 1638345600,
       "end_date_time": 1638352800
-    }
+    }]
+  },
+  {
+    "name": "Michael Edwards",
+    "email": "David@awansea.ac.uk",
+    "module_code": "CSM20",
+    "officeHour": [{
+      "start_date_time": 1638345600,
+      "end_date_time": 1638352800
+    }]
   }
 ]

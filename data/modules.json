@@ -11,12 +11,12 @@
   },
   {
     "code": "CSCM08",
-    "name": "High Integrity Systems/Critical Systems",
+    "name": "Information Security Management",
     "course_code": "MSFS2FX"
   },
   {
-    "code": "CSCM30",
-    "name": "Information Security Management",
+    "code": "CSM20",
+    "name": "MSc Project",
     "course_code": "MSFS2FX"
   }
 ]

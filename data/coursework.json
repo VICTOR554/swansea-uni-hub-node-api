@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Coursework 1",
+    "module_code": "CSC313 & CSCM13",
+    "percentage": "40",
+    "due_date": 1639738800
+  },
+  {
+    "name": "Coursework 2",
+    "module_code": "CSC313 & CSCM13",
+    "percentage": "40",
+    "due_date": 1638874800
+  },
+  {
+    "name": "Coursework 1a",
+    "module_code": "CSC348 & CSCM48",
+    "percentage": "10",
+    "due_date": 1636110000
+  },
+  {
+    "name": "Coursework 1b",
+    "module_code": "CSC348 & CSCM48",
+    "percentage": "10",
+    "due_date": 1636714800
+  },
+  {
+    "name": "Coursework 2",
+    "module_code": "CSC348 & CSCM48",
+    "percentage": "20",
+    "due_date": 1639738800
+  },
+  {
+    "name": "Coursework 1a: Slide",
+    "module_code": "CSCM08",
+    "percentage": "10",
+    "due_date": 1635332400
+  },
+  {
+    "name": "Coursework 1b: Presentation",
+    "module_code": "CSCM08",
+    "percentage": "20",
+    "due_date": 1638874800
+  },
+  {
+    "name": "Coursework 2: Report",
+    "module_code": "CSCM08",
+    "percentage": "70",
+    "due_date": 1638529200
+  },
+  {
+    "name": "Final Report",
+    "module_code": "CSM20",
+    "percentage": "50",
+    "due_date": 1639566000
+  }
+]
