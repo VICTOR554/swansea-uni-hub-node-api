@@ -1,6 +1,6 @@
 [
   {
-    "module_code": "CSC348",
+    "module_code": "CSC313 & CSCM13",
     "lecturer_name": "david",
     "start_date_time": 1638345600    ,
     "end_date_time": 1638352800,
@@ -8,7 +8,7 @@
     "type": "Seminar"
   },
   {
-    "module_code": "CSC348",
+    "module_code": "CSC348 & CSCM48",
     "lecturer_name": "john",
     "start_date_time": 1638360000,
     "end_date_time": 1638367200,
@@ -16,11 +16,36 @@
     "type": "Lecture"
   },
   {
-    "module_code": "CSC348",
+    "module_code": "CSCM08",
     "lecturer_name": "larry",
-    "start_date_time": 1638367200,
+    "start_date_time": 1638374400,
     "end_date_time": 1638381600,
     "location": "Computer foundary",
+    "type": "Lecture/Seminar"
+  },
+
+  {
+    "module_code": "CSCM08",
+    "lecturer_name": "david",
+    "start_date_time": 1638432000,
+    "end_date_time": 1638439200,
+    "location": "Art",
+    "type": "Seminar"
+  },
+  {
+    "module_code": "CSC348 & CSCM48",
+    "lecturer_name": "john",
+    "start_date_time": 1638446400,
+    "end_date_time": 1638453600,
+    "location": "Business",
+    "type": "Lecture"
+  },
+  {
+    "module_code": "CSC313 & CSCM13",
+    "lecturer_name": "larry",
+    "start_date_time": 1638460800,
+    "end_date_time": 1638471600,
+    "location": "bay",
     "type": "Lecture/Seminar"
   }
 ]

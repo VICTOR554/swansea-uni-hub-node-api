@@ -30,7 +30,7 @@ app.use(cookieParser());
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
-
+ 
 //Mount routers
 app.use('/admin', admin);
 app.use('/auth', auth);

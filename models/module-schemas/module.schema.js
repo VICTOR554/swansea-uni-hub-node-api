@@ -2,12 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const moduleSchema = new Schema({
-  code: [
+  code: 
     {
       type: String,
       required: true
-    }
-  ],
+    },
   name: {
     type: String,
     required: true
@@ -17,5 +16,11 @@ const moduleSchema = new Schema({
     required: true
   }
 });
+
+moduleSchema.virtual('students', {
+  localField: 'code',
+  foreignField: 'module_code',
+  justOne: false
+})
 
 module.exports = moduleSchema;

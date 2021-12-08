@@ -87,10 +87,10 @@ const studentSchema = new Schema({
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,
-  createdAt: {
-    type: Date,
-    default: Date.now
-  }
+  // createdAt: {
+  //   type: Date,
+  //   default: Date.now
+  // }
 });
 
 //encrypt password

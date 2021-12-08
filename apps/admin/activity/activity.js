@@ -12,4 +12,4 @@ router.put('/update/:id', handlers.updateActivity)
 router.delete('/delete/:id', handlers.deleteActivity)
 
 
-module.exports = router;  
+module.exports = router;   
