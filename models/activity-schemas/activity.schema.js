@@ -29,5 +29,15 @@ const activitySchema = new Schema({
   }
 });
 
+activitySchema.index({ module_code: 1, start_date_time: 1}, { unique: true })
+activitySchema.index({ module_code: 1, start_date_time: 1, type: 1}, { unique: true })
+activitySchema.index({ start_date_time: 1, lecturer_number: 1}, { unique: true })
+activitySchema.index({ start_date_time: 1, location: 1}, { unique: true })
+
+activitySchema.index({ module_code: 1, end_date_time: 1}, { unique: true })
+activitySchema.index({ module_code: 1, end_date_time: 1, type: 1}, { unique: true })
+activitySchema.index({ end_date_time: 1, lecturer_number: 1}, { unique: true })
+activitySchema.index({ end_date_time: 1, location: 1}, { unique: true })
+
 
 module.exports = activitySchema;
