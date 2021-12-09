@@ -4,7 +4,6 @@ const handlers = require('./activity.handlers');
 const model = require('../../../models/model');
 const advancedResults = require('../../../middleware/advancedresults');
 
-
 router.get('/', advancedResults(model.Activity), handlers.getAllActivities)
 router.get('/:id', handlers.getOneActivity)
 router.post('/new', handlers.createActivities)
