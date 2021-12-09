@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "Swansea uni hub API",
   "main": "server.js",
-  "engines": {
-    "node": "14.x",
-    "npm": "8.x"
-  },
   "scripts": {
-    "start": "node server.js"
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
   },
   "author": "Victor Lawuyi",
   "license": "ISC",
