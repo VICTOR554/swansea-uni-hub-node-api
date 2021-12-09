@@ -19,6 +19,108 @@
     },
     "courseCode": "MSFS2FX",
     "moduleCode": ["CSCM13"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -41,6 +143,108 @@
     },
     "courseCode": "MSC0001",
     "moduleCode": ["CSCM13", "CSCM48"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -63,6 +267,108 @@
     },
     "courseCode": "MSM0002",
     "moduleCode": ["CSCM08", "CSCM30"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -85,6 +391,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -107,6 +515,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM30"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -129,6 +639,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -151,6 +763,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -173,6 +887,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -195,6 +1011,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -217,6 +1135,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   
@@ -240,6 +1260,108 @@
     },
     "courseCode": "MSFS2FX",
     "moduleCode": ["CSCM13"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -262,6 +1384,108 @@
     },
     "courseCode": "MSC0001",
     "moduleCode": ["CSCM13", "CSCM48"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -284,6 +1508,108 @@
     },
     "courseCode": "MSM0002",
     "moduleCode": ["CSCM08", "CSCM30"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -306,6 +1632,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -328,6 +1756,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM30"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -350,6 +1880,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -372,6 +2004,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -394,6 +2128,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -416,6 +2252,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -438,6 +2376,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },  
 
@@ -461,6 +2501,108 @@
     },
     "courseCode": "MSFS2FX",
     "moduleCode": ["CSCM13"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -483,6 +2625,108 @@
     },
     "courseCode": "MSC0001",
     "moduleCode": ["CSCM13", "CSCM48"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -505,6 +2749,108 @@
     },
     "courseCode": "MSM0002",
     "moduleCode": ["CSCM08", "CSCM30"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -527,6 +2873,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -549,6 +2997,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM30"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -571,6 +3121,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -593,6 +3245,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -615,6 +3369,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -637,6 +3493,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   },
   {
@@ -659,6 +3617,108 @@
     },
     "courseCode": "BSM0001",
     "moduleCode": ["CSCM08"],
+    "mainMenu": {
+      "default": [
+        {
+        "number": 0,
+        "icon": "information-circle-outline",
+        "title": "Student information",
+        "path": "/home/tabs/main-menu/student-information"
+      },
+      {
+        "number": 1,
+        "icon": "calendar-number-outline",
+        "title": "Coursework Deadline",
+        "path": "/home/tabs/main-menu/coursework-deadline"
+      },
+      {
+        "number": 2,
+        "icon": "library-outline",
+        "title": "Library",
+        "path": "/home/tabs/main-menu/library"
+      },
+      {
+        "number": 3,
+        "icon": "map-outline",
+        "title": "Maps",
+        "path": "/home/tabs/main-menu/maps"
+      },
+      {
+        "number": 4,
+        "icon": "book-outline",
+        "title": "Booking",
+        "path": "/home/tabs/main-menu/booking"
+      },
+      {
+        "number": 5,
+        "icon": "body-outline",
+        "title": "Student Union",
+        "path": "/home/tabs/main-menu/student-union"
+      },
+      {
+        "number": 6,
+        "icon": "call-outline",
+        "title": "Contact",
+        "path": "/home/tabs/main-menu/contact"
+      },
+      {
+        "number": 7,
+        "icon": "alert-circle-outline",
+        "title": "Report",
+        "path": "/home/tabs/main-menu/report"
+      }
+    ],
+      "custom": [
+        {
+          "number": 0,
+          "icon": "information-circle-outline",
+          "title": "Student information",
+          "path": "/home/tabs/main-menu/student-information"
+        },
+        {
+          "number": 1,
+          "icon": "calendar-number-outline",
+          "title": "Coursework Deadline",
+          "path": "/home/tabs/main-menu/coursework-deadline"
+        },
+        {
+          "number": 2,
+          "icon": "library-outline",
+          "title": "Library",
+          "path": "/home/tabs/main-menu/library"
+        },
+        {
+          "number": 3,
+          "icon": "map-outline",
+          "title": "Maps",
+          "path": "/home/tabs/main-menu/maps"
+        },
+        {
+          "number": 4,
+          "icon": "book-outline",
+          "title": "Booking",
+          "path": "/home/tabs/main-menu/booking"
+        },
+        {
+          "number": 5,
+          "icon": "body-outline",
+          "title": "Student Union",
+          "path": "/home/tabs/main-menu/student-union"
+        },
+        {
+          "number": 6,
+          "icon": "call-outline",
+          "title": "Contact",
+          "path": "/home/tabs/main-menu/contact"
+        },
+        {
+          "number": 7,
+          "icon": "alert-circle-outline",
+          "title": "Report",
+          "path": "/home/tabs/main-menu/report"
+        }
+      ]
+    },
     "password": "chad123"
   }
 ]
