@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Swansea uni hub API",
   "engines": {
-    "node": "14.4.2",
-    "npm": "7.21.1"
+    "node": "14.x",
+    "npm": "7.x"
   },
   "main": "server.js",
   "scripts": {
