@@ -2,6 +2,10 @@
   "name": "swansea-uni-hub-api",
   "version": "1.0.0",
   "description": "Swansea uni hub API",
+  "engines": {
+    "node": "14.x",
+    "npm": "8.x"
+  },
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node server",
