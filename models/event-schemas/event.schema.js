@@ -40,18 +40,12 @@ const eventSchema = new Schema({
       type: Number,
       required: true
     },
-    start_time: {
+    end_date: {
       type: Number,
       required: true
     },
-    end_time: {
-      type: Number,
-      required: true
-    },
-    start_date: {
-      type: Number,
-      required: true
-    },
+  },
+  time: {
     start_time: {
       type: Number,
       required: true
@@ -61,8 +55,6 @@ const eventSchema = new Schema({
       required: true
     }
   },
-  
-  
 });
 
 module.exports = eventSchema;

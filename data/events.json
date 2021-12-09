@@ -12,7 +12,7 @@
       "start_date": 1633654800,
       "end_date": 1639749600
     },
-    "time": {
+    "time": { 
       "start_time": 1639746000,
       "end_time": 1639749600
     }
@@ -76,7 +76,7 @@
     "img": "https://images.native.fm/920x612/png/png/event/event/616d6d7d3c4a4.png",
     "description": "In this session, students will acquire some general language/ vocabulary regarding the usage of numbers in a text.",
     "category": "Clubnights",
-    "status": "past",
+    "status": "Past",
     "genre": ["Non - Music"],
     "price": 1,
     "location": "Via Zoom, Online, Swansea",

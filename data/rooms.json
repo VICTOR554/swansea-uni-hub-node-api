@@ -1,232 +1,232 @@
 [
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Engineering East"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Engineering East"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Engineering East"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Engineering East"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Engineering East"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Engineering Central"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Engineering Central"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Engineering Central"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Engineering Central"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Engineering Central"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Bay Library"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Bay Library"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Bay Library"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Bay Library"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Bay Library"
   },
   
   {
-    "number": "1",
+    "number": 1,
     "building_name": "School of Management"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "School of Management"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "School of Management"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "School of Management"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Computational Foundry"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Computational Foundry"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Computational Foundry"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Computational Foundry"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Computational Foundry"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Computational Foundry"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Faraday Building"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Faraday Building"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Faraday Building"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Faraday Building"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Faraday Building"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Faraday Tower"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Faraday Tower"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Faraday Tower"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Faraday Tower"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Faraday Tower"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Grove Building Extension"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Grove Building Extension"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Grove Building Extension"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Grove Building Extension"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Grove Building Extension"
   },
   
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Grove Building"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Grove Building"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Grove Building"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Grove Building"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Grove Building"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Wallace Building"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Wallace Building"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Wallace Building"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Wallace Building"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Wallace Building"
   },
 
   {
-    "number": "1",
+    "number": 1,
     "building_name": "Singleton Park Library"
   },
   {
-    "number": "2",
+    "number": 2,
     "building_name": "Singleton Park Library"
   },
   {
-    "number": "3",
+    "number": 3,
     "building_name": "Singleton Park Library"
   },
   {
-    "number": "4",
+    "number": 4,
     "building_name": "Singleton Park Library"
   },
   {
-    "number": "5",
+    "number": 5,
     "building_name": "Singleton Park Library"
   }
 ]

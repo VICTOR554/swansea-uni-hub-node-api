@@ -7,7 +7,7 @@ const roomSchema = new Schema({
     required: true
   },
   building_name: {
-    type: Number,
+    type: String,
     required: true
   }
 });
