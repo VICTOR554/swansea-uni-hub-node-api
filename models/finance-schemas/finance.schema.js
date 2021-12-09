@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const financeSchema = new Schema({
-  studentNumber: {
+  student_number: {
     type: Number,
     required: true
   },
@@ -15,7 +15,11 @@ const financeSchema = new Schema({
       {
         type: Number
       }
-    ]
+    ],
+    remainder: {
+      type: Number,
+      required: true
+    },
   },
   accomodation: {
     initial: {
@@ -25,7 +29,11 @@ const financeSchema = new Schema({
       {
         type: Number
       }
-    ]
+    ],
+    remainder: {
+      type: Number,
+      required: true
+    },
   }
 });
 

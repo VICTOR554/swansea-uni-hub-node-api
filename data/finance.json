@@ -1,0 +1,394 @@
+[
+  {
+    "student_number": 1111,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1112,
+    "tuition": {
+      "initial": 16000,
+      "payment": [2000, 4000, 8000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 12000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1113,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 12000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1114,
+    "tuition": {
+      "initial": 19000,
+      "payment": [2000, 4000, 10000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 0,
+      "payment": [0],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1115,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 5000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1116,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 20000,
+      "payment": [2000, 4000, 11000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1117,
+    "tuition": {
+      "initial": 7000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 3000,
+      "payment": [2000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1118,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 5000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 1119,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 8000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 1000,
+      "payment": [500],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11110,
+    "tuition": {
+      "initial": 19000,
+      "payment": [2000, 4000, 12000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 2000,
+      "payment": [2000],
+      "remainder": 0
+    }
+  },
+
+  {
+    "student_number": 11111,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11112,
+    "tuition": {
+      "initial": 16000,
+      "payment": [2000, 4000, 8000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 12000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11113,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 12000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11114,
+    "tuition": {
+      "initial": 19000,
+      "payment": [2000, 4000, 10000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 0,
+      "payment": [0],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11115,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 5000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11116,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 20000,
+      "payment": [2000, 4000, 11000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11117,
+    "tuition": {
+      "initial": 7000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 3000,
+      "payment": [2000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11118,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 5000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11119,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 8000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 1000,
+      "payment": [500],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11120,
+    "tuition": {
+      "initial": 19000,
+      "payment": [2000, 4000, 12000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 2000,
+      "payment": [2000],
+      "remainder": 0
+    }
+  },
+
+  {
+    "student_number": 11121,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11122,
+    "tuition": {
+      "initial": 16000,
+      "payment": [2000, 4000, 8000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 12000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11123,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 12000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11124,
+    "tuition": {
+      "initial": 19000,
+      "payment": [2000, 4000, 10000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 0,
+      "payment": [0],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11125,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 5000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11126,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 20000,
+      "payment": [2000, 4000, 11000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11127,
+    "tuition": {
+      "initial": 7000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 3000,
+      "payment": [2000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11128,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 4000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 10000,
+      "payment": [2000, 5000],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11129,
+    "tuition": {
+      "initial": 14000,
+      "payment": [2000, 8000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 1000,
+      "payment": [500],
+      "remainder": 0
+    }
+  },
+  {
+    "student_number": 11130,
+    "tuition": {
+      "initial": 19000,
+      "payment": [2000, 4000, 12000],
+      "remainder": 0
+    },
+    "accomodation": {
+      "initial": 2000,
+      "payment": [2000],
+      "remainder": 0
+    }
+  }
+]
