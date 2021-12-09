@@ -10,30 +10,14 @@ const sportSchema = new Schema({
     type: String,
     required: true
   },
-  category: {
-    type: String,
-    required: true
-  },
   description: {
     type: String,
     required: true
   },
-  event: {
-    type: [String],
+  category: {
+    type: String,
     required: true
   },
-  training_time: [
-    {
-      time: {
-        type: String,
-        required: true
-      },
-      location_name: {
-        type: String,
-        required: true
-      }
-    }
-  ],
   contact: {
     email: {
       type: String,
@@ -46,6 +30,9 @@ const sportSchema = new Schema({
       type: String
     },
     instagram: {
+      type: String
+    },
+    twitter: {
       type: String
     }
   }

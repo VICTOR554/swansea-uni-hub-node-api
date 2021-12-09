@@ -20,35 +20,49 @@ const eventSchema = new Schema({
   },
   status: {
     type: String,
+    enum: ['Current', 'Past'],
     required: true
   },
-  genre: {
+  genre: [{
     type: String,
     required: true
-  },
+  }],
   price: {
-    type: String,
+    type: Number,
     required: true
   },
   location: {
     type: String,
     required: true
   },
-  contact: {
-    email: {
-      type: String,
+  date: {
+    start_date: {
+      type: Number,
       required: true
     },
-    facebook: {
-      type: String
+    start_time: {
+      type: Number,
+      required: true
     },
-    linkedin: {
-      type: String
+    end_time: {
+      type: Number,
+      required: true
     },
-    instagram: {
-      type: String
+    start_date: {
+      type: Number,
+      required: true
+    },
+    start_time: {
+      type: Number,
+      required: true
+    },
+    end_time: {
+      type: Number,
+      required: true
     }
-  }
+  },
+  
+  
 });
 
 module.exports = eventSchema;

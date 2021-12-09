@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Talk Club",
+    "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+    "description": "This course helps students to understand how to get the most out of Microsoft Word, Excel and PowerPoint to format work, sort data, structure a presentation and produce posters.",
+    "category": "Uni Event",
+    "status": "Current",
+    "genre": "Non - Music",
+    "price": 0,
+    "location": "Via Zoom, Online",
+    "date": {
+      "start_date": 1633654800,
+      "end_date": 1639749600
+    },
+    "time": {
+      "start_time": 1639746000,
+      "end_time": 1639749600
+    }
+  },
+  {
+    "name": "Sin Savers",
+    "img": "https://images.native.fm/920x612/jpg/jpg/event/event/616ee3016aa45.jpg",
+    "description": "The only club night in Swansea with censored drinks prices, remember that you’ll have to arrive early to avoid disappointment! ",
+    "category": "Clubnights",
+    "status": "Current",
+    "genre": ["Rock", "Pop", "Indie", "Party"],
+    "price": 5,
+    "location": "Sin City , Swansea",
+    "date": {
+      "start_date": 1639011600,
+      "end_date": 1639191600
+    },
+    "time": {
+      "start_time": 1639087200,
+      "end_time": 1639105200
+    }
+  },
+  {
+    "name": "Fiction Fridays",
+    "img": "https://images.native.fm/920x612/jpg/jpg/event/event/616ee3016aa45.jpg",
+    "description": "Our DJ's, across 3 rooms of music, will help you dance the night away and see in the weekend in style!  ",
+    "category": "Clubnights",
+    "status": "Current",
+    "genre": ["Electronic", "Pop", "Party"],
+    "price": 2.5,
+    "location": "Fiction, Little Wind St., Swansea",
+    "date": {
+      "start_date": 1639098000,
+      "end_date": 1639278000
+    },
+    "time": {
+      "start_time": 1639087200,
+      "end_time": 1639105200
+    }
+  },
+  {
+    "name": "Quids In - Get P*ssed with Santa",
+    "img": "https://images.native.fm/920x612/jpeg/jpeg/event/event/618e545b51c6f.jpeg",
+    "description": "Swansea's biggest Monday night, every week at Fiction.",
+    "category": "Clubnights",
+    "status": "Current",
+    "genre": ["Electronic", "Pop", "Party"],
+    "price": 1,
+    "location": "Fiction, Little Wind St., Swansea",
+    "date": {
+      "start_date": 1639357200,
+      "end_date": 1639537200
+    },
+    "time": {
+      "start_time": 1639432800,
+      "end_time": 1639450800
+    }
+  },
+  {
+    "name": "AS-112 Academic Writing for Internationals",
+    "img": "https://images.native.fm/920x612/png/png/event/event/616d6d7d3c4a4.png",
+    "description": "In this session, students will acquire some general language/ vocabulary regarding the usage of numbers in a text.",
+    "category": "Clubnights",
+    "status": "past",
+    "genre": ["Non - Music"],
+    "price": 1,
+    "location": "Via Zoom, Online, Swansea",
+    "date": {
+      "start_date": 1638406800,
+      "end_date": 1638788400
+    },
+    "time": {
+      "start_time": 1638784800,
+      "end_time": 1638788400
+    }
+  }
+]

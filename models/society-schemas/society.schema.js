@@ -2,9 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const societySchema = new Schema({
-  student_number: {
-    type: String
-  },
   name: {
     type: String,
     required: true
@@ -21,14 +18,9 @@ const societySchema = new Schema({
     type: String,
     required: true
   },
-  attending: {
-    type: Boolean,
-    required: true
-  },
   contact: {
     email: {
       type: String,
-      required: true
     },
     facebook: {
       type: String
@@ -37,6 +29,9 @@ const societySchema = new Schema({
       type: String
     },
     instagram: {
+      type: String
+    },
+    twitter: {
       type: String
     }
   }

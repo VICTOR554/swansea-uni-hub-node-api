@@ -1,0 +1,67 @@
+[
+    {
+      "name": "Aerial Sports",
+      "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+      "description": "Aerial sports is a fun and alternative way to improve strength, balance, flexibility and increase your confidence! ",
+      "category": "Other Sports",
+      "contact": {
+        "email": "aerial@swansea-sports.co.uk",
+        "facebook": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Faerialclubswansea",
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/aerial_swanseauni/",
+        "twitter": "https://twitter.com/aerialswansea"
+      }
+    },
+    {
+        "name": "Aikido",
+        "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+        "description": "Aikido is a modern self-defence martial art developed in Japan in the 1930s by Morihei Ueshiba, a master of several traditional martial arts, who envisaged a new way that would provide a basis for both physical and mental development.",
+        "category": "Martial Arts",
+        "contact": {
+          "email": "aikido@swansea-sports.co.uk",
+          "facebook": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fswanseauniaikido%2F",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/aikidoswansea/",
+          "twitter": "https://twitter.com/Aikidouni"
+        }
+      },
+      {
+        "name": "Archery",
+        "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+        "description": "Our club is open to all members of the University's Student Union. Whether you have done archery before or wish to give it a try, any and all level of experience is welcomed. ",
+        "category": "Other Sports",
+        "contact": {
+          "email": "archery@swansea-sports.co.uk",
+          "facebook": "https://www.facebook.com/groups/119658481474106/?fref=ts",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/swanuarchery/",
+          "twitter": "https://twitter.com/SUArchery"
+        }
+      },
+      {
+        "name": "Athletics & Cross Country",
+        "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+        "description": "Whether you want to run to keep fit, improve your personal best or want to come along on our Wednesday socials and make some new friends, Swansea University Athletics & Cross Country is the club for you.",
+        "category": "Other Sports",
+        "contact": {
+          "email": "athletics@swansea-sports.co.uk",
+          "facebook": "https://www.facebook.com/groups/1423782334666712/",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/swansathletics/",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Badminton",
+        "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+        "description": "For those who love to play badminton at Swansea University! All Abilities welcome!",
+        "category": "Ball Based Sports",
+        "contact": {
+          "email": "badminton@swansea-sports.co.uk",
+          "facebook": "https://www.facebook.com/groups/2244366315/?fref=ts",
+          "linkedin": "",
+          "instagram": "https://www.instagram.com/swanseaunibadminton/",
+          "twitter": "https://twitter.com/BadSwans"
+        }
+      }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Accounting Society",
+    "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+    "description": "The Accounting Society is a student-led society, who work closely with the School of Management and the Swansea Employability Academy. Our goal is to bring together any students that have an interest in any aspect of Accounting.",
+    "category": "Academic & Employability",
+    "contact": {
+      "email": "accounting@swansea-societies.co.uk",
+      "facebook": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Faccountingswans",
+      "linkedin": "https://www.linkedin.com/company/swansea-university-accounting-society",
+      "instagram": "https://www.instagram.com/accounting_swans",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Aerospace Engineering",
+    "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+    "description": "Hoodies/Trips/Socials/Flight Simulator/Guest Lectures and much more, join now!",
+    "category": "Academic & Employability",
+    "contact": {
+      "email": "aerospace@swansea-societies.co.uk",
+      "facebook": "https://www.facebook.com/SUAerospaceSociety",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/swanseaaerospace",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Airsoft",
+    "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+    "description": "Airsoft is a sport similar to paintball but far more fun! We play both causally and competitively at least twice a month and encourage all to join regardless of experience.",
+    "category": "Hobbies & Interests",
+    "contact": {
+      "email": "airsoft@swansea-societies.co.uk",
+      "facebook": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fswanseauniairsoft%2F",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/su.airsoft",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Ancient Studies",
+    "img": "https://images.native.fm/920x612/png/png/event/event/613b6a3c27902.png",
+    "description": "A society for those who love the ancient world or just want to find out more!",
+    "category": "Academic & Employability",
+    "contact": {
+      "email": "sas@swansea-societies.co.uk",
+      "facebook": "https://www.facebook.com/groups/707850182643399/",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/ancient_studies_society_swanse",
+      "twitter": "https://twitter.com/SwanAncientSoc"
+    }
+  },
+  {
+    "name": "Art",
+    "img": "https://www.swansea-union.co.uk/asset/Organisation/20271/art%20logo.jpg?thumbnail_width=700&thumbnail_height=700&resize_type=ResizeFitAll",
+    "description": "The intention of this society is to allow the people of Swansea to explore their creative sides, even if they didn't previously realise they had one. ",
+    "category": "Hobbies & Interests",
+    "contact": {
+      "email": "art@swansea-societies.co.uk",
+      "facebook": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fswanseauniart%2F",
+      "linkedin": "",
+      "instagram": "",
+      "twitter": ""
+    }
+  }
+]
