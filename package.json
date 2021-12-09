@@ -4,8 +4,8 @@
   "description": "Swansea uni hub API",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node server",
-    "dev": "nodemon server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
   },
   "author": "Victor Lawuyi",
   "license": "ISC",
