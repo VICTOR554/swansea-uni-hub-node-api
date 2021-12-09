@@ -12,6 +12,10 @@ const buildingSchema = new Schema({
     enum: ['Bay', 'Singleton'],
     required: true
   },
+  available_to_booking: {
+    type: Boolean,
+    required: true
+  },
 });
 
 module.exports = buildingSchema;

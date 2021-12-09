@@ -22,6 +22,7 @@ const courses = JSON.parse(fs.readFileSync(`${__dirname}/data/courses.json`, 'ut
 const tasks = JSON.parse(fs.readFileSync(`${__dirname}/data/tasks.json`, 'utf-8'));
 const lecturers = JSON.parse(fs.readFileSync(`${__dirname}/data/lecturers.json`, 'utf-8'));
 const activities = JSON.parse(fs.readFileSync(`${__dirname}/data/activities.json`, 'utf-8'));
+const session = JSON.parse(fs.readFileSync(`${__dirname}/data/session.json`, 'utf-8'));
 
 
 //Import into DB
@@ -33,6 +34,8 @@ const importData = async () => {
     await Model.Task.create(tasks);
     await Model.Lecturer.create(lecturers);
     await Model.Activity.create(activities);
+    await Model.Session.create(session);
+
 
     console.log('Data Imported....'.green.inverse);
     process.exit();
@@ -50,6 +53,7 @@ const deleteData = async () => {
     await Model.Task.deleteMany();
     await Model.Lecturer.deleteMany();
     await Model.Activity.deleteMany();
+    await Model.Session.deleteMany();
 
     console.log('Data Destroyed....'.red.inverse);
     process.exit();
