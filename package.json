@@ -2,13 +2,12 @@
   "name": "swansea-uni-hub-api",
   "version": "1.0.0",
   "description": "Swansea uni hub API",
+  "main": "server.js",
   "engines": {
     "node": "14.x",
     "npm": "8.x"
   },
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "Victor Lawuyi",
@@ -25,7 +24,6 @@
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
     "mongoose": "^6.0.3",
-    "morgan": "^1.10.0",
-    "request": "^2.88.2"
+    "morgan": "^1.10.0"
   }
 }
