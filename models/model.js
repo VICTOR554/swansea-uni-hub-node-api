@@ -1,27 +1,34 @@
 const mongoose = require('mongoose')
+const dotenv = require('dotenv');
 
-const Activity = mongoose.model('Activity',require('./activity-schemas/activity.schema'));
-const Book = mongoose.model('Book',require('./book-schemas/book.schema'));
-const Booking = mongoose.model('Booking',require('./booking-schemas/booking.schema'));
-const Building = mongoose.model('Building',require('./building-schemas/building.schema'));
-const Campus = mongoose.model('Campus',require('./campus-schemas/campus.schema'));
-const Course = mongoose.model('Course',require('./course-schemas/course.schema'));
-const Coursework = mongoose.model('Coursework',require('./coursework-schemas/coursework.schema'));
-const Event = mongoose.model('Event',require('./event-schemas/event.schema'));
-const Finance = mongoose.model('Finance',require('./finance-schemas/finance.schema'));
-const Lecturer = mongoose.model('Lecturer',require('./lecturer-schemas/lecturer.schema'));
-const Location = mongoose.model('Location',require('./location-schemas/location.schema'));
-const Module =  mongoose.model('Module',require('./module-schemas/module.schema'));
-const Note =  mongoose.model('Note',require('./note-schemas/note.schema'));
-const Report = mongoose.model('Report',require('./report-schemas/report.schema'));
-const Room = mongoose.model('Room',require('./room-schemas/room.schema'));
-const Session = mongoose.model('Session',require('./session-schemas/session.schema'));
-const Society = mongoose.model('Society',require('./society-schemas/society.schema'));
-const Sport = mongoose.model('Sport',require('./sport-schemas/sport.schema'));
-const Student =  mongoose.model('Student', require('./student-schemas/student.schema'));
-const Task = mongoose.model('Task',require('./task-schemas/task.schema'));
-const Term = mongoose.model('Term',require('./term-schemas/term.schema'));
-const Week = mongoose.model('Week',require('./week-schemas/week.schema'));
+// Connect to Database
+const user = mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
+
+const Activity = mongoose.user('Activity', require('./activity-schemas/activity.schema'), 'activities');
+const Book = mongoose.user('Book', require('./book-schemas/book.schema'), 'books');
+const Booking = mongoose.user('Booking', require('./booking-schemas/booking.schema'), 'booking');
+const Building = mongoose.user('Building', require('./building-schemas/building.schema'), 'buildings');
+const Campus = mongoose.user('Campus', require('./campus-schemas/campus.schema'), 'campuses');
+const Course = mongoose.user('Course', require('./course-schemas/course.schema'), 'courses');
+const Coursework = mongoose.user('Coursework', require('./coursework-schemas/coursework.schema'), 'courseworks');
+const Event = mongoose.user('Event', require('./event-schemas/event.schema'), 'events');
+const Finance = mongoose.user('Finance', require('./finance-schemas/finance.schema'), 'finances');
+const Lecturer = mongoose.user('Lecturer', require('./lecturer-schemas/lecturer.schema'), 'lecturers');
+const Location = mongoose.user('Location', require('./location-schemas/location.schema'), 'locations');
+const Module =  mongoose.user('Module', require('./module-schemas/module.schema'), 'modules');
+const Note =  mongoose.user('Note', require('./note-schemas/note.schema'), 'notes');
+const Report = mongoose.user('Report', require('./report-schemas/report.schema'));
+const Room = mongoose.user('Room', require('./room-schemas/room.schema'), 'rooms');
+const Session = mongoose.user('Session', require('./session-schemas/session.schema'), 'sessions');
+const Society = mongoose.user('Society', require('./society-schemas/society.schema'), 'socities');
+const Sport = mongoose.user('Sport', require('./sport-schemas/sport.schema'), 'sports');
+const Student =  mongoose.user('Student', require('./student-schemas/student.schema'), 'students');
+const Task = mongoose.user('Task', require('./task-schemas/task.schema'), 'tasks');
+const Term = mongoose.user('Term', require('./term-schemas/term.schema'), 'terms');
+const Week = mongoose.user('Week', require('./week-schemas/week.schema'), 'weeks');
 
 
 
