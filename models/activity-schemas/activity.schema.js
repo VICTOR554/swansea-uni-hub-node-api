@@ -2,19 +2,19 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const activitySchema = new Schema({
-  module_code: {
+  moduleCode: {
     type: String,
     required: true
   },
-  lecturer_name: {
+  lecturerName: {
     type: String,
     required: true
   },
-  start_date_time: {
+  startDateTime: {
     type: Number,
     required: true
   },
-  end_date_time: {
+  endDateTime: {
     type: Number,
     required: true
   },
@@ -29,15 +29,15 @@ const activitySchema = new Schema({
   }
 });
 
-activitySchema.index({ module_code: 1, start_date_time: 1}, { unique: true })
-activitySchema.index({ module_code: 1, start_date_time: 1, type: 1}, { unique: true })
-activitySchema.index({ start_date_time: 1, lecturer_number: 1}, { unique: true })
-activitySchema.index({ start_date_time: 1, location: 1}, { unique: true })
+activitySchema.index({ moduleCode: 1, startDateTime: 1}, { unique: true })
+activitySchema.index({ moduleCode: 1, startDateTime: 1, type: 1}, { unique: true })
+activitySchema.index({ startDateTime: 1, lecturer_number: 1}, { unique: true })
+activitySchema.index({ startDateTime: 1, location: 1}, { unique: true })
 
-activitySchema.index({ module_code: 1, end_date_time: 1}, { unique: true })
-activitySchema.index({ module_code: 1, end_date_time: 1, type: 1}, { unique: true })
-activitySchema.index({ end_date_time: 1, lecturer_number: 1}, { unique: true })
-activitySchema.index({ end_date_time: 1, location: 1}, { unique: true })
+activitySchema.index({ moduleCode: 1, endDateTime: 1}, { unique: true })
+activitySchema.index({ moduleCode: 1, endDateTime: 1, type: 1}, { unique: true })
+activitySchema.index({ endDateTime: 1, lecturer_number: 1}, { unique: true })
+activitySchema.index({ endDateTime: 1, location: 1}, { unique: true })
 
 
 module.exports = activitySchema;

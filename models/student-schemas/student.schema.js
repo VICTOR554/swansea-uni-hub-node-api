@@ -18,7 +18,7 @@ const studentSchema = new Schema({
     enum: ['male', 'female', 'other'],
     required: true
   },
-  date_of_birth: {
+  dateOfBirth: {
     type: String,
     required: true
   },
@@ -36,7 +36,7 @@ const studentSchema = new Schema({
   address: {
     type: String
   },
-  home_campus: {
+  homeCampus: {
     type: String,
     enum: ['bay', 'singleton'],
     required: true
@@ -59,21 +59,21 @@ const studentSchema = new Schema({
     type: Boolean,
     required: true
   },
-  course_duration: {
-    start_date_time: {
+  courseDuration: {
+    startDateTime: {
       type: String
       // required: true
     },
-    end_date_time: {
+    endDateTime: {
       type: String
       // required: true
     }
   },
-  course_code: {
+  courseCode: {
     type: String,
     required: true
   },
-  module_code: [
+  moduleCode: [
     {
       type: String,
       required: true

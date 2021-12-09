@@ -12,7 +12,7 @@ const buildingSchema = new Schema({
     enum: ['Bay', 'Singleton'],
     required: true
   },
-  available_to_booking: {
+  availableToBooking: {
     type: Boolean,
     required: true
   },

@@ -1,12 +1,12 @@
 [
   {
     "number": "1",
-    "start_week": 1632099600,
-    "end_week": 1642726800
+    "startWeek": 1632099600,
+    "endWeek": 1642726800
   },
   {
     "number": "2",
-    "start_week": 1642986000,
-    "end_week": 1641430800
+    "startWeek": 1642986000,
+    "endWeek": 1641430800
   }
 ]

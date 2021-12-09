@@ -29,7 +29,7 @@ const getOneActivity = asyncHandler(async (req, res, next) => {
 const getModules = function(req, res, next) {
   model.Student.findOne( req.params.number )
     .then(d => {
-      req.module_code = d.module_code;
+      req.moduleCode = d.moduleCode;
       next();
     })
     .catch(e => {
@@ -39,43 +39,43 @@ const getModules = function(req, res, next) {
 
 const getModuleActivities = async function(
   element,
-  start_date_time,
-  end_date_time
+  startDateTime,
+  endDateTime
 ) {
   a = await model.Activity.find({
-    module_code: element,
-    start_date_time: { $gt: start_date_time, $lt: end_date_time }
+    moduleCode: element,
+    startDateTime: { $gt: startDateTime, $lt: endDateTime }
   });
   return a;
 };
 
 const getActivities = async function(req, res, next) {
-  date_time = req.params.start_date_time;
-  start_date_time = moment
+  date_time = req.params.startDateTime;
+  startDateTime = moment
     .unix(date_time)
     .startOf("day")
     .format("X");
-  console.log(start_date_time);
-  end_date_time = moment
+  console.log(startDateTime);
+  endDateTime = moment
     .unix(date_time)
     .endOf("day")
     .format("X");
-  console.log(end_date_time);
+  console.log(endDateTime);
   
   let activities = [];
 
-  await req.module_code.forEach(async element => {
+  await req.moduleCode.forEach(async element => {
     module_activities = await getModuleActivities(
       element,
-      start_date_time,
-      end_date_time
+      startDateTime,
+      endDateTime
     );
     activities = await activities.concat(module_activities);
 
     activities.sort((a, b) => {
       // Use toUpperCase() to ignore character casing
-      const startA = a.start_date_time;
-      const startB = b.start_date_time;
+      const startA = a.startDateTime;
+      const startB = b.startDateTime;
     
       let comparison = 0;
       if (startA > startB) {

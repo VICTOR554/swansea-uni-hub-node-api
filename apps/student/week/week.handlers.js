@@ -51,11 +51,11 @@ const getOneWeekByDate = asyncHandler(async (req, res) => {
   date = req.params.date
   console.log('date', date)
   
-  let start_date = moment.unix(date).startOf('day').format('X')
-  console.log(start_date)
+  let startDate = moment.unix(date).startOf('day').format('X')
+  console.log(startDate)
 
-  let end_date = moment.unix(date).endOf('day').format('X')
-  console.log(end_date)
+  let endDate = moment.unix(date).endOf('day').format('X')
+  console.log(endDate)
 
   let found = false
   let foundWeek
@@ -67,7 +67,7 @@ const getOneWeekByDate = asyncHandler(async (req, res) => {
           if(found == false){
               for(j=0; j<dates.length;j++){
                   console.log(dates[j])
-                  if(dates[j]>start_date && dates[j]<end_date){
+                  if(dates[j]>startDate && dates[j]<endDate){
                       found = true
                       foundWeek = d[i]
                       console.log(foundWeek)

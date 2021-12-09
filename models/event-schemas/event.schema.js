@@ -36,21 +36,21 @@ const eventSchema = new Schema({
     required: true
   },
   date: {
-    start_date: {
+    startDate: {
       type: Number,
       required: true
     },
-    end_date: {
+    endDate: {
       type: Number,
       required: true
     },
   },
   time: {
-    start_time: {
+    startTime: {
       type: Number,
       required: true
     },
-    end_time: {
+    endTime: {
       type: Number,
       required: true
     }

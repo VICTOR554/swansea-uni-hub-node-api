@@ -78,9 +78,9 @@ const deleteSession = asyncHandler(async (req, res, next) => {
 
 
 const getWeeks =  function(req, res){
-  start_date = moment.unix(req.body.start_date).format('X');
-  console.log(start_date)
-  nweeks = req.body.number_of_weeks;
+  startDate = moment.unix(req.body.startDate).format('X');
+  console.log(startDate)
+  nweeks = req.body.numberOfWeeks;
 
   for (i = 1; i <= nweeks; i++) {
     week = {};
@@ -88,9 +88,9 @@ const getWeeks =  function(req, res){
     week.number = i;
 
     for (j = 1; j <= 7; j++) {
-      dates.push(start_date);
-      start_date = moment.unix(start_date).add(1, "days").format('X');
-      console.log(start_date)
+      dates.push(startDate);
+      startDate = moment.unix(startDate).add(1, "days").format('X');
+      console.log(startDate)
     }
     week.dates = dates;
     

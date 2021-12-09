@@ -7,7 +7,7 @@ const advancedResults = require('../../../middleware/advancedresults');
 
 router.get('/',advancedResults(model.Activity), handlers.getAllActivities)
 router.get('/:id', handlers.getOneActivity)
-router.get('/day/:start_date_time', handlers.getModules, handlers.getActivities, handlers.getOneDayActivities)
+router.get('/day/:startDateTime', handlers.getModules, handlers.getActivities, handlers.getOneDayActivities)
 
 
 

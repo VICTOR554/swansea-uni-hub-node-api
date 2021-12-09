@@ -8,11 +8,11 @@ const termSchema = new Schema({
     required: true,
     unique: true
   },
-  start_week: {
+  startWeek: {
     type: Number,
     required: true
   },
-  end_week: {
+  endWeek: {
     type: Number,
     required: true
   }

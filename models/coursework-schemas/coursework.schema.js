@@ -6,7 +6,7 @@ const courseWorkSchema = new Schema({
     type: String,
     required: true
   },
-  module_code: {
+  moduleCode: {
     type: String,
     required: true
   },
@@ -14,7 +14,7 @@ const courseWorkSchema = new Schema({
     type: Number,
     required: true
   },
-  due_date: {
+  dueDateTime: {
     type: Number,
     required: true
   }

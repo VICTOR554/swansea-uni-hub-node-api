@@ -2,18 +2,18 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const noteSchema = new Schema({
-  student_number: {
+  studentNumber: {
     type: Number,
     required: true
   },
-  module_code: {
+  moduleCode: {
     type: String
   },
   title: {
     type: String,
     required: true
   },
-  created_date_time: {
+  createdDateTime: {
     type: Number,
     required: true
   },

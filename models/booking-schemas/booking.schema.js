@@ -10,27 +10,27 @@ const bookingSchema = new Schema({
     type: String,
     required: true
   },
-  lecturer_name: {
+  lecturerName: {
     type: String
   },
   room_name: {
     type: String
   },
-  student_number: {
+  studentNumber: {
     type: String,
     required: true
   },
   date: {
-    start_date_time: {
+    startDateTime: {
       type: Number,
       required: true
     },
-    end_date_time: {
+    endDateTime: {
       type: Number,
       required: true
     }
   },
-  created_date_time: {
+  createdDateTime: {
     type: Number,
     required: true
   }

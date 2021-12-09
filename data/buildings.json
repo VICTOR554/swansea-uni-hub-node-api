@@ -2,89 +2,89 @@
   {
     "name": "Engineering East",
     "campus_name": "Bay",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Engineering Central",
     "campus_name": "Bay",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Bay Library",
     "campus_name": "Bay",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Great Hall",
     "campus_name": "Bay",
-    "available_to_booking": false
+    "availableToBooking": false
 
   },
   {
     "name": "School of Management",
     "campus_name": "Bay",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Students’ Union",
     "campus_name": "Bay",
-    "available_to_booking": false
+    "availableToBooking": false
   },
   {
     "name": "Tower Information Centre",
     "campus_name": "Bay",
-    "available_to_booking": false
+    "availableToBooking": false
 
   },
   {
     "name": "MyUniHub",
     "campus_name": "Bay",
-    "available_to_booking": false
+    "availableToBooking": false
 
   },
   {
     "name": "Computational Foundry",
     "campus_name": "Bay",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Faraday Building",
     "campus_name": "Singleton",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Faraday Tower",
     "campus_name": "Singleton",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Grove Building Extension",
     "campus_name": "Singleton",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Grove Building",
     "campus_name": "Singleton",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Wallace Building",
     "campus_name": "Singleton",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "Students’ Union",
     "campus_name": "Singleton",
-    "available_to_booking": false
+    "availableToBooking": false
   },
   {
     "name": "Singleton Park Library",
     "campus_name": "Singleton",
-    "available_to_booking": true
+    "availableToBooking": true
   },
   {
     "name": "MyUniHub",
     "campus_name": "Singleton",
-    "available_to_booking": false
+    "availableToBooking": false
   }
 ]

@@ -6,7 +6,7 @@ const roomSchema = new Schema({
     type: String,
     required: true
   },
-  building_name: {
+  buildingName: {
     type: String,
     required: true
   }

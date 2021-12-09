@@ -11,7 +11,7 @@ const moduleSchema = new Schema({
     type: String,
     required: true
   },
-  course_code: {
+  courseCode: {
     type: String,
     required: true
   }
@@ -19,7 +19,7 @@ const moduleSchema = new Schema({
 
 moduleSchema.virtual('students', {
   localField: 'code',
-  foreignField: 'module_code',
+  foreignField: 'moduleCode',
   justOne: false
 })
 

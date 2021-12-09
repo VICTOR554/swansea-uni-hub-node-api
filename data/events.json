@@ -9,12 +9,12 @@
     "price": 0,
     "location": "Via Zoom, Online",
     "date": {
-      "start_date": 1633654800,
-      "end_date": 1639749600
+      "startDate": 1633654800,
+      "endDate": 1639749600
     },
     "time": { 
-      "start_time": 1639746000,
-      "end_time": 1639749600
+      "startTime": 1639746000,
+      "endTime": 1639749600
     }
   },
   {
@@ -27,12 +27,12 @@
     "price": 5,
     "location": "Sin City , Swansea",
     "date": {
-      "start_date": 1639011600,
-      "end_date": 1639191600
+      "startDate": 1639011600,
+      "endDate": 1639191600
     },
     "time": {
-      "start_time": 1639087200,
-      "end_time": 1639105200
+      "startTime": 1639087200,
+      "endTime": 1639105200
     }
   },
   {
@@ -45,12 +45,12 @@
     "price": 2.5,
     "location": "Fiction, Little Wind St., Swansea",
     "date": {
-      "start_date": 1639098000,
-      "end_date": 1639278000
+      "startDate": 1639098000,
+      "endDate": 1639278000
     },
     "time": {
-      "start_time": 1639087200,
-      "end_time": 1639105200
+      "startTime": 1639087200,
+      "endTime": 1639105200
     }
   },
   {
@@ -63,12 +63,12 @@
     "price": 1,
     "location": "Fiction, Little Wind St., Swansea",
     "date": {
-      "start_date": 1639357200,
-      "end_date": 1639537200
+      "startDate": 1639357200,
+      "endDate": 1639537200
     },
     "time": {
-      "start_time": 1639432800,
-      "end_time": 1639450800
+      "startTime": 1639432800,
+      "endTime": 1639450800
     }
   },
   {
@@ -81,12 +81,12 @@
     "price": 1,
     "location": "Via Zoom, Online, Swansea",
     "date": {
-      "start_date": 1638406800,
-      "end_date": 1638788400
+      "startDate": 1638406800,
+      "endDate": 1638788400
     },
     "time": {
-      "start_time": 1638784800,
-      "end_time": 1638788400
+      "startTime": 1638784800,
+      "endTime": 1638788400
     }
   }
 ]

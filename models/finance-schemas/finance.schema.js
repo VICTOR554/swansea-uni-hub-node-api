@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const financeSchema = new Schema({
-  student_number: {
+  studentNumber: {
     type: Number,
     required: true
   },

@@ -11,16 +11,16 @@ const lecturerSchema = new Schema({
     required: true,
     unique: true
   },
-  module_code: {
+  moduleCode: {
     type: String,
     required: true
   },
   officeHour: [
     {
-      start_date_time: {
+      startDateTime: {
         type: Number
       },
-      end_date_time: {
+      endDateTime: {
         type: Number
       }
     }

@@ -2,21 +2,21 @@
   {
     "code": "CSC313 & CSCM13",
     "name": "High Integrity Systems/Critical Systems",
-    "course_code": "MSFS2FX"
+    "courseCode": "MSFS2FX"
   },
   {
     "code": "CSC348 & CSCM48",
     "name": "Web Application Development",
-    "course_code": "MSFS2FX"
+    "courseCode": "MSFS2FX"
   },
   {
     "code": "CSCM08",
     "name": "Information Security Management",
-    "course_code": "MSFS2FX"
+    "courseCode": "MSFS2FX"
   },
   {
     "code": "CSM20",
     "name": "MSc Project",
-    "course_code": "MSFS2FX"
+    "courseCode": "MSFS2FX"
   }
 ]

@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const sessionSchema = new Schema({
-  start_date: {
+  startDate: {
     type: Number,
     unique: true
   },
-  number_of_weeks: {
+  numberOfWeeks: {
     type: Number,
     required: true
   }

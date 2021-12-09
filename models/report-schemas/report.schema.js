@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const reportSchema = new Schema({
-  student_number: {
+  studentNumber: {
     type: Number,
     required: true
   },
@@ -14,7 +14,7 @@ const reportSchema = new Schema({
     type: String,
     required: true
   },
-  created_date_time: {
+  createdDateTime: {
     type: Number,
     required: true
   },

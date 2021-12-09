@@ -1,6 +1,6 @@
 [
   {
-    "student_number": 1111,
+    "studentNumber": 1111,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -13,7 +13,7 @@
     }
   },
   {
-    "student_number": 1112,
+    "studentNumber": 1112,
     "tuition": {
       "initial": 16000,
       "payment": [2000, 4000, 8000],
@@ -26,7 +26,7 @@
     }
   },
   {
-    "student_number": 1113,
+    "studentNumber": 1113,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -39,7 +39,7 @@
     }
   },
   {
-    "student_number": 1114,
+    "studentNumber": 1114,
     "tuition": {
       "initial": 19000,
       "payment": [2000, 4000, 10000],
@@ -52,7 +52,7 @@
     }
   },
   {
-    "student_number": 1115,
+    "studentNumber": 1115,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -65,7 +65,7 @@
     }
   },
   {
-    "student_number": 1116,
+    "studentNumber": 1116,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -78,7 +78,7 @@
     }
   },
   {
-    "student_number": 1117,
+    "studentNumber": 1117,
     "tuition": {
       "initial": 7000,
       "payment": [2000, 4000],
@@ -91,7 +91,7 @@
     }
   },
   {
-    "student_number": 1118,
+    "studentNumber": 1118,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -104,7 +104,7 @@
     }
   },
   {
-    "student_number": 1119,
+    "studentNumber": 1119,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 8000],
@@ -117,7 +117,7 @@
     }
   },
   {
-    "student_number": 11110,
+    "studentNumber": 11110,
     "tuition": {
       "initial": 19000,
       "payment": [2000, 4000, 12000],
@@ -131,7 +131,7 @@
   },
 
   {
-    "student_number": 11111,
+    "studentNumber": 11111,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -144,7 +144,7 @@
     }
   },
   {
-    "student_number": 11112,
+    "studentNumber": 11112,
     "tuition": {
       "initial": 16000,
       "payment": [2000, 4000, 8000],
@@ -157,7 +157,7 @@
     }
   },
   {
-    "student_number": 11113,
+    "studentNumber": 11113,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -170,7 +170,7 @@
     }
   },
   {
-    "student_number": 11114,
+    "studentNumber": 11114,
     "tuition": {
       "initial": 19000,
       "payment": [2000, 4000, 10000],
@@ -183,7 +183,7 @@
     }
   },
   {
-    "student_number": 11115,
+    "studentNumber": 11115,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -196,7 +196,7 @@
     }
   },
   {
-    "student_number": 11116,
+    "studentNumber": 11116,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -209,7 +209,7 @@
     }
   },
   {
-    "student_number": 11117,
+    "studentNumber": 11117,
     "tuition": {
       "initial": 7000,
       "payment": [2000, 4000],
@@ -222,7 +222,7 @@
     }
   },
   {
-    "student_number": 11118,
+    "studentNumber": 11118,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -235,7 +235,7 @@
     }
   },
   {
-    "student_number": 11119,
+    "studentNumber": 11119,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 8000],
@@ -248,7 +248,7 @@
     }
   },
   {
-    "student_number": 11120,
+    "studentNumber": 11120,
     "tuition": {
       "initial": 19000,
       "payment": [2000, 4000, 12000],
@@ -262,7 +262,7 @@
   },
 
   {
-    "student_number": 11121,
+    "studentNumber": 11121,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -275,7 +275,7 @@
     }
   },
   {
-    "student_number": 11122,
+    "studentNumber": 11122,
     "tuition": {
       "initial": 16000,
       "payment": [2000, 4000, 8000],
@@ -288,7 +288,7 @@
     }
   },
   {
-    "student_number": 11123,
+    "studentNumber": 11123,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -301,7 +301,7 @@
     }
   },
   {
-    "student_number": 11124,
+    "studentNumber": 11124,
     "tuition": {
       "initial": 19000,
       "payment": [2000, 4000, 10000],
@@ -314,7 +314,7 @@
     }
   },
   {
-    "student_number": 11125,
+    "studentNumber": 11125,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -327,7 +327,7 @@
     }
   },
   {
-    "student_number": 11126,
+    "studentNumber": 11126,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -340,7 +340,7 @@
     }
   },
   {
-    "student_number": 11127,
+    "studentNumber": 11127,
     "tuition": {
       "initial": 7000,
       "payment": [2000, 4000],
@@ -353,7 +353,7 @@
     }
   },
   {
-    "student_number": 11128,
+    "studentNumber": 11128,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 4000],
@@ -366,7 +366,7 @@
     }
   },
   {
-    "student_number": 11129,
+    "studentNumber": 11129,
     "tuition": {
       "initial": 14000,
       "payment": [2000, 8000],
@@ -379,7 +379,7 @@
     }
   },
   {
-    "student_number": 11130,
+    "studentNumber": 11130,
     "tuition": {
       "initial": 19000,
       "payment": [2000, 4000, 12000],
