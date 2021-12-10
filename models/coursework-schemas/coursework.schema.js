@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const courseWorkSchema = new Schema({
+const courseworkSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -20,4 +20,4 @@ const courseWorkSchema = new Schema({
   }
 });
 
-module.exports = courseWorkSchema;
+module.exports = courseworkSchema;
