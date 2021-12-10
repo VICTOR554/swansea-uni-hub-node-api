@@ -9,14 +9,14 @@ const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
 require('dotenv').config()
-const connectDB = require('./config/db');
+// const connectDB = require('./config/db');
 
 
 //Load config vars
 dotenv.config({ path: './config/config.env'});
 
 // Connect to Database
-connectDB(); 
+// connectDB(); 
 
 
 
