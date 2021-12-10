@@ -1,11 +1,16 @@
 const mongoose = require('mongoose')
-const dotenv = require('dotenv');
-
+// const dotenv = require('dotenv');
+require('dotenv').config()
 // Connect to Database
-const user = mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  });
+
+  const user = mongoose.createConnection(process.env.MONGO_URI.toString(),
+    {
+        dbName: process.env.DBNAME,
+        useNewUrlParser: true,
+        user: process.env.DBUSER,
+        pass: process.env.DBPASSWORD
+        
+    });
 
 const Activity = user.model('Activity', require('./activity-schemas/activity.schema'), 'activities');
 const Book = user.model('Book', require('./book-schemas/book.schema'), 'books');

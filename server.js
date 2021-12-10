@@ -8,6 +8,7 @@ const admin = require('./apps/admin/admin')
 const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
+require('dotenv').config()
 const connectDB = require('./config/db');
 
 
