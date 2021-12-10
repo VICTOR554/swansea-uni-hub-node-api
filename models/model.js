@@ -9,7 +9,7 @@ dotenv.config({ path: './config/config.env' });
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // });
-const user = mongoose.createConnection(process.env.URI,
+const user = mongoose.createConnection(process.env.MONGO_URI,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
