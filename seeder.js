@@ -36,7 +36,7 @@ const tasks = JSON.parse(fs.readFileSync(`${__dirname}/data/tasks.json`, 'utf-8'
 const terms = JSON.parse(fs.readFileSync(`${__dirname}/data/terms.json`, 'utf-8'));
 
 
-//Import into DB
+//Import into DB 
 const importData = async () => {
   try {
     await Model.Activity.create(activities);
