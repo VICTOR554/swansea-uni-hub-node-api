@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './config/config.env' });
+require('dotenv').config();
 const mongoose = require('mongoose');
 // const dotenv = require('dotenv');
 // dotenv.config({ path: './config/config.env' });
@@ -18,7 +18,7 @@ const user = mongoose.createConnection(process.env.MONGO_URI.toString(),
 
 const Activity = user.model('Activity', require('./activity-schemas/activity.schema'), 'activities');
 const Book = user.model('Book', require('./book-schemas/book.schema'), 'books');
-const Booking = user.model('Booking', require('./booking-schemas/booking.schema'), 'booking');
+const Booking = user.model('Booking', require('./booking-schemas/booking.schema'), 'bookings');
 const Building = user.model('Building', require('./building-schemas/building.schema'), 'buildings');
 const Campus = user.model('Campus', require('./campus-schemas/campus.schema'), 'campuses');
 const Course = user.model('Course', require('./course-schemas/course.schema'), 'courses');
@@ -29,7 +29,7 @@ const Lecturer = user.model('Lecturer', require('./lecturer-schemas/lecturer.sch
 const Location = user.model('Location', require('./location-schemas/location.schema'), 'locations');
 const Module = user.model('Module', require('./module-schemas/module.schema'), 'modules');
 const Note = user.model('Note', require('./note-schemas/note.schema'), 'notes');
-const Report = user.model('Report', require('./report-schemas/report.schema'));
+const Report = user.model('Report', require('./report-schemas/report.schema'), 'reports');
 const Room = user.model('Room', require('./room-schemas/room.schema'), 'rooms');
 const Session = user.model('Session', require('./session-schemas/session.schema'), 'sessions');
 const Society = user.model('Society', require('./society-schemas/society.schema'), 'socities');
