@@ -21,7 +21,7 @@ const books = JSON.parse(fs.readFileSync(`${__dirname}/data/books.json`, 'utf-8'
 const buildings = JSON.parse(fs.readFileSync(`${__dirname}/data/buildings.json`, 'utf-8'));
 const campus = JSON.parse(fs.readFileSync(`${__dirname}/data/campus.json`, 'utf-8'));
 const courses = JSON.parse(fs.readFileSync(`${__dirname}/data/courses.json`, 'utf-8'));
-const courseworks = JSON.parse(fs.readFileSync(`${__dirname}/data/courseworks.json`, 'utf-8'));
+const coursework = JSON.parse(fs.readFileSync(`${__dirname}/data/courseworks.json`, 'utf-8'));
 const events = JSON.parse(fs.readFileSync(`${__dirname}/data/events.json`, 'utf-8'));
 const finances = JSON.parse(fs.readFileSync(`${__dirname}/data/finances.json`, 'utf-8'));
 const lecturers = JSON.parse(fs.readFileSync(`${__dirname}/data/lecturers.json`, 'utf-8'));
@@ -44,7 +44,7 @@ const importData = async () => {
     await Model.Building.create(buildings);
     await Model.Campus.create(campus);
     await Model.Course.create(courses);
-    await Model.Coursework.create(courseworks);
+    await Model.Coursework.create(coursework);
     await Model.Event.create(events);
     await Model.Finance.create(finances);
     await Model.Lecturer.create(lecturers);
