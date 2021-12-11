@@ -8,7 +8,7 @@ const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
 // const connectDB = require('./config/db');
-require('dotenv').config({ path: '../config/config.env' })
+require('dotenv').config({ path: '.env' })
 
 
 //Load config vars

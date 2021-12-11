@@ -4,10 +4,7 @@ const handlers = require('./week.handlers');
 const model = require('../../../models/model');
 const advancedResults = require('../../../middleware/advancedresults');
 
-router.get('/'/*, advancedResults(model.Week)*/, handlers.getAllWeeks)
-// router.get('/', function(req, res){ 
-//     res.send('hi');
-// })
+router.get('/', advancedResults(model.Week), handlers.getAllWeeks)
 router.get('/:id', handlers.getOneWeek)
 router.delete('/delete/:id', handlers.deleteWeek)
 
