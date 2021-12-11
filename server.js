@@ -8,7 +8,7 @@ const admin = require('./apps/admin/admin')
 const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
-// const connectDB = require('./config/db');
+const connectDB = require('./config/db');
 require('dotenv').config({ path: '.env' });
 
 
@@ -26,6 +26,7 @@ const app = express();
 //Body parser
 app.use(express.json());
 
+
 //cookie parser
 app.use(cookieParser());
 
@@ -36,13 +37,15 @@ if(process.env.NODE_ENV === 'development') {
 }
  
 //Mount routers
+console.log("hey server.js");
+
 app.use('/admin', admin);
 app.use('/auth', auth);
 app.use('/student', protect, student);
 
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT;
 
 
 const server = app.listen(PORT,

@@ -3,17 +3,20 @@ const mongoose = require('mongoose');
 
 // //Load config vars
 // dotenv.config({ path: '.env' });
+const connectDB = require('../config/db');
+
 require('dotenv').config({ path: '.env' })
 
 
-mongoose.createConnection(process.env.MONGO_URI,
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
+// mongoose.createConnection(process.env.MONGO_URI,
+//     {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true
         
-    },
-    console.log(process.env.MONGO_URI)
-    );
+//     },
+//     console.log(process.env.MONGO_URI)
+//     );
+connectDB();
 
 
     const db = mongoose.connection;

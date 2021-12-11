@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 // Routes
+console.log("hey admin route");
+
 const activity = require('./activity/activity');
 const book = require('./book/book');
 const booking = require('./booking/booking');
