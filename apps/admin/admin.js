@@ -31,7 +31,7 @@ router.use('/bookings', booking);
 router.use('/buildings', building);
 router.use('/campuses', campus);
 router.use('/courses', course);
-router.use('/courseworks', coursework);
+router.use('/coursework', coursework);
 router.use('/events', event);
 router.use('/finances', finance);
 router.use('/lecturers', lecturer);

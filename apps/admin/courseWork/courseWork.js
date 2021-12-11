@@ -6,9 +6,7 @@ const advancedResults = require('../../../middleware/advancedresults');
 
 router.get('/', advancedResults(model.Coursework), handlers.getAllCourseworks)
 router.get('/:id', handlers.getOneCoursework)
-router.post('/new', handlers.createCourseworks)
-router.put('/update/:id', handlers.updateCoursework)
-router.delete('/delete/:id', handlers.deleteCoursework)
 
 
-module.exports = router;
+
+module.exports = router; 
