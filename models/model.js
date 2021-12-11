@@ -3,21 +3,20 @@ const mongoose = require('mongoose');
 
 // //Load config vars
 // dotenv.config({ path: '.env' });
-// require('dotenv').config({ path: '.env' })
-const connectDB = require('../config/db');
-require('dotenv').config({ path: './/config/config.env' });
-
-// mongoose.connect(process.env.MONGO_URI,
-//     {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true
-//     });
+require('dotenv').config({ path: '.env' })
 
 
-// Connect to Database
-connectDB();
+mongoose.createConnection(process.env.MONGO_URI.toString(),
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+        
+    },
+    console.log(process.env.MONGO_URI)
+    );
 
-    var db = mongoose.connection;
+
+    const db = mongoose.connection;
 
 const Activity = db.model('Activity', require('./activity-schemas/activity.schema'), 'activities');
 const Book = db.model('Book', require('./book-schemas/book.schema'), 'books');
