@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 
-//Load config vars
-dotenv.config({ path: '.env' });
+// //Load config vars
+// dotenv.config({ path: '.env' });
+// require('dotenv').config({ path: '.env' })
+const connectDB = require('../config/db');
+require('dotenv').config({ path: './/config/config.env' });
 
 // mongoose.connect(process.env.MONGO_URI,
 //     {
@@ -10,13 +13,9 @@ dotenv.config({ path: '.env' });
 //         useUnifiedTopology: true
 //     });
 
-   // Connect to Database
-mongoose.connect(process.env.MONGO_URI.toString(), {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
 
- 
+// Connect to Database
+connectDB();
 
     var db = mongoose.connection;
 
