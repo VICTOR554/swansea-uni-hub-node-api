@@ -8,15 +8,15 @@ const admin = require('./apps/admin/admin')
 const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
-// const connectDB = require('./config/db');
-require('dotenv').config({ path: '.env' });
+const connectDB = require('./config/db');
+// require('dotenv').config({ path: '.env' });
 
 
 //Load config vars
-// dotenv.config({ path: './config/config.env'});
+dotenv.config({ path: '.env'});
 
 // Connect to Database
-// connectDB();
+connectDB();
 
 
 
