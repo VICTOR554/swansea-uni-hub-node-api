@@ -9,7 +9,7 @@ const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
 // const connectDB = require('./config/db');
-// require('dotenv').config({ path: '.env' });
+require('dotenv').config({ path: '.env' });
 
 
 //Load config vars
@@ -43,6 +43,7 @@ app.use('/student', protect, student);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 6000;
+
 
 const server = app.listen(PORT,
     console.log(`Server runnin in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold)

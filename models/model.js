@@ -1,25 +1,20 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 
 // //Load config vars
 // dotenv.config({ path: '.env' });
-// require('dotenv').config({ path: '.env' })
-const connectDB = require('../config/db');
-//Load config vars
-dotenv.config({ path: '.env'});
+require('dotenv').config({ path: '.env' })
 
-// Connect to Database
-connectDB();
 
-// mongoose.createConnection("mongodb+srv://brad123:brad123@swansea-uni-hub.b6wv1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-//     {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true
+mongoose.createConnection(process.env.MONGO_URI,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
         
-//     },
-//     console.log(process.env.MONGO_URI)
-//     );
-console.log(process.env.MONGO_URI)
+    },
+    console.log(process.env.MONGO_URI)
+    );
+
 
     const db = mongoose.connection;
 
