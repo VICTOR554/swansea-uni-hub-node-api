@@ -7,6 +7,7 @@ const admin = require('./apps/admin/admin')
 const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
+const cors = require('cors');
 // const connectDB = require('./config/db');
 require('dotenv').config({ path: '.env' })
 
@@ -34,7 +35,9 @@ app.use(cookieParser());
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
- 
+ // Enable CORS
+app.use(cors());
+
 //Mount routers
 console.log("hey server.js");
 
