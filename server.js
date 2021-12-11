@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 // const dotenv = require('dotenv');
 const morgan = require('morgan');
@@ -9,14 +8,15 @@ const admin = require('./apps/admin/admin')
 const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
 const {protect} = require('./middleware/auth')
-// const connectDB = require('./config/db');
+// const connectDB = require('./models/model');
+require('dotenv').config({ path: '.env' });
 
 
 //Load config vars
 // dotenv.config({ path: './config/config.env'});
 
 // Connect to Database
-// connectDB(); 
+// connectDB();
 
 
 
