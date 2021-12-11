@@ -2,35 +2,13 @@ const ErrorResponse = require('../../../utils/errorResponse');
 const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
 
-//@des      get all weeks
-//@route    GET /weeks
-//@access   Admin
-// const getAllWeeks = asyncHandler(async (req, res, next) => {
-//   console.log("heyyyy");
-//   // res.status(200).json(res.advancedResults);
-//   console.log("heyyyy2");
-
-//   const week = await model.Week.find();
-
-
-
-//   res.status(200).json({
-//     success: true,
-//     data: week
-//   });
-// });
-
-const getAllWeeks = function(req, res){
-  model.Week.find()
-.then(d => {
-  res.send(d);
-})
-.catch(e => {
-  console.log(e);
-  res.send(e);
+// @des      get all weeks
+// @route    GET /weeks
+// @access   Admin
+const getAllWeeks = asyncHandler(async (req, res, next) => {
+  res.status(200).json(res.advancedResults);
 });
 
-}
 
 //@des      get one week 
 //@route    GET /weeks/:id

@@ -1,21 +1,8 @@
 const mongoose = require('mongoose');
-// const dotenv = require('dotenv');
-
-// //Load config vars
-// dotenv.config({ path: '.env' });
 const connectDB = require('../config/db');
-
 require('dotenv').config({ path: '.env' })
 
-
-// mongoose.createConnection(process.env.MONGO_URI,
-//     {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true
-        
-//     },
-//     console.log(process.env.MONGO_URI)
-//     );
+//Connect to the database
 connectDB();
 
 
@@ -27,7 +14,7 @@ const Booking = db.model('Booking', require('./booking-schemas/booking.schema'),
 const Building = db.model('Building', require('./building-schemas/building.schema'), 'buildings');
 const Campus = db.model('Campus', require('./campus-schemas/campus.schema'), 'campuses');
 const Course = db.model('Course', require('./course-schemas/course.schema'), 'courses');
-const Coursework = db.model('Coursework', require('./coursework-schemas/coursework.schema'), 'coursework');
+const Coursework = db.model('Coursework', require('./coursework-schemas/coursework.schema'), 'courseworks');
 const Event = db.model('Event', require('./event-schemas/event.schema'), 'events');
 const Finance = db.model('Finance', require('./finance-schemas/finance.schema'), 'finances');
 const Lecturer = db.model('Lecturer', require('./lecturer-schemas/lecturer.schema'), 'lecturers');

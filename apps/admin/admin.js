@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 // Routes
-console.log("hey admin route");
-
 const activity = require('./activity/activity');
 const book = require('./book/book');
 const booking = require('./booking/booking');
@@ -27,25 +25,25 @@ const week = require('./week/week');
 
 
 // Mounting the Routes and how it is displayed in the url
-router.use('/activity', activity);
-router.use('/book', book);
-router.use('/booking', booking);
-router.use('/building', building);
-router.use('/campus', campus);
-router.use('/course', course);
-router.use('/coursework', coursework);
-router.use('/event', event);
-router.use('/finance', finance);
-router.use('/lecturer', lecturer);
-router.use('/location', location);
+router.use('/activities', activity);
+router.use('/books', book);
+router.use('/bookings', booking);
+router.use('/buildings', building);
+router.use('/campuses', campus);
+router.use('/courses', course);
+router.use('/courseworks', coursework);
+router.use('/events', event);
+router.use('/finances', finance);
+router.use('/lecturers', lecturer);
+router.use('/locations', location);
 router.use('/modules', modules);
-router.use('/report', report);
-router.use('/room', room);
-router.use('/session', session);
-router.use('/society', society);
-router.use('/sport', sport);
-router.use('/student', student);
-router.use('/term', term);
-router.use('/week', week);
+router.use('/reports', report);
+router.use('/rooms', room);
+router.use('/sessions', session);
+router.use('/societies', society);
+router.use('/sports', sport);
+router.use('/students', student);
+router.use('/terms', term);
+router.use('/weeks', week);
 
 module.exports = router;
