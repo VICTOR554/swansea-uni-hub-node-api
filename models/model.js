@@ -11,7 +11,7 @@ dotenv.config({ path: '.env' });
 //     });
 
    // Connect to Database
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGO_URI.toString(), {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
