@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 require('dotenv').config({ path: '.env' })
 
 
-mongoose.createConnection(process.env.MONGO_URI.toString(),
+mongoose.createConnection("mongodb+srv://brad123:brad123@swansea-uni-hub.b6wv1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
