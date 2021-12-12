@@ -1,29 +1,32 @@
 [
   {
-    "studentNumber": 1113,
-    "moduleCode": "CSC313",
     "title": "masters",
-    "dueDateTime_time": 1638694800,
+    "moduleCode": "CSC313",
     "createdDateTime": 1638608400,
+    "description": "sds",
+    "dueDateTime": 1638694800,
     "flagged": "true",
-    "completed": "false"
+    "completed": "false",
+    "studentNumber": 1113
   },
   {
-    "studentNumber": 1112,
-    "moduleCode": "CSC313",
     "title": "masters",
-    "dueDateTime_time": 1638694800,
+    "moduleCode": "CSC313",
     "createdDateTime": 1638349200,
+    "description": "sds",
+    "dueDateTime": 1638694800,
     "flagged": "true",
-    "completed": "false"
+    "completed": "false",
+    "studentNumber": 1112
   },
   {
-    "studentNumber": 1111,
-    "moduleCode": "CSC313",
     "title": "masters",
-    "dueDateTime_time": 1638694800,
+    "moduleCode": "CSC313",
     "createdDateTime": 1638435600,
+    "description": "sds",
+    "dueDateTime": 1638694800,
     "flagged": "true",
-    "completed": "false"
+    "completed": "false",
+    "studentNumber": 1111
   }
 ]

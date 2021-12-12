@@ -6,7 +6,7 @@ const advancedResults = require('../../../middleware/advancedresults');
 
 
 router.get('/', advancedResults(model.Module), handlers.getAllModules)
-router.get('/:id', handlers.getOneModule)
+router.get('/:code', handlers.getOneModule)
 
 
 

@@ -13,10 +13,10 @@ const getAllModules = asyncHandler(async (req, res, next) => {
 //@route    GET /modules/:id
 //@access   Student
 const getOneModule = asyncHandler(async (req, res, next) => {
-  const module = await model.Module.findById(req.params.id);
+  const module = await model.Module.findOne({code: req.params.code });
 
   if (!module) {
-    return next(new ErrorResponse(`Module is not in the database with the id of ${req.params.id}`, 404));
+    return next(new ErrorResponse(`Module is not in the database with the id of ${req.params.code}`, 404));
   }
 
   res.status(200).json({

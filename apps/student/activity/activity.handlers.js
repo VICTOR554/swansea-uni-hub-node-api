@@ -50,17 +50,19 @@ const getModuleActivities = async function(
 };
 
 const getActivities = async function(req, res, next) {
-  date_time = req.params.startDateTime;
+  dateTime = req.params.startDateTime;
   startDateTime = moment
-    .unix(date_time)
+    .unix(dateTime)
     .startOf("day")
     .format("X");
   console.log(startDateTime);
   endDateTime = moment
-    .unix(date_time)
+    .unix(dateTime)
     .endOf("day")
     .format("X");
   console.log(endDateTime);
+
+  console.log("modules", req.moduleCode);
   
   let activities = [];
 

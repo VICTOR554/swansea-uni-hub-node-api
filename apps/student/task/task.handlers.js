@@ -30,7 +30,7 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.create(req.body);
+  const task = await model.Task.create(req.body, req.params.studentNumber);
 
   res.status(201).json({
     success: true,

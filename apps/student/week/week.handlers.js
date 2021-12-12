@@ -7,50 +7,32 @@ const moment = require('moment')
 //@des      get all weeks
 //@route    GET /weeks
 //@access   Student
-const getAllWeeks = asyncHandler(async (req, res, next) => {
-  const week = await model.Week.find();
-
-  res.status(200).json({
-    success: true,
-    count: week.length,
-    data: week
-  });
+const getAllWeeks = function(req, res){
+  model.Week.find().sort({number: 1})
+.then(d => {
+  res.send(d);
+})
+.catch(e => {
+  console.log(e);
+  res.send(e);
 });
 
-//@des      get one week
-//@route    GET /weeks/:id
-//@access   Student
-const getOneWeek = asyncHandler(async (req, res, next) => {
-  const week = await model.Week.findById(req.params.id);
+}
 
-  if (!week) {
-    return next(new ErrorResponse(`Week is not in the database with the id of ${req.params.id}`, 404));
-  }
+const getOneWeekByNumber = function(req, res){
+  model.Week.findOne({ number: req.params.number })
+    .then(d => {
+      res.send(d);
+    })
+    .catch(e => {
+      console.log(e);
+      res.send(e);
+    });
+}
 
-  res.status(200).json({
-    success: true,
-    data: week
-  });
-});
-
-const getOneWeekByNumber = asyncHandler(async (req, res, next) => {
-
-  const week = await model.Week.findOne({ number: req.params.number });
-
-  if (!week) {
-    return next(new ErrorResponse(`Week is not in the database with the number of ${req.params.number}`, 404));
-  }
-
-  res.status(200).json({
-    success: true,
-    data: week
-  });
-});
-
-const getOneWeekByDate = asyncHandler(async (req, res) => {
+const getOneWeekByDate = function(req, res){
   date = req.params.date
-  console.log('date', date)
-  
+  console.log(date, 'loool')
   let startDate = moment.unix(date).startOf('day').format('X')
   console.log(startDate)
 
@@ -59,7 +41,7 @@ const getOneWeekByDate = asyncHandler(async (req, res) => {
 
   let found = false
   let foundWeek
-  const week = await model.Week.find()
+  model.Week.find()
   .then(d => {
       for(i=0;i<d.length;i++){
           dates = d[i].dates
@@ -78,20 +60,20 @@ const getOneWeekByDate = asyncHandler(async (req, res) => {
               i = d.length
           }
       }
-      if (found==false) {
-        return next(new ErrorResponse(`Could not find week with the date of ${req.params.date}`, 404));
+      if(found==false){
+      res.send(`couldn't find a week, check the date you input`)
       }
   })
-
-  res.status(200).json({
-    success: true,
-    data: week
+  .catch(e => {
+      console.log(e);
+      res.send(e);
   });
-});
+}
+
 
 module.exports = {
   getAllWeeks,
-  getOneWeek,
+  // getOneWeek,
   getOneWeekByNumber,
   getOneWeekByDate
 };

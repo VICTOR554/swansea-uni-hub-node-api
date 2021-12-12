@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const taskSchema = new Schema({
-  studentNumber: {
-    type: Number,
-    required: true
-  },
   title: {
     type: String,
     required: true
@@ -33,7 +29,11 @@ const taskSchema = new Schema({
     type: Boolean,
     required: true,
     default: false
-  }
+  },
+  studentNumber: {
+    type: Number,
+    required: true
+  },
 }
 );
 

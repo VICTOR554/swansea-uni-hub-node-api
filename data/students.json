@@ -18,7 +18,7 @@
       "endDateTime": "12/11/2024"
     },
     "courseCode": "MSFS2FX",
-    "moduleCode": ["CSCM13"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -142,7 +142,7 @@
       "endDateTime": "12/11/2010"
     },
     "courseCode": "MSC0001",
-    "moduleCode": ["CSCM13", "CSCM48"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -266,7 +266,7 @@
       "endDateTime": "12/11/2008"
     },
     "courseCode": "MSM0002",
-    "moduleCode": ["CSCM08", "CSCM30"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -390,7 +390,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -514,7 +514,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM30"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -638,7 +638,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -762,7 +763,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -886,7 +888,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -1010,7 +1013,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -1134,7 +1138,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -1259,7 +1263,7 @@
       "endDateTime": "12/11/2024"
     },
     "courseCode": "MSFS2FX",
-    "moduleCode": ["CSCM13"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -1383,7 +1387,7 @@
       "endDateTime": "12/11/2010"
     },
     "courseCode": "MSC0001",
-    "moduleCode": ["CSCM13", "CSCM48"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -1507,7 +1511,8 @@
       "endDateTime": "12/11/2008"
     },
     "courseCode": "MSM0002",
-    "moduleCode": ["CSCM08", "CSCM30"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -1631,7 +1636,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -1755,7 +1761,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM30"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -1879,7 +1886,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -2003,7 +2011,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -2127,7 +2136,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -2251,7 +2261,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -2375,7 +2386,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -2500,7 +2512,7 @@
       "endDateTime": "12/11/2024"
     },
     "courseCode": "MSFS2FX",
-    "moduleCode": ["CSCM13"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -2624,7 +2636,7 @@
       "endDateTime": "12/11/2010"
     },
     "courseCode": "MSC0001",
-    "moduleCode": ["CSCM13", "CSCM48"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -2748,7 +2760,7 @@
       "endDateTime": "12/11/2008"
     },
     "courseCode": "MSM0002",
-    "moduleCode": ["CSCM08", "CSCM30"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -2872,7 +2884,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -2996,7 +3008,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM30"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -3120,7 +3132,8 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
+
     "mainMenu": {
       "default": [
         {
@@ -3244,7 +3257,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -3368,7 +3381,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -3492,7 +3505,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
@@ -3616,7 +3629,7 @@
       "endDateTime": "12/11/2022"
     },
     "courseCode": "BSM0001",
-    "moduleCode": ["CSCM08"],
+    "moduleCode": ["CSCM13", "CSM20", "CSCM08", "CSC348&CSCM48", "CSC313&CSCM13"],
     "mainMenu": {
       "default": [
         {
