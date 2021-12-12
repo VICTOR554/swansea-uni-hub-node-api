@@ -1,6 +1,6 @@
 const ErrorResponse = require('../utils/errorResponse');
 
-const advancedResults = (model) => async (req, res, next) => {
+const advancedResults = (model, populate) => async (req, res, next) => {
     let query;
 
     // copy req.query
@@ -33,9 +33,11 @@ const advancedResults = (model) => async (req, res, next) => {
       const sortBy = req.query.sort.split(',').join(' ');
       query = query.sort(sortBy);
     }
-    
+  
+    if (populate) {
+      query = query.populate(populate);
+    }
    
-
     //Executing query
     const results = await query;
 

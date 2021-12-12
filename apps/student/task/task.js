@@ -4,7 +4,7 @@ const handlers = require('./task.handlers');
 const model = require('../../../models/model');
 const advancedResults = require('../../../middleware/advancedresults');
 
-router.get('/', advancedResults(model.Task), handlers.getAllTasks)
+router.get('/', advancedResults(model.Task, 'student'), handlers.getAllTasks)
 router.get('/:id', handlers.getOneTask)
 router.post('/new', handlers.createTasks)
 router.put('/update/:id', handlers.updateTask)

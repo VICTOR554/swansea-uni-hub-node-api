@@ -6,12 +6,12 @@ const taskSchema = new Schema({
     type: Number,
     required: true
   },
-  moduleCode: {
-    type: String
-  },
   title: {
     type: String,
     required: true
+  },
+  moduleCode: {
+    type: String
   },
   createdDateTime: {
     type: Number,
@@ -20,10 +20,6 @@ const taskSchema = new Schema({
   dueDateTime_time: {
     type: Number,
     required: true
-  },
-  description: {
-    type: String
-    //required: true
   },
   flagged: {
     type: Boolean,
@@ -35,6 +31,19 @@ const taskSchema = new Schema({
     required: true,
     default: false
   }
+},
+{
+  toJSON: { virtuals: true },
+  toObject: { virtuals: true }
+}
+);
+
+// Reverse populate with virtuals
+taskSchema.virtual('student', {
+ref: 'Student',
+localField: 'studentNumber',
+foreignField: 'number',
+justOne: false
 });
 
 module.exports = taskSchema;
