@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const colors = require('colors');
 const cookieParser = require('cookie-parser');
-const errorHandler = require('./middleware/error');
+// const errorHandler = require('./middleware/error');
 const admin = require('./apps/admin/admin')
 const auth = require('./apps/auth/auth')
 const student = require('./apps/student/student')
@@ -57,7 +57,7 @@ app.use('/admin', admin);
 app.use('/auth', auth);
 app.use('/student', protect, student);
 
-app.use(errorHandler);
+// app.use(errorHandler);
 
 const PORT = process.env.PORT;
 

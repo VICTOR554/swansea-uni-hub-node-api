@@ -1,6 +1,7 @@
 const ErrorResponse = require('../../../utils/errorResponse');
 const asyncHandler = require('../../../middleware/async');
 const model = require('../../../models/model');
+const moment = require('moment')
 
 //@des      get all tasks
 //@route    GET /tasks
@@ -8,6 +9,23 @@ const model = require('../../../models/model');
 const getAllTasks = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);
 });
+
+
+const getOverdueTask = asyncHandler(async (req, res, next) => {
+  date = moment(Date.now(), 'X')
+
+  const task = await model.Task.find({ dueDateTime: {$lt: date} }).sort( { dueDateTime: -1 } )
+
+  if (!task) {
+    return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
+  }
+
+  res.status(200).json({
+    success: true,
+    data: task
+  });
+});
+
 
 
 //@des      get one task
@@ -30,7 +48,9 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.create(req.body, req.params.studentNumber);
+  student = {student_number: req.student_number}
+
+  const task = await model.Task.create({ ...req.body, ...student })
 
   res.status(201).json({
     success: true,
@@ -61,7 +81,7 @@ const updateTask = asyncHandler(async (req, res, next) => {
 //@route    DELETE /tasks/delete/id
 //@access   Student
 const deleteTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.findByIdAndDelete(req.params.id, studentNumber);
+  const task = await model.Task.findByIdAndDelete(req.params.id);
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
@@ -75,6 +95,7 @@ const deleteTask = asyncHandler(async (req, res, next) => {
 
 module.exports = {
   getAllTasks,
+  getOverdueTask,
   getOneTask,
   createTasks,
   updateTask,

@@ -5,7 +5,8 @@ const model = require('../../../models/model');
 const advancedResults = require('../../../middleware/advancedresults');
 
 router.get('/', advancedResults(model.Task), handlers.getAllTasks)
-router.get('/:id', handlers.getOneTask)
+router.get('/overdue', handlers.getOverdueTask)
+router.get('/one/:id', handlers.getOneTask)
 router.post('/new', handlers.createTasks)
 router.put('/update/:id', handlers.updateTask)
 router.delete('/delete/:id', handlers.deleteTask)
