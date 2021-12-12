@@ -30,7 +30,7 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.create(req.description, studentNumber);
+  const task = await model.Task.create(req.body);
 
   res.status(201).json({
     success: true,
@@ -42,7 +42,7 @@ const createTasks = asyncHandler(async (req, res, next) => {
 //@route    PUT /tasks/update/id
 //@access   Student
 const updateTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.findByIdAndUpdate(req.params.id, req.description, {
+  const task = await model.Task.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true
   });
