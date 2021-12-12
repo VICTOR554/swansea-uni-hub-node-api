@@ -14,7 +14,7 @@ const getAllTasks = asyncHandler(async (req, res, next) => {
 //@route    GET /tasks/:id
 //@access   Student
 const getOneTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.findById(req.params.id);
+  const task = await model.Task.find(req.params.studentNumber, req.params.id);
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
@@ -30,7 +30,7 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.create(req.body);
+  const task = await model.Task.create(req.description, studentNumber);
 
   res.status(201).json({
     success: true,
@@ -42,7 +42,7 @@ const createTasks = asyncHandler(async (req, res, next) => {
 //@route    PUT /tasks/update/id
 //@access   Student
 const updateTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.findByIdAndUpdate(req.params.id, req.body, {
+  const task = await model.Task.findByIdAndUpdate(req.params.id, req.description, {
     new: true,
     runValidators: true
   });
@@ -61,7 +61,7 @@ const updateTask = asyncHandler(async (req, res, next) => {
 //@route    DELETE /tasks/delete/id
 //@access   Student
 const deleteTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.findByIdAndDelete(req.params.id);
+  const task = await model.Task.findByIdAndDelete(req.params.id, studentNumber);
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));

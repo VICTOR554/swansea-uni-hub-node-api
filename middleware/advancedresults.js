@@ -1,13 +1,13 @@
 const ErrorResponse = require('../utils/errorResponse');
 
-const advancedResults = (model, populate) => async (req, res, next) => {
+const advancedResults = (model, populate,) => async (req, res, next) => {
     let query;
 
     // copy req.query
     const reqQuery = { ...req.query };
   
     //Field to exclude
-    const removeFields = ['select', 'sort'];
+    const removeFields = ['select', 'sort', 'find'];
   
     //loop removeFields and exclude them from reqQuery
     removeFields.forEach(param => delete reqQuery[param]);
@@ -32,6 +32,12 @@ const advancedResults = (model, populate) => async (req, res, next) => {
     if (req.query.sort) {
       const sortBy = req.query.sort.split(',').join(' ');
       query = query.sort(sortBy);
+    }
+
+     //Sort Fields
+     if (req.query.find) {
+      const find = req.query.find.split(',').join(' ');
+      query = query.find(find);
     }
   
     if (populate) {

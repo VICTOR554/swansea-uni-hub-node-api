@@ -17,7 +17,10 @@ const taskSchema = new Schema({
     type: Number,
     required: true
   },
-  dueDateTime_time: {
+  description: {
+    type: String
+  },
+  dueDateTime: {
     type: Number,
     required: true
   },
@@ -31,19 +34,8 @@ const taskSchema = new Schema({
     required: true,
     default: false
   }
-},
-{
-  toJSON: { virtuals: true },
-  toObject: { virtuals: true }
 }
 );
 
-// Reverse populate with virtuals
-taskSchema.virtual('student', {
-ref: 'Student',
-localField: 'studentNumber',
-foreignField: 'number',
-justOne: false
-});
 
 module.exports = taskSchema;
