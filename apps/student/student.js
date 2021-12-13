@@ -17,13 +17,14 @@ const lecturer = require('./lecturer/lecturer');
 const location = require('./location/location');
 const modules = require('./module/module');
 const notification = require('./notification/notification');
-// const note = require('./note/note');
+const note = require('./note/note');
 const report = require('./report/report');
 const room = require('./room/room');
 const society = require('./society/society');
 const sport = require('./sport/sport');
 const task = require('./task/task');
 const week = require('./week/week');
+const { Note } = require('../../models/model');
 
 // Mounting the Routes and how it is displayed in the url
 router.use('/activities', activity);
@@ -39,7 +40,7 @@ router.use('/lecturers', lecturer);
 router.use('/locations', location);
 router.use('/modules', modules);
 router.use('/notifications', notification);
-// router.use('/notes', note);
+router.use('/notes', note);
 router.use('/reports', report);
 router.use('/rooms', room);
 router.use('/societies', society);

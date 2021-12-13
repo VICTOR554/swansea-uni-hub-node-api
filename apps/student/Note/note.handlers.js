@@ -9,11 +9,12 @@ const getAllNotes = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);
 });
 
+
 //@des      get one note
 //@route    GET /notes/:id
 //@access   Student
 const getOneNote = asyncHandler(async (req, res, next) => {
-  const note = await model.Note.findById(req.params.id);
+  const note = await model.Note.find({studentNumber: req.user.number,  _id: req.params.id});
 
   if (!note) {
     return next(new ErrorResponse(`Note is not in the database with the id of ${req.params.id}`, 404));
@@ -25,11 +26,14 @@ const getOneNote = asyncHandler(async (req, res, next) => {
   });
 });
 
-//@des      Create note
+//@des      Create notes
 //@route    POST /notes/new
 //@access   Student
 const createNotes = asyncHandler(async (req, res, next) => {
-  const note = await model.Note.create(req.body);
+  student = {studentNumber: req.user.number}
+
+
+  const note = await model.Note.create({...req.body, ...student})
 
   res.status(201).json({
     success: true,
