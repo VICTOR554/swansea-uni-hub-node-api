@@ -33,7 +33,7 @@
     "type": "Seminar"
   },
   {
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "lecturerName": "john",
     "startDateTime": 1639569698,
     "endDateTime": 1639576898,
@@ -41,7 +41,7 @@
     "type": "Lecture"
   },
   {
-    "moduleCode": "CSC313 & CSCM13",
+    "moduleCode": "CSC313&CSCM13",
     "lecturerName": "larry",
     "startDateTime": 1639587698,
     "endDateTime": 1639594898,

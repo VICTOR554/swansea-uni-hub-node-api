@@ -94,9 +94,8 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  student = {student_number: req.user.number}
 
-  const task = await model.Task.create({ ...req.body, ...student })
+  const task = await model.Task.create(req.body)
 
   res.status(201).json({
     success: true,

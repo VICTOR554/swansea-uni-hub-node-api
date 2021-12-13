@@ -34,6 +34,8 @@ const societies = JSON.parse(fs.readFileSync(`${__dirname}/data/societies.json`,
 const sports = JSON.parse(fs.readFileSync(`${__dirname}/data/sports.json`, 'utf-8'));
 const students = JSON.parse(fs.readFileSync(`${__dirname}/data/students.json`, 'utf-8'));
 const terms = JSON.parse(fs.readFileSync(`${__dirname}/data/terms.json`, 'utf-8'));
+const tasks = JSON.parse(fs.readFileSync(`${__dirname}/data/tasks.json`, 'utf-8'));
+
 
 
 //Import into DB 
@@ -56,6 +58,7 @@ const importData = async () => {
     await Model.Society.create(societies);
     await Model.Sport.create(sports);
     await Model.Student.create(students);
+    await Model.Task.create(tasks);
     await Model.Term.create(terms);
 
     console.log('Data Imported....'.green.inverse);
@@ -85,6 +88,7 @@ const deleteData = async () => {
     await Model.Society.deleteMany();
     await Model.Sport.deleteMany();
     await Model.Student.deleteMany();
+    await Model.Task.deleteMany();
     await Model.Term.deleteMany();
 
     console.log('Data Destroyed....'.red.inverse);

@@ -1,31 +1,31 @@
 [
   {
     "name": "Coursework 1",
-    "moduleCode": "CSC313 & CSCM13",
+    "moduleCode": "CSC313&CSCM13",
     "percentage": "40",
     "dueDateTime": 1639738800
   },
   {
     "name": "Coursework 2",
-    "moduleCode": "CSC313 & CSCM13",
+    "moduleCode": "CSC313&CSCM13",
     "percentage": "40",
     "dueDateTime": 1638874800
   },
   {
     "name": "Coursework 1a",
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "percentage": "10",
     "dueDateTime": 1636110000
   },
   {
     "name": "Coursework 1b",
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "percentage": "10",
     "dueDateTime": 1636714800
   },
   {
     "name": "Coursework 2",
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "percentage": "20",
     "dueDateTime": 1639738800
   },
