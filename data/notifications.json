@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Extension",
+        "moduleCode": "CSC348&CSCM48",
+        "description": "Extension on Course work 2",
+        "lecturerName": "Sean Walton",
+        "status": "current",
+        "createdDateTime": 1639404098
+      },
+      {
+        "title": "No class",
+        "moduleCode": "CSC313&CSCM13",
+        "description": "Class has been cancelled",
+        "lecturerName": "Anton Setzer",
+        "status": "current",
+        "createdDateTime": 1639411298
+      },
+      {
+        "title": "Report Structure",
+        "moduleCode": "CSCM08",
+        "description": "Structure of report",
+        "lecturerName": "Bertie Müller",
+        "status": "past",
+        "createdDateTime": 1639144898
+      },
+      {
+        "title": "Draft",
+        "moduleCode": "CSC348&CSCM48",
+        "description": "Dissertation Draft",
+        "lecturerName": "Michael Edwards",
+        "status": "past",
+        "createdDateTime": 1639058498
+      }
+]

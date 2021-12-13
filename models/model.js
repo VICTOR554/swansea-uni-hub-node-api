@@ -21,6 +21,7 @@ const Lecturer = db.model('Lecturer', require('./lecturer-schemas/lecturer.schem
 const Location = db.model('Location', require('./location-schemas/location.schema'), 'locations');
 const Module = db.model('Module', require('./module-schemas/module.schema'), 'modules');
 const Note = db.model('Note', require('./note-schemas/note.schema'), 'notes');
+const Notification = db.model('Note', require('./notification-schemas/notification.schema'), 'notifications');
 const Report = db.model('Report', require('./report-schemas/report.schema'), 'reports');
 const Room = db.model('Room', require('./room-schemas/room.schema'), 'rooms');
 const Session = db.model('Session', require('./session-schemas/session.schema'), 'sessions');
@@ -45,6 +46,7 @@ module.exports = {
   Location,
   Module,
   Note,
+  Notification,
   Report,
   Room,
   Session,

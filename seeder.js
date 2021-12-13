@@ -27,6 +27,7 @@ const finances = JSON.parse(fs.readFileSync(`${__dirname}/data/finances.json`, '
 const lecturers = JSON.parse(fs.readFileSync(`${__dirname}/data/lecturers.json`, 'utf-8'));
 const locations = JSON.parse(fs.readFileSync(`${__dirname}/data/locations.json`, 'utf-8'));
 const modules = JSON.parse(fs.readFileSync(`${__dirname}/data/modules.json`, 'utf-8'));
+const notifications = JSON.parse(fs.readFileSync(`${__dirname}/data/notifications.json`, 'utf-8'));
 const rooms = JSON.parse(fs.readFileSync(`${__dirname}/data/rooms.json`, 'utf-8'));
 const session = JSON.parse(fs.readFileSync(`${__dirname}/data/session.json`, 'utf-8'));
 const societies = JSON.parse(fs.readFileSync(`${__dirname}/data/societies.json`, 'utf-8'));
@@ -49,6 +50,7 @@ const importData = async () => {
     await Model.Lecturer.create(lecturers);
     await Model.Location.create(locations);
     await Model.Module.create(modules);
+    await Model.Notification.create(notifications);
     await Model.Room.create(rooms);
     await Model.Session.create(session);
     await Model.Society.create(societies);
@@ -77,6 +79,7 @@ const deleteData = async () => {
     await Model.Lecturer.deleteMany();
     await Model.Location.deleteMany();
     await Model.Module.deleteMany();
+    await Model.Notification.deleteMany();
     await Model.Room.deleteMany();
     await Model.Session.deleteMany();
     await Model.Society.deleteMany();

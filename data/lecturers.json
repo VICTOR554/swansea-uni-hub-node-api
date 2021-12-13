@@ -2,7 +2,7 @@
   {
     "name": "Anton Setzer",
     "email": "Anton@awansea.ac.uk",
-    "moduleCode": "CSC313 & CSCM13",
+    "moduleCode": "CSC313&CSCM13",
     "officeHour": [{
       "startDateTime": 1638345600,
       "endDateTime": 1638352800
@@ -12,7 +12,7 @@
   {
     "name": "Sean Walton",
     "email": "Sean@awansea.ac.uk",
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "officeHour": [{
       "startDateTime": 1638345600,
       "endDateTime": 1638352800
