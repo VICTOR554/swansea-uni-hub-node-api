@@ -5,8 +5,28 @@ const model = require('../../../models/model');
 //@des      get all notifications
 //@route    GET /notifications
 //@access   Admin
-const getAllNotification = asyncHandler(async (req, res, next) => {
-  res.status(200).json(res.advancedResults);
+const getCurrentNotifications = asyncHandler(async (req, res, next) => {
+  const notification = await model.Notification.find({status: current} );
+
+
+  res.status(200).json({
+    success: true,
+    data: notification
+  });
+});
+
+//@des      get all notifications
+//@route    GET /notifications
+//@access   Admin
+const getPastNotifications = asyncHandler(async (req, res, next) => {
+  const notification = await model.Notification.find({status: past} );
+
+
+
+  res.status(200).json({
+    success: true,
+    data: notification
+  });
 });
 
 //@des      get one notification
@@ -27,6 +47,7 @@ const getOneNotification = asyncHandler(async (req, res, next) => {
 
 
 module.exports = {
-  getAllNotification,
+  getCurrentNotifications,
+  getPastNotifications,
   getOneNotification
 };

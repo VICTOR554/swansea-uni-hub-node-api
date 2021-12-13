@@ -8,6 +8,9 @@ const model = require('../../../models/model');
 const loginStudent = asyncHandler(async (req, res, next) => {
   const { number, password } = req.body;
 
+  console.log("student number "  + req.body)
+
+
   //Validate student number and password
   if (!number || !password) {
     return next(new ErrorResponse(`Please Provide a student number and password`, 400));

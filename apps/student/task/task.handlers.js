@@ -10,11 +10,53 @@ const getAllTasks = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);
 });
 
+const getInprogressTasks = asyncHandler(async (req, res, next) => {
 
-const getOverdueTask = asyncHandler(async (req, res, next) => {
+  const task = await model.Task.find({ studentNumber: req.user.number, completed: false}).sort( { createdDateTime: -1 } )
+
+  if (!task) {
+    return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
+  }
+
+  res.status(200).json({
+    success: true,
+    data: task
+  });
+});
+
+const getFlaggedTasks = asyncHandler(async (req, res, next) => {
+
+  const task = await model.Task.find({ studentNumber: req.user.number, flagged: true}).sort( { dueDateTime: -1 } )
+
+  if (!task) {
+    return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
+  }
+
+  res.status(200).json({
+    success: true,
+    data: task
+  });
+});
+
+const getCompletedTasks = asyncHandler(async (req, res, next) => {
   date = moment(Date.now(), 'X')
 
-  const task = await model.Task.find({ dueDateTime: {$lt: date} }).sort( { dueDateTime: -1 } )
+  const task = await model.Task.find({ studentNumber: req.user.number, completed: true}).sort( { createdDateTime: -1 } )
+
+  if (!task) {
+    return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
+  }
+
+  res.status(200).json({
+    success: true,
+    data: task
+  });
+});
+
+const getOverdueTasks = asyncHandler(async (req, res, next) => {
+  date = moment(Date.now(), 'X')
+
+  const task = await model.Task.find({ studentNumber: req.user.number, completed: false, dueDateTime: {$lt: date} }).sort( { dueDateTime: -1 } )
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
@@ -32,7 +74,7 @@ const getOverdueTask = asyncHandler(async (req, res, next) => {
 //@route    GET /tasks/:id
 //@access   Student
 const getOneTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.find(req.params.studentNumber, req.params.id);
+  const task = await model.Task.find(req.user.number, req.params.id);
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
@@ -48,7 +90,7 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  student = {student_number: req.student_number}
+  student = {student_number: req.user.number}
 
   const task = await model.Task.create({ ...req.body, ...student })
 
@@ -95,7 +137,10 @@ const deleteTask = asyncHandler(async (req, res, next) => {
 
 module.exports = {
   getAllTasks,
-  getOverdueTask,
+  getInprogressTasks,
+  getFlaggedTasks,
+  getCompletedTasks,
+  getOverdueTasks,
   getOneTask,
   createTasks,
   updateTask,
