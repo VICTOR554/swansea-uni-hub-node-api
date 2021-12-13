@@ -22,7 +22,8 @@ const getInprogressTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-     task
+    success: true,
+    data: task
   });
 });
 
@@ -35,7 +36,8 @@ const getFlaggedTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-   task
+    success: true,
+    data: task
   });
 });
 
@@ -49,7 +51,8 @@ const getCompletedTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-    task
+    success: true,
+    data: task
   });
 });
 
@@ -64,7 +67,8 @@ const getOverdueTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-    task
+    success: true,
+    data: task
   });
 });
 
@@ -81,7 +85,8 @@ const getOneTask = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-  task
+    success: true,
+    data: task
   });
 });
 
