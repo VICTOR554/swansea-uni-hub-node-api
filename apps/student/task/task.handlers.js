@@ -15,7 +15,6 @@ const getInprogressTasks = asyncHandler(async (req, res, next) => {
 
   const task = await model.Task.find({ studentNumber: req.user.number, completed: false}).sort( { createdDateTime: -1 } )
 
-  console.log( "after number "+req.user.number)
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
@@ -77,7 +76,7 @@ const getOverdueTasks = asyncHandler(async (req, res, next) => {
 //@route    GET /tasks/:id
 //@access   Student
 const getOneTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.find(req.user.number, req.params.id);
+  const task = await model.Task.find({studentNumber: req.user.number,  _id: req.params.id});
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
@@ -93,9 +92,10 @@ const getOneTask = asyncHandler(async (req, res, next) => {
 //@route    POST /tasks/new
 //@access   Student
 const createTasks = asyncHandler(async (req, res, next) => {
-  student = {student_number: req.user.number}
+  student = {studentNumber: req.user.number}
 
-  const task = await model.Task.create({ ...req.body, ...student })
+
+  const task = await model.Task.create({...req.body, ...student})
 
   res.status(201).json({
     success: true,
