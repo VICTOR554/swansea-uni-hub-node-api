@@ -11,16 +11,18 @@ const getAllTasks = asyncHandler(async (req, res, next) => {
 });
 
 const getInprogressTasks = asyncHandler(async (req, res, next) => {
+  console.log( "number "+req.user.number)
 
   const task = await model.Task.find({ studentNumber: req.user.number, completed: false}).sort( { createdDateTime: -1 } )
+
+  console.log( "after number "+req.user.number)
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
   }
 
   res.status(200).json({
-    success: true,
-    data: task
+     task
   });
 });
 
@@ -33,8 +35,7 @@ const getFlaggedTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-    success: true,
-    data: task
+   task
   });
 });
 
@@ -48,13 +49,13 @@ const getCompletedTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-    success: true,
-    data: task
+    task
   });
 });
 
 const getOverdueTasks = asyncHandler(async (req, res, next) => {
   date = moment(Date.now(), 'X')
+
 
   const task = await model.Task.find({ studentNumber: req.user.number, completed: false, dueDateTime: {$lt: date} }).sort( { dueDateTime: -1 } )
 
@@ -63,8 +64,7 @@ const getOverdueTasks = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-    success: true,
-    data: task
+    task
   });
 });
 
@@ -81,8 +81,7 @@ const getOneTask = asyncHandler(async (req, res, next) => {
   }
 
   res.status(200).json({
-    success: true,
-    data: task
+  task
   });
 });
 
