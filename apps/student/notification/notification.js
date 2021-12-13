@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router()
 const handlers = require('./notification.handlers');
+const model = require('../../../models/model');
+const advancedResults = require('../../../middleware/advancedresults');
 
-
-router.get('/current',  handlers.getCurrentNotifications)
-router.get('/past',  handlers.getPastNotifications)
-router.get('/one/:id', handlers.getOneNotification)
+router.get('/', advancedResults(model.Notification), handlers.getAllNotification)
+router.get('/:id', handlers.getOneNotification)
 
 
 

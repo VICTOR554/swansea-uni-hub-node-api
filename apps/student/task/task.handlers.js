@@ -78,7 +78,9 @@ const getOverdueTasks = asyncHandler(async (req, res, next) => {
 //@route    GET /tasks/:id
 //@access   Student
 const getOneTask = asyncHandler(async (req, res, next) => {
-  const task = await model.Task.find(req.user.number, req.params.id);
+  console.log( "number "+req.user.number, req.params.id )
+
+  const task = await model.Task.findOne({studentNumber: req.user.number, _id: req.params.id});
 
   if (!task) {
     return next(new ErrorResponse(`Task is not in the database with the id of ${req.params.id}`, 404));
