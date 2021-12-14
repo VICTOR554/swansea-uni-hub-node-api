@@ -90,6 +90,7 @@ const deleteData = async () => {
     await Model.Student.deleteMany();
     await Model.Task.deleteMany();
     await Model.Term.deleteMany();
+    await Model.Note.deleteMany();
 
     console.log('Data Destroyed....'.red.inverse);
     process.exit();

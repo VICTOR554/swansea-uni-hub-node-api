@@ -1,25 +1,25 @@
 [
   {
-    "moduleCode": "CSC313&CSCM13",
+    "moduleCode": "CSC313 & CSCM13",
     "lecturerName": "david",
-    "startDateTime": 1638792098,
-    "endDateTime": 1638799298,
+    "startDateTime": 1638345600    ,
+    "endDateTime": 1638352800,
     "location": "Engineering",
     "type": "Seminar"
   },
   {
-    "moduleCode": "CSC348&CSCM48",
+    "moduleCode": "CSC348 & CSCM48",
     "lecturerName": "john",
-    "startDateTime": 1638806498,
-    "endDateTime": 1638813698,
+    "startDateTime": 1638360000,
+    "endDateTime": 1638367200,
     "location": "Library",
     "type": "Lecture"
   },
   {
     "moduleCode": "CSCM08",
     "lecturerName": "larry",
-    "startDateTime": 1638878498,
-    "endDateTime": 1638885698,
+    "startDateTime": 1638374400,
+    "endDateTime": 1638381600,
     "location": "Computer foundary",
     "type": "Lecture/Seminar"
   },
@@ -27,16 +27,65 @@
   {
     "moduleCode": "CSCM08",
     "lecturerName": "david",
-    "startDateTime": 1638892898,
-    "endDateTime": 1638900098,
+    "startDateTime": 1638432000,
+    "endDateTime": 1638439200,
+    "location": "Art",
+    "type": "Seminar"
+  },
+  {
+    "moduleCode": "CSC348 & CSCM48",
+    "lecturerName": "john",
+    "startDateTime": 1638446400,
+    "endDateTime": 1638453600,
+    "location": "Business",
+    "type": "Lecture"
+  },
+  {
+    "moduleCode": "CSC313 & CSCM13",
+    "lecturerName": "larry",
+    "startDateTime": 1638460800,
+    "endDateTime": 1638471600,
+    "location": "bay",
+    "type": "Lecture/Seminar"
+  },
+  {
+    "moduleCode": "CSC313&CSCM13",
+    "lecturerName": "david",
+    "startDateTime": 1639396898,
+    "endDateTime": 1639404098,
+    "location": "Engineering",
+    "type": "Seminar"
+  },
+  {
+    "moduleCode": "CSC348&CSCM48",
+    "lecturerName": "john",
+    "startDateTime": 1639490498,
+    "endDateTime": 1639497698,
+    "location": "Library",
+    "type": "Lecture"
+  },
+  {
+    "moduleCode": "CSCM08",
+    "lecturerName": "larry",
+    "startDateTime": 1639576898,
+    "endDateTime": 1639584098,
+    "location": "Computer foundary",
+    "type": "Lecture/Seminar"
+  },
+
+  {
+    "moduleCode": "CSCM08",
+    "lecturerName": "david",
+    "startDateTime": 1639645298,
+    "endDateTime": 1639656098,
     "location": "Art",
     "type": "Seminar"
   },
   {
     "moduleCode": "CSC348&CSCM48",
     "lecturerName": "john",
-    "startDateTime": 1639569698,
-    "endDateTime": 1639576898,
+    "startDateTime": 1639760498,
+    "endDateTime": 1639767698,
     "location": "Business",
     "type": "Lecture"
   },
