@@ -91,46 +91,46 @@ const studentSchema = new Schema({
   //     required: true
   //   }
   // ],
-  mainMenu: 
-    {
-      default: [{
-      number: {
-      type: Number,
-      required: true
-    },
-    icon: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    path: {
-      type: String,
-      required: true
-    }
-    }],
-    custom: 
-    [{
-      number: {
-        type: String,
-        required: true
-      },
-      icon: {
-        type: String,
-        required: true
-      },
-      title: {
-        type: String,
-        required: true
-      },
-      path: {
-        type: String,
-        required: true
-      }
-    }]
-    },
+  // mainMenu: 
+  //   {
+  //     default: [{
+  //     number: {
+  //     type: Number,
+  //     required: true
+  //   },
+  //   icon: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   title: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   path: {
+  //     type: String,
+  //     required: true
+  //   }
+  //   }],
+  //   custom: 
+  //   [{
+  //     number: {
+  //       type: String,
+  //       required: true
+  //     },
+  //     icon: {
+  //       type: String,
+  //       required: true
+  //     },
+  //     title: {
+  //       type: String,
+  //       required: true
+  //     },
+  //     path: {
+  //       type: String,
+  //       required: true
+  //     }
+  //   }]
+  //   },
   password: {
     type: String,
     required: true,
