@@ -1,25 +1,25 @@
 [
   {
-    "moduleCode": "CSC313 & CSCM13",
+    "moduleCode": "CSC313&CSCM13",
     "lecturerName": "david",
-    "startDateTime": 1638345600    ,
-    "endDateTime": 1638352800,
+    "startDateTime": 1638792000    ,
+    "endDateTime": 1638799200,
     "location": "Engineering",
     "type": "Seminar"
   },
   {
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "lecturerName": "john",
-    "startDateTime": 1638360000,
-    "endDateTime": 1638367200,
+    "startDateTime": 1638972000,
+    "endDateTime": 1638979200,
     "location": "Library",
     "type": "Lecture"
   },
   {
     "moduleCode": "CSCM08",
     "lecturerName": "larry",
-    "startDateTime": 1638374400,
-    "endDateTime": 1638381600,
+    "startDateTime": 1639126800,
+    "endDateTime": 1639137600,
     "location": "Computer foundary",
     "type": "Lecture/Seminar"
   },
@@ -27,24 +27,24 @@
   {
     "moduleCode": "CSCM08",
     "lecturerName": "david",
-    "startDateTime": 1638432000,
-    "endDateTime": 1638439200,
+    "startDateTime": 1640001600,
+    "endDateTime": 1640008800,
     "location": "Art",
     "type": "Seminar"
   },
   {
-    "moduleCode": "CSC348 & CSCM48",
+    "moduleCode": "CSC348&CSCM48",
     "lecturerName": "john",
-    "startDateTime": 1638446400,
-    "endDateTime": 1638453600,
+    "startDateTime": 1640163600,
+    "endDateTime": 1640178000,
     "location": "Business",
     "type": "Lecture"
   },
   {
-    "moduleCode": "CSC313 & CSCM13",
+    "moduleCode": "CSC313&CSCM13",
     "lecturerName": "larry",
-    "startDateTime": 1638460800,
-    "endDateTime": 1638471600,
+    "startDateTime": 1640350800,
+    "endDateTime": 1640358000,
     "location": "bay",
     "type": "Lecture/Seminar"
   },
