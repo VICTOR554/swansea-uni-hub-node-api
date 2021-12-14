@@ -6,7 +6,14 @@ const model = require('../../../models/model');
 //@route    GET /notes
 //@access   Student
 const getAllNotes = asyncHandler(async (req, res, next) => {
-  res.status(200).json(res.advancedResults);
+  const note = await model.Note.find({studentNumber: req.user.number}).sort( { createdDateTime: -1 } );
+
+
+
+  res.status(200).json({
+    success: true,
+    data: note
+  });
 });
 
 
@@ -16,9 +23,7 @@ const getAllNotes = asyncHandler(async (req, res, next) => {
 const getOneNote = asyncHandler(async (req, res, next) => {
   const note = await model.Note.find({studentNumber: req.user.number,  _id: req.params.id});
 
-  if (!note) {
-    return next(new ErrorResponse(`Note is not in the database with the id of ${req.params.id}`, 404));
-  }
+
 
   res.status(200).json({
     success: true,
