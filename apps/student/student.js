@@ -17,7 +17,7 @@ const lecturer = require('./lecturer/lecturer');
 const location = require('./location/location');
 const modules = require('./module/module');
 const notification = require('./notification/notification');
-const note = require('./notea/note');
+const note = require('./note2/note');
 const report = require('./report/report');
 const room = require('./room/room');
 const society = require('./society/society');
@@ -48,7 +48,7 @@ router.use('/sports', sport);
 router.use('/tasks', task);
 router.use('/weeks', week);
 
-router.get('/me', handlers.getCurrentStudent);
+router.get('/current', handlers.getCurrentStudent);
 router.put('/update/:id', handlers.updateStudent);
 
 module.exports = router;

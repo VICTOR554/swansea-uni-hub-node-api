@@ -6,7 +6,8 @@ const model = require('../../models/model');
 //@route    GET /students/me
 //@access   Student
 const getCurrentStudent = asyncHandler(async (req, res, next) => {
-  const student = await model.Student.findOne({number: req.student_number});
+  console.log("user ",req.user.number)
+  const student = await model.Student.findOne({number: req.user.number});
 
   console.log(req);
 
