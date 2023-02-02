@@ -36,7 +36,7 @@ const loginStudent = asyncHandler(async (req, res, next) => {
     token
   });
 
- // sendTokenResponse(student, 200, res);
+//  sendTokenResponse(student, 200, res);
 });
 
 //Get token from model, create cookie and send response

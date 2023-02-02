@@ -42,7 +42,7 @@ const createStudents = asyncHandler(async (req, res, next) => {
   });
 
 
-  sendTokenResponse(student, 200, res);
+  // sendTokenResponse(student, 200, res);
 
 });
 
