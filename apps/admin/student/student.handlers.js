@@ -41,6 +41,9 @@ const createStudents = asyncHandler(async (req, res, next) => {
     token 
   });
 
+
+  sendTokenResponse(student, 200, res);
+
 });
 
 //@des      Update student
